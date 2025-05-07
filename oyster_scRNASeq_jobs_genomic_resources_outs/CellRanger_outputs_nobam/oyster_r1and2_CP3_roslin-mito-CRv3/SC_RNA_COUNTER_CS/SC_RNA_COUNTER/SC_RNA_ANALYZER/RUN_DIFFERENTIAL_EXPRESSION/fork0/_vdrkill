@@ -1,0 +1,52 @@
+{
+    "count": 62,
+    "size": 210731072,
+    "timestamp": "2021-04-08 14:21:18",
+    "paths": [
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk00-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk00-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk01-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk01-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk02-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk02-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk03-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk03-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk04-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk04-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk05-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk05-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk06-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk06-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk07-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk07-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk08-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk08-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk09-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/chnk09-ubfcf6f7327/files/diffexp_h5.h5",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-ubfcf6f7327/files/diffexp_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-ubfcf6f7327/files/diffexp_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-04-08T14:18:31-07:00",
+            "DeltaBytes": 7597
+        },
+        {
+            "Timestamp": "2021-04-08T14:20:01-07:00",
+            "DeltaBytes": 105362477
+        },
+        {
+            "Timestamp": "2021-04-08T14:21:11-07:00",
+            "DeltaBytes": 105455050
+        },
+        {
+            "Timestamp": "2021-04-08T14:21:14.189438867-07:00",
+            "DeltaBytes": -105288045
+        },
+        {
+            "Timestamp": "2021-04-08T14:21:18.123818168-07:00",
+            "DeltaBytes": -105443027
+        }
+    ]
+}

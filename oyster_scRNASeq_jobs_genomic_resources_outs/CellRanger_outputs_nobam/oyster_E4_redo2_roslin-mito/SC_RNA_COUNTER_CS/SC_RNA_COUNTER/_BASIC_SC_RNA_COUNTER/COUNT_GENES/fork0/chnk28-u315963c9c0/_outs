@@ -1,0 +1,7 @@
+{
+    "barcode_summary": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/chnk28-u315963c9c0/files/barcode_summary.h5", 
+    "chunked_reporter": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/chnk28-u315963c9c0/files/chunked_reporter.pickle", 
+    "matrices_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/chnk28-u315963c9c0/files/matrices_h5.h5", 
+    "reporter_summary": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/chnk28-u315963c9c0/files/reporter_summary.json", 
+    "matrices_mex": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/chnk28-u315963c9c0/files/matrices_mex"
+}

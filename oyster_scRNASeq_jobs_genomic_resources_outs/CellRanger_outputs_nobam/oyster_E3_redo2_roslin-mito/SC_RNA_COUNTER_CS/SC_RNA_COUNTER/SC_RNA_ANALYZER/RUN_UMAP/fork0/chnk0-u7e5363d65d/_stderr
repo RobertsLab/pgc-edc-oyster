@@ -1,0 +1,94 @@
+[stderr]
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py:469: NumbaWarning: 
+Compilation is falling back to object mode WITH looplifting enabled because Function "make_angular_tree" failed type inference due to: Cannot unify RandomProjectionTreeNode(array(int64, 1d, C), bool, none, none, none, none) and RandomProjectionTreeNode(none, bool, array(float32, 1d, C), none, RandomProjectionTreeNode(array(int64, 1d, C), bool, none, none, none, none), RandomProjectionTreeNode(array(int64, 1d, C), bool, none, none, none, none)) for '$19.16', defined at /opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py (476)
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py", line 476:
+def make_angular_tree(data, indices, rng_state, leaf_size=30):
+    <source elided>
+
+        left_node = make_angular_tree(data, left_indices, rng_state, leaf_size)
+        ^
+
+[1] During: resolving callee type: recursive(type(CPUDispatcher(<function make_angular_tree at 0x1460873717d0>)))
+[2] During: typing of call at /opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py (476)
+
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py", line 476:
+def make_angular_tree(data, indices, rng_state, leaf_size=30):
+    <source elided>
+
+        left_node = make_angular_tree(data, left_indices, rng_state, leaf_size)
+        ^
+
+  @numba.jit()
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/numba/compiler.py:725: NumbaWarning: Function "make_angular_tree" was compiled in object mode without forceobj=True.
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py", line 470:
+@numba.jit()
+def make_angular_tree(data, indices, rng_state, leaf_size=30):
+^
+
+  self.func_ir.loc))
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/numba/compiler.py:734: NumbaDeprecationWarning: 
+Fall-back from the nopython compilation path to the object mode compilation path has been detected, this is deprecated behaviour.
+
+For more information visit http://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/rp_tree.py", line 470:
+@numba.jit()
+def make_angular_tree(data, indices, rng_state, leaf_size=30):
+^
+
+  warnings.warn(errors.NumbaDeprecationWarning(msg, self.func_ir.loc))
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/nndescent.py:92: NumbaPerformanceWarning: 
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see http://numba.pydata.org/numba-doc/latest/user/parallel.html#diagnostics for help.
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/utils.py", line 409:
+@numba.njit(parallel=True)
+def build_candidates(current_graph, n_vertices, n_neighbors, max_candidates, rng_state):
+^
+
+  current_graph, n_vertices, n_neighbors, max_candidates, rng_state
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/numba/compiler.py:588: NumbaPerformanceWarning: 
+The keyword argument 'parallel=True' was specified but no transformation for parallel execution was possible.
+
+To find out why, try turning on parallel diagnostics, see http://numba.pydata.org/numba-doc/latest/user/parallel.html#diagnostics for help.
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/nndescent.py", line 47:
+    @numba.njit(parallel=True)
+    def nn_descent(
+    ^
+
+  self.func_ir.loc))
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/umap_.py:349: NumbaWarning: 
+Compilation is falling back to object mode WITH looplifting enabled because Function "fuzzy_simplicial_set" failed type inference due to: Untyped global name 'nearest_neighbors': cannot determine Numba type of <type 'function'>
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/umap_.py", line 467:
+def fuzzy_simplicial_set(
+    <source elided>
+    if knn_indices is None or knn_dists is None:
+        knn_indices, knn_dists, _ = nearest_neighbors(
+        ^
+
+  @numba.jit()
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/numba/compiler.py:725: NumbaWarning: Function "fuzzy_simplicial_set" was compiled in object mode without forceobj=True.
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/umap_.py", line 350:
+@numba.jit()
+def fuzzy_simplicial_set(
+^
+
+  self.func_ir.loc))
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/numba/compiler.py:734: NumbaDeprecationWarning: 
+Fall-back from the nopython compilation path to the object mode compilation path has been detected, this is deprecated behaviour.
+
+For more information visit http://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit
+
+File "../../../../../../../../../../opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/lib/python2.7/site-packages/umap/umap_.py", line 350:
+@numba.jit()
+def fuzzy_simplicial_set(
+^
+
+  warnings.warn(errors.NumbaDeprecationWarning(msg, self.func_ir.loc))

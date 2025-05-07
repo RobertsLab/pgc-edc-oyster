@@ -1,0 +1,9 @@
+{
+    "gene_index_tab": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/chnk50-ubfcf6f5759/files/gene_index_tab", 
+    "summary": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/chnk50-ubfcf6f5759/files/summary.json", 
+    "barcodes_detected": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/chnk50-ubfcf6f5759/files/barcodes_detected.csv", 
+    "output": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/chnk50-ubfcf6f5759/files/output.bam", 
+    "num_alignments": 5773606, 
+    "chunked_reporter": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/chnk50-ubfcf6f5759/files/chunked_reporter.bincode", 
+    "chunk_metadata": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/chnk50-ubfcf6f5759/files/chunk_metadata.json"
+}

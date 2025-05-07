@@ -1,0 +1,38 @@
+[stdout]
+Args { cmd_martian: true, arg_adapter: ["mark_duplicates", "split", "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5", "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5/files", "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/journal/ID.oyster_r1and2_CP1_roslin-mito-CRv3.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.u05346ea9d5"] }
+/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/lib/bin/cr_stage martian mark_duplicates split /home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5 /home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5/files /home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/journal/ID.oyster_r1and2_CP1_roslin-mito-CRv3.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.u05346ea9d5
+got metadata: Metadata { stage_name: "mark_duplicates", stage_type: "split", metadata_path: "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5", files_path: "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5/files", run_file: "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/journal/ID.oyster_r1and2_CP1_roslin-mito-CRv3.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.u05346ea9d5", jobinfo: {}, cache: {}, log_file: File { fd: 3, path: "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/split-u05346ea9d5/_log", read: false, write: true } }
+[2021-04-07 23:59:35][INFO] Found first block at real offset 4002
+[2021-04-08 00:01:03][INFO] Found 1851342 blocks
+[2021-04-08 00:01:03][INFO] size_gb=21.814565734, chunk_size_gb=0.5, num_chunks=44
+[2021-04-08 00:01:03][INFO] Found first block at real offset 4002
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 00:01:03][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?

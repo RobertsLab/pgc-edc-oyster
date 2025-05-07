@@ -1,0 +1,11 @@
+{
+    "chunks": [
+        {
+            "__threads": 1, 
+            "__mem_gb": 6
+        }
+    ], 
+    "join": {
+        "__mem_gb": 1
+    }
+}

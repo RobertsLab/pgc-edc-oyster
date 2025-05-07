@@ -1,0 +1,13 @@
+@include "_sc_rna_analyzer_stages.mro"
+
+call CHOOSE_DIMENSION_REDUCTION_OUTPUT(
+    skip = false,
+    pca_h5_list = [
+        "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u05346eb7ad/files/pca_h5.h5",
+        null
+    ],
+    pca_csv_list = [
+        "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_PCA/fork0/join-u05346eb7ad/files/pca_csv",
+        null
+    ],
+)

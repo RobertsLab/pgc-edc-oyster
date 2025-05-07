@@ -1,0 +1,388 @@
+{
+    "chunks": [
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk00-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk01-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk02-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk03-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk04-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk05-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk06-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk07-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk08-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk09-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk10-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk11-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk12-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk13-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk14-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk15-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk16-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk17-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk18-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk19-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk20-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk21-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk22-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk23-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk24-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk25-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWNKBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk27-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk28-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk29-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk30-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk31-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:1", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk32-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk33-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk34-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk35-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk36-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:2", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk37-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk38-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk39-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk40-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk41-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:3", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk42-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk43-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk44-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk45-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk46-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }, 
+        {
+            "library_type": "Gene Expression", 
+            "read_group": "oyster_r1and2_CP2_roslin-mito-CRv3:0:1:HHWHYBGXF:4", 
+            "read_chunk": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk47-u13af6f2705/files/reads.fastq/1.fastq.lz4", 
+            "__threads": 4, 
+            "__mem_gb": 16, 
+            "read2_chunk": null
+        }
+    ]
+}

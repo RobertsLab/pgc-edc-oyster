@@ -1,0 +1,332 @@
+{
+  "chunks": [
+    {
+      "__mem_gb": 16,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 29061409603584,
+      "chunk_size_gb": 6.169108651058514,
+      "chunk_start": 262209536,
+      "major_barcode_proportion": 1.0
+    },
+    {
+      "__mem_gb": 12,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 57969000489899,
+      "chunk_size_gb": 6.1364910374042765,
+      "chunk_start": 29061409603584,
+      "major_barcode_proportion": 0.6
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 90511316352032,
+      "chunk_size_gb": 6.908072445040254,
+      "chunk_start": 57969000489899,
+      "major_barcode_proportion": 0.01990049751243781
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 123248679966271,
+      "chunk_size_gb": 6.949476528462789,
+      "chunk_start": 90511316352032,
+      "major_barcode_proportion": 0.020689655172413793
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 155894614322180,
+      "chunk_size_gb": 6.930063967642043,
+      "chunk_start": 123248679966271,
+      "major_barcode_proportion": 0.016898608349900597
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 188130720673699,
+      "chunk_size_gb": 6.8430755212406345,
+      "chunk_start": 155894614322180,
+      "major_barcode_proportion": 0.019569471624266144
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 220743794536330,
+      "chunk_size_gb": 6.923089391976325,
+      "chunk_start": 188130720673699,
+      "major_barcode_proportion": 0.02178217821782178
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 253273789756871,
+      "chunk_size_gb": 6.905460191164128,
+      "chunk_start": 220743794536330,
+      "major_barcode_proportion": 0.01881188118811881
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 285575361131346,
+      "chunk_size_gb": 6.8569658375239655,
+      "chunk_start": 253273789756871,
+      "major_barcode_proportion": 0.02485089463220676
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 318206206505401,
+      "chunk_size_gb": 6.926886068132013,
+      "chunk_start": 285575361131346,
+      "major_barcode_proportion": 0.026627218934911243
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 350212204905791,
+      "chunk_size_gb": 6.794224734890044,
+      "chunk_start": 318206206505401,
+      "major_barcode_proportion": 0.01768172888015717
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 382848643500179,
+      "chunk_size_gb": 6.928049093319121,
+      "chunk_start": 350212204905791,
+      "major_barcode_proportion": 0.014895729890764648
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 415374235686185,
+      "chunk_size_gb": 6.904518051306585,
+      "chunk_start": 382848643500179,
+      "major_barcode_proportion": 0.01881188118811881
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 447769620656817,
+      "chunk_size_gb": 6.876876861560245,
+      "chunk_start": 415374235686185,
+      "major_barcode_proportion": 0.022840119165839126
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 480136876742534,
+      "chunk_size_gb": 6.870916839189142,
+      "chunk_start": 447769620656817,
+      "major_barcode_proportion": 0.023928215353938187
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 512612443886367,
+      "chunk_size_gb": 6.893897706027337,
+      "chunk_start": 480136876742534,
+      "major_barcode_proportion": 0.018830525272547076
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 545026986794453,
+      "chunk_size_gb": 6.8809478601274945,
+      "chunk_start": 512612443886367,
+      "major_barcode_proportion": 0.028769841269841268
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 577746861627644,
+      "chunk_size_gb": 6.945757288078618,
+      "chunk_start": 545026986794453,
+      "major_barcode_proportion": 0.020895522388059702
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 610338242926826,
+      "chunk_size_gb": 6.918506588313399,
+      "chunk_start": 577746861627644,
+      "major_barcode_proportion": 0.01791044776119403
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 643034180270592,
+      "chunk_size_gb": 6.94068427118444,
+      "chunk_start": 610338242926826,
+      "major_barcode_proportion": 0.01485148514851485
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 676008718952801,
+      "chunk_size_gb": 6.99982616861864,
+      "chunk_start": 643034180270592,
+      "major_barcode_proportion": 0.018682399213372666
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 707851906353840,
+      "chunk_size_gb": 6.759660472752538,
+      "chunk_start": 676008718952801,
+      "major_barcode_proportion": 0.01671583087512291
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 740213671918446,
+      "chunk_size_gb": 6.86974411714024,
+      "chunk_start": 707851906353840,
+      "major_barcode_proportion": 0.021847070506454815
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 772585337180207,
+      "chunk_size_gb": 6.871847682272255,
+      "chunk_start": 740213671918446,
+      "major_barcode_proportion": 0.018867924528301886
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 804973686262224,
+      "chunk_size_gb": 6.875382404036659,
+      "chunk_start": 772585337180207,
+      "major_barcode_proportion": 0.020854021847070508
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 837603699298548,
+      "chunk_size_gb": 6.92669147701879,
+      "chunk_start": 804973686262224,
+      "major_barcode_proportion": 0.019860973187686197
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 870272156279096,
+      "chunk_size_gb": 6.934853382631378,
+      "chunk_start": 837603699298548,
+      "major_barcode_proportion": 0.016881827209533268
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 902721899235030,
+      "chunk_size_gb": 6.888432042748051,
+      "chunk_start": 870272156279096,
+      "major_barcode_proportion": 0.014895729890764648
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 935371661764959,
+      "chunk_size_gb": 6.930881759507164,
+      "chunk_start": 902721899235030,
+      "major_barcode_proportion": 0.018849206349206348
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 967939324034909,
+      "chunk_size_gb": 6.91345904481082,
+      "chunk_start": 935371661764959,
+      "major_barcode_proportion": 0.01684836471754212
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1000432448606062,
+      "chunk_size_gb": 6.897629189221234,
+      "chunk_start": 967939324034909,
+      "major_barcode_proportion": 0.017839444995044598
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1032825906759821,
+      "chunk_size_gb": 6.876476730366465,
+      "chunk_start": 1000432448606062,
+      "major_barcode_proportion": 0.015857284440039643
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1065242400329533,
+      "chunk_size_gb": 6.88137311690578,
+      "chunk_start": 1032825906759821,
+      "major_barcode_proportion": 0.02178217821782178
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1097389196855548,
+      "chunk_size_gb": 6.824115220940989,
+      "chunk_start": 1065242400329533,
+      "major_barcode_proportion": 0.022549019607843137
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1130035597446169,
+      "chunk_size_gb": 6.930179425685128,
+      "chunk_start": 1097389196855548,
+      "major_barcode_proportion": 0.019821605550049554
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1162203418599520,
+      "chunk_size_gb": 6.828581356192142,
+      "chunk_start": 1130035597446169,
+      "major_barcode_proportion": 0.02390438247011952
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1194825030641377,
+      "chunk_size_gb": 6.924918968591589,
+      "chunk_start": 1162203418599520,
+      "major_barcode_proportion": 0.020771513353115726
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1227199156507000,
+      "chunk_size_gb": 6.872392445568206,
+      "chunk_start": 1194825030641377,
+      "major_barcode_proportion": 0.015920398009950248
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1259886859193408,
+      "chunk_size_gb": 6.93893569188534,
+      "chunk_start": 1227199156507000,
+      "major_barcode_proportion": 0.02073050345508391
+    },
+    {
+      "__mem_gb": 10,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": 1292263468242673,
+      "chunk_size_gb": 6.8729008978034924,
+      "chunk_start": 1259886859193408,
+      "major_barcode_proportion": 0.01860920666013712
+    },
+    {
+      "__mem_gb": 4,
+      "bam_compression_ratio": 0.06694246533363978,
+      "chunk_end": null,
+      "chunk_size_gb": 0.004467164760152367,
+      "chunk_start": 1292263468242673,
+      "major_barcode_proportion": 0.3448275862068966
+    }
+  ]
+}

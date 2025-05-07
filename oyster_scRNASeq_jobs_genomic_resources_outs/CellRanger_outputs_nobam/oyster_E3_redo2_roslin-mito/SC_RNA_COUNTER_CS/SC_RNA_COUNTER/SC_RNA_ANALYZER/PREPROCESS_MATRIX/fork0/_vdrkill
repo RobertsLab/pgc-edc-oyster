@@ -1,0 +1,28 @@
+{
+    "count": 2,
+    "size": 46849799,
+    "timestamp": "2021-10-10 23:18:33",
+    "paths": [
+        "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u7e5363d469/files/cloupe_matrix_h5.h5",
+        "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u7e5363d469/files/preprocessed_matrix_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-10-10T23:14:22-07:00",
+            "DeltaBytes": 6090
+        },
+        {
+            "Timestamp": "2021-10-10T23:14:23-07:00",
+            "DeltaBytes": 46857263
+        },
+        {
+            "Timestamp": "2021-10-10T23:14:32.957215197-07:00",
+            "DeltaBytes": -23970389
+        },
+        {
+            "Timestamp": "2021-10-10T23:18:33.011849374-07:00",
+            "DeltaBytes": -22879410
+        }
+    ]
+}

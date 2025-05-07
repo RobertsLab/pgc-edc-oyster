@@ -1,0 +1,28 @@
+{
+    "count": 2,
+    "size": 886240,
+    "timestamp": "2021-04-08 14:26:09",
+    "paths": [
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/summary.json",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/filtered_barcodes.csv"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-04-08T14:06:58-07:00",
+            "DeltaBytes": 8668
+        },
+        {
+            "Timestamp": "2021-04-08T14:06:59-07:00",
+            "DeltaBytes": 92878241
+        },
+        {
+            "Timestamp": "2021-04-08T14:25:24.553115648-07:00",
+            "DeltaBytes": -4705
+        },
+        {
+            "Timestamp": "2021-04-08T14:25:40.870546602-07:00",
+            "DeltaBytes": -881535
+        }
+    ]
+}

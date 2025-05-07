@@ -1,0 +1,32 @@
+{
+    "read_groups": [
+        "oyster_E3_redo2_roslin-mito:0:1:HGKT3BGXK:4"
+    ], 
+    "bam_comments": [
+        "10x_bam_to_fastq:I1(BC:QT)", 
+        "10x_bam_to_fastq:R1(CR:CY,UR:UY)", 
+        "10x_bam_to_fastq:R2(SEQ:QUAL)"
+    ], 
+    "gem_groups": [
+        1
+    ], 
+    "barcode_counts": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/barcode_counts.json", 
+    "tags": [
+        "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/tags.fastq/1.fastq.lz4"
+    ], 
+    "read": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/read.fastq", 
+    "align": null, 
+    "feature_counts": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/feature_counts.json", 
+    "reads": [
+        "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/reads.fastq/1.fastq.lz4"
+    ], 
+    "read2s": [], 
+    "library_ids": [
+        "0"
+    ], 
+    "library_types": [
+        "Gene Expression"
+    ], 
+    "summary": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/summary.json", 
+    "chunked_reporter": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/EXTRACT_READS/fork0/chnk26-u7e5363af5d/files/chunked_reporter.pickle"
+}

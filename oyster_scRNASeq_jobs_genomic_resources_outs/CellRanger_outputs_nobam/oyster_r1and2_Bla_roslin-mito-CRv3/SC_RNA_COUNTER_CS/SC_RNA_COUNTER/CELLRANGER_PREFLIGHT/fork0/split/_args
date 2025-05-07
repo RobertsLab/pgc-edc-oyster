@@ -1,0 +1,54 @@
+{
+    "allowed_chems": [
+        "auto",
+        "custom",
+        "threeprime",
+        "fiveprime",
+        "SC3P_auto",
+        "SC5P_auto",
+        "SC3Pv1",
+        "SC3Pv2",
+        "SC3Pv3",
+        "SC5P-PE",
+        "SC5P-R2",
+        "SC5P-R1",
+        "SC-FB"
+    ],
+    "check_executables": true,
+    "chemistry_name": "SC3Pv3",
+    "custom_chemistry_def": null,
+    "feature_reference": null,
+    "force_cells": null,
+    "r1_length": null,
+    "r2_length": null,
+    "recovered_cells": null,
+    "reference_path": "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    "sample_def": [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/HHWNKBGXF"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path/HHWHYBGXF"
+        }
+    ]
+}

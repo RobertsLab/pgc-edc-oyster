@@ -1,0 +1,2 @@
+[stderr]
+[W::bgzf_read_block] EOF marker is absent. The input is probably truncated

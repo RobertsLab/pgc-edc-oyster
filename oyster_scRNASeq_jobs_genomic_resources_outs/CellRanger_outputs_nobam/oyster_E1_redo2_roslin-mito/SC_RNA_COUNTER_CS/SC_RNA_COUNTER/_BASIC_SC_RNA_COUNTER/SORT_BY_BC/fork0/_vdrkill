@@ -1,0 +1,48 @@
+{
+    "count": 18,
+    "size": 41873353226,
+    "timestamp": "2021-10-10 15:56:51",
+    "paths": [
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk00-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk01-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk02-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk03-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk04-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk05-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk06-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk07-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk08-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk09-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk10-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk11-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk12-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk13-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk14-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk15-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/chnk16-u9fbc636b3f/files/default.bam",
+        "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/join-u9fbc636b3e/files/default.bam"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-10-10T15:37:50-07:00",
+            "DeltaBytes": 308700
+        },
+        {
+            "Timestamp": "2021-10-10T15:37:51-07:00",
+            "DeltaBytes": 20939486413
+        },
+        {
+            "Timestamp": "2021-10-10T15:46:14-07:00",
+            "DeltaBytes": 20936953576
+        },
+        {
+            "Timestamp": "2021-10-10T15:46:42.18387641-07:00",
+            "DeltaBytes": -20936708845
+        },
+        {
+            "Timestamp": "2021-10-10T15:56:51.626710104-07:00",
+            "DeltaBytes": -20936644381
+        }
+    ]
+}

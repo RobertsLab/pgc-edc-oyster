@@ -1,0 +1,24 @@
+{
+    "count": 22,
+    "size": 3761082,
+    "timestamp": "2021-04-08 14:21:18",
+    "paths": [
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-ubfcf6f7326/files/clustering_csv",
+        "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-ubfcf6f7326/files/clustering_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-04-08T14:18:30-07:00",
+            "DeltaBytes": 3768772
+        },
+        {
+            "Timestamp": "2021-04-08T14:18:31-07:00",
+            "DeltaBytes": 1264
+        },
+        {
+            "Timestamp": "2021-04-08T14:21:18.147551854-07:00",
+            "DeltaBytes": -3761082
+        }
+    ]
+}

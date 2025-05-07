@@ -1,0 +1,12 @@
+{
+    "__mem_gb": 3,
+    "__threads": 4,
+    "__vmem_gb": 6,
+    "clustering_h5": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-u05346eb7dc/files/clustering_h5.h5",
+    "clustering_key": "graphclust",
+    "is_antibody_only": false,
+    "matrix_h5": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u05346eb5b0/files/preprocessed_matrix_h5.h5",
+    "max_clusters": null,
+    "random_seed": null,
+    "skip": false
+}

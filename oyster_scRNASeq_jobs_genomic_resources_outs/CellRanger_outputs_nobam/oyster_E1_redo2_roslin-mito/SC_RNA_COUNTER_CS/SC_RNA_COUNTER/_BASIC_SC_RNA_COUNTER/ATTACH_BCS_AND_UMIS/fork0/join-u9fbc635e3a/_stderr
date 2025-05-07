@@ -1,0 +1,2 @@
+[stderr]
+Running annotate_reads join chunk_metrics.json /home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/join-u9fbc635e3a/files/summary.json /home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/ATTACH_BCS_AND_UMIS/fork0/join-u9fbc635e3a/files/barcodes_detected.csv

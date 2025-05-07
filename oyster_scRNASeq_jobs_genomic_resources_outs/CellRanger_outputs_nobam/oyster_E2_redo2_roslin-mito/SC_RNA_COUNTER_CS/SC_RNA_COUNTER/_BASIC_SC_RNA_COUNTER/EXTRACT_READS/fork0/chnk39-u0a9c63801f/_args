@@ -1,0 +1,2766 @@
+{
+    "__mem_gb": 6,
+    "__threads": 1,
+    "__vmem_gb": 9,
+    "align": {
+        "aligner": "star",
+        "high_conf_mapq": null
+    },
+    "augment_fastq": false,
+    "barcode_whitelist": "3M-february-2018",
+    "chemistry": {
+        "si_read_offset": 0,
+        "strandedness": "+",
+        "umi_read_offset": 16,
+        "barcode_read_type": "R1",
+        "umi_read_type": "R1",
+        "barcode_read_length": 16,
+        "rna_read_type": "R2",
+        "barcode_whitelist": "3M-february-2018",
+        "si_read_type": "I1",
+        "rna_read_length": null,
+        "description": "Single Cell 3' v3",
+        "rna_read_offset": 0,
+        "barcode_read_offset": 0,
+        "rna_read2_type": null,
+        "endedness": "three_prime",
+        "name": "SC3Pv3",
+        "umi_read_length": 12,
+        "si_read_length": null,
+        "read_type_to_bcl2fastq_filename": {
+            "I1": "I1",
+            "I2": null,
+            "R1": "R1",
+            "R2": "R2"
+        },
+        "rna_read2_length": null,
+        "rna_read2_offset": 0,
+        "read_type_to_bcl_processor_filename": {
+            "I1": "I1",
+            "I2": "I2",
+            "R1": "RA",
+            "R2": null
+        }
+    },
+    "chemistry_def": {
+        "si_read_offset": 0,
+        "strandedness": "+",
+        "umi_read_offset": 16,
+        "barcode_read_type": "R1",
+        "umi_read_type": "R1",
+        "barcode_read_length": 16,
+        "rna_read_type": "R2",
+        "barcode_whitelist": "3M-february-2018",
+        "si_read_type": "I1",
+        "rna_read_length": null,
+        "description": "Single Cell 3' v3",
+        "rna_read_offset": 0,
+        "barcode_read_offset": 0,
+        "rna_read2_type": null,
+        "endedness": "three_prime",
+        "name": "SC3Pv3",
+        "umi_read_length": 12,
+        "si_read_length": null,
+        "read_type_to_bcl2fastq_filename": {
+            "I1": "I1",
+            "I2": null,
+            "R1": "R1",
+            "R2": "R2"
+        },
+        "rna_read2_length": null,
+        "rna_read2_offset": 0,
+        "read_type_to_bcl_processor_filename": {
+            "I1": "I1",
+            "I2": "I2",
+            "R1": "RA",
+            "R2": null
+        }
+    },
+    "chunk_initial_reads": null,
+    "chunk_subsample_rate": 1.0,
+    "chunks": [
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk0-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk1-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk2-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HGKT3BGXK:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk3-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:1",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk4-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:3",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk6-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0000.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0000.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0000.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0001.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0001.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0001.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0002.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0002.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0002.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0003.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0003.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0003.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0004.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0004.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0004.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0005.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0005.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0005.fastq.lz4"
+            }
+        },
+        {
+            "gem_group": 1,
+            "library_type": "Gene Expression",
+            "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:4",
+            "subsample_rate": 1.0,
+            "library_id": "0",
+            "reads_interleaved": false,
+            "chemistry": {
+                "si_read_offset": 0,
+                "strandedness": "+",
+                "umi_read_offset": 16,
+                "barcode_read_type": "R1",
+                "umi_read_type": "R1",
+                "barcode_read_length": 16,
+                "rna_read_type": "R2",
+                "barcode_whitelist": "3M-february-2018",
+                "si_read_type": "I1",
+                "rna_read_length": null,
+                "description": "Single Cell 3' v3",
+                "rna_read_offset": 0,
+                "barcode_read_offset": 0,
+                "rna_read2_type": null,
+                "endedness": "three_prime",
+                "name": "SC3Pv3",
+                "umi_read_length": 12,
+                "si_read_length": null,
+                "read_type_to_bcl2fastq_filename": {
+                    "I1": "I1",
+                    "I2": null,
+                    "R1": "R1",
+                    "R2": "R2"
+                },
+                "rna_read2_length": null,
+                "rna_read2_offset": 0,
+                "read_type_to_bcl_processor_filename": {
+                    "I1": "I1",
+                    "I2": "I2",
+                    "R1": "RA",
+                    "R2": null
+                }
+            },
+            "read_chunks": {
+                "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/I1-0006.fastq.lz4",
+                "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R1-0006.fastq.lz4",
+                "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk7-u0a9c637fdb/files/R2-0006.fastq.lz4"
+            }
+        }
+    ],
+    "feature_reference": null,
+    "gem_group": 1,
+    "initial_reads": null,
+    "library_id": "0",
+    "library_info": [
+        {
+            "gem_group": 1,
+            "library_id": "0",
+            "library_type": "Gene Expression"
+        }
+    ],
+    "library_type": "Gene Expression",
+    "primers": [
+        {
+            "name": "P5",
+            "seq": "AATGATACGGCGACCACCGAGATCT"
+        },
+        {
+            "name": "P7",
+            "seq": "CAAGCAGAAGACGGCATACGAGAT"
+        },
+        {
+            "name": "R1",
+            "seq": "ACACTCTTTCCCTACACGACG"
+        },
+        {
+            "name": "R2",
+            "seq": "GTGACTGGAGTTCAGACGTGTG"
+        },
+        {
+            "name": "switch_oligo",
+            "seq": "AAGCAGTGGTATCAACGCAGAGTACATGGG"
+        },
+        {
+            "name": "polyA",
+            "seq": "AAAAAAAAAAAAAAAAAAAA"
+        }
+    ],
+    "r1_length": null,
+    "r2_length": null,
+    "read_chunks": {
+        "I1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/I1-0004.fastq.lz4",
+        "R1": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R1-0004.fastq.lz4",
+        "R2": "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/CHUNK_READS/fork0/chnk5-u0a9c637fdb/files/R2-0004.fastq.lz4"
+    },
+    "read_group": "oyster_E2_redo2_roslin-mito:0:1:HHLK5BGXJ:2",
+    "reads_interleaved": false,
+    "reads_per_file": 5000000,
+    "reference_path": "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    "skip_metrics": false,
+    "subsample_rate": 1
+}

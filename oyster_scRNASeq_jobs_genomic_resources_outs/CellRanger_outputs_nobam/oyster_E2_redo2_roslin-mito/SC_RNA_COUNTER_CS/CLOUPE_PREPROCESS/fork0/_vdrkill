@@ -1,0 +1,28 @@
+{
+    "count": 2,
+    "size": 91347884,
+    "timestamp": "2021-10-10 20:14:33",
+    "paths": [
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/CLOUPE_PREPROCESS/fork0/chnk0-u0a9c63abfd/files/gem_group_index_json.json",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/CLOUPE_PREPROCESS/fork0/chnk0-u0a9c63abfd/files/output_for_cloupe.cloupe"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-10-10T20:14:04-07:00",
+            "DeltaBytes": 6458
+        },
+        {
+            "Timestamp": "2021-10-10T20:14:05-07:00",
+            "DeltaBytes": 91361265
+        },
+        {
+            "Timestamp": "2021-10-10T20:14:32-07:00",
+            "DeltaBytes": 91354986
+        },
+        {
+            "Timestamp": "2021-10-10T20:14:33-07:00",
+            "DeltaBytes": -91347884
+        }
+    ]
+}

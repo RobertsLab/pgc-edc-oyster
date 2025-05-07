@@ -1,0 +1,436 @@
+[
+    {
+        "__mem_gb": 5,
+        "__threads": 1,
+        "__vmem_gb": 8,
+        "chunk_len": 40008153,
+        "chunk_start": 0,
+        "subsample_info": [
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 1166,
+                "library_subsample_rates": [
+                    0.09997763511430154
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 2333,
+                "library_subsample_rates": [
+                    0.20004101434105098
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 3499,
+                "library_subsample_rates": [
+                    0.30001864945535256
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 4665,
+                "library_subsample_rates": [
+                    0.3999962845696541
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 5000,
+                "library_subsample_rates": [
+                    0.428720562239715
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 5831,
+                "library_subsample_rates": [
+                    0.49997391968395555
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 6998,
+                "library_subsample_rates": [
+                    0.6000372989107051
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 8164,
+                "library_subsample_rates": [
+                    0.7000149340250066
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 9330,
+                "library_subsample_rates": [
+                    0.7999925691393082
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 10496,
+                "library_subsample_rates": [
+                    0.8999702042536096
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 11663,
+                "library_subsample_rates": [
+                    1.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 20000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 50000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 1166,
+                "library_subsample_rates": [
+                    0.4861319997900072
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 2333,
+                "library_subsample_rates": [
+                    0.9726809223928704
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 3499,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 4665,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 5000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 5831,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 6998,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 8164,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 9330,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 10496,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 11663,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 20000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 50000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            }
+        ]
+    },
+    {
+        "__mem_gb": 5,
+        "__threads": 1,
+        "__vmem_gb": 8,
+        "chunk_len": 39826285,
+        "chunk_start": 40008153,
+        "subsample_info": [
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 1166,
+                "library_subsample_rates": [
+                    0.09997763511430154
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 2333,
+                "library_subsample_rates": [
+                    0.20004101434105098
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 3499,
+                "library_subsample_rates": [
+                    0.30001864945535256
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 4665,
+                "library_subsample_rates": [
+                    0.3999962845696541
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 5000,
+                "library_subsample_rates": [
+                    0.428720562239715
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 5831,
+                "library_subsample_rates": [
+                    0.49997391968395555
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 6998,
+                "library_subsample_rates": [
+                    0.6000372989107051
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 8164,
+                "library_subsample_rates": [
+                    0.7000149340250066
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 9330,
+                "library_subsample_rates": [
+                    0.7999925691393082
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 10496,
+                "library_subsample_rates": [
+                    0.8999702042536096
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 11663,
+                "library_subsample_rates": [
+                    1.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 20000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "raw_rpc",
+                "target_read_pairs_per_cell": 50000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 1166,
+                "library_subsample_rates": [
+                    0.4861319997900072
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 2333,
+                "library_subsample_rates": [
+                    0.9726809223928704
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 3499,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 4665,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 5000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 5831,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 6998,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 8164,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 9330,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 10496,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 11663,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 20000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            },
+            {
+                "library_type": "Gene Expression",
+                "subsample_type": "conf_mapped_barcoded_filtered_bc_rpc",
+                "target_read_pairs_per_cell": 50000,
+                "library_subsample_rates": [
+                    0.0
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+{
+    "__mem_gb": 1,
+    "__threads": 1,
+    "__vmem_gb": 4,
+    "filtered_matrices_h5": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u05346eb4f6/files/filtered_matrices_h5.h5",
+    "is_multi_genome": false,
+    "raw_matrices_h5": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/join-u05346eac88/files/matrices_h5.h5",
+    "skip": false
+}

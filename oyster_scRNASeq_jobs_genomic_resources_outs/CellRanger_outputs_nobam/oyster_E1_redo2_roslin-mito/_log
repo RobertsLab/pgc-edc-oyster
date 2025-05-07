@@ -1,0 +1,1453 @@
+Martian Runtime - '3.1.0-v3.2.3'
+2021-10-10 14:00:43 [build  ] Built with Go version go1.12.5
+2021-10-10 14:00:43 [cmdline] mrp __oyster_E1_redo2_roslin-mito.mro oyster_E1_redo2_roslin-mito --localcores=20 --localmem=200
+2021-10-10 14:00:43 [pid    ] 2662332
+2021-10-10 14:00:43 [environ] LC_ALL=C
+2021-10-10 14:00:43 [environ] SLURM_MEM_PER_CPU=4700
+2021-10-10 14:00:43 [environ] LD_LIBRARY_PATH=
+2021-10-10 14:00:43 [environ] SLURM_NODEID=0
+2021-10-10 14:00:43 [environ] SLURM_TASK_PID=2662289
+2021-10-10 14:00:43 [environ] SSH_CONNECTION=161.55.245.199 60579 161.55.52.157 22
+2021-10-10 14:00:43 [environ] SLURM_PRIO_PROCESS=0
+2021-10-10 14:00:43 [environ] TENX_PRODUCT=cellranger
+2021-10-10 14:00:43 [environ] LANG=en_US.UTF-8
+2021-10-10 14:00:43 [environ] SLURM_SUBMIT_DIR=/home/mgavery/job_files
+2021-10-10 14:00:43 [environ] HOSTNAME=node07
+2021-10-10 14:00:43 [environ] SLURM_CPUS_PER_TASK=20
+2021-10-10 14:00:43 [environ] ENVIRONMENT=BATCH
+2021-10-10 14:00:43 [environ] SLURM_PROCID=0
+2021-10-10 14:00:43 [environ] SLURM_JOB_GID=1109
+2021-10-10 14:00:43 [environ] SLURM_TASKS_PER_NODE=1
+2021-10-10 14:00:43 [environ] TENX_VERSION=3.1.0
+2021-10-10 14:00:43 [environ] XDG_SESSION_ID=10518
+2021-10-10 14:00:43 [environ] SLURM_NNODES=1
+2021-10-10 14:00:43 [environ] USER=mgavery
+2021-10-10 14:00:43 [environ] PWD=/home/mgavery
+2021-10-10 14:00:43 [environ] SLURM_JOB_NODELIST=node07
+2021-10-10 14:00:43 [environ] HOME=/home/mgavery
+2021-10-10 14:00:43 [environ] SLURM_CLUSTER_NAME=sedna
+2021-10-10 14:00:43 [environ] SLURM_NODELIST=node07
+2021-10-10 14:00:43 [environ] SSH_CLIENT=161.55.245.199 60579 22
+2021-10-10 14:00:43 [environ] SLURM_JOB_CPUS_PER_NODE=20
+2021-10-10 14:00:43 [environ] BASH_ENV=/usr/share/lmod/lmod/init/bash
+2021-10-10 14:00:43 [environ] XDG_DATA_DIRS=/home/mgavery/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+2021-10-10 14:00:43 [environ] SLURM_TOPOLOGY_ADDR=node07
+2021-10-10 14:00:43 [environ] SLURM_WORKING_CLUSTER=sedna:sedna.cluster:6817:8960:109
+2021-10-10 14:00:43 [environ] SLURM_JOB_NAME=CellRanger_count_E1_redo2_roslin-mito
+2021-10-10 14:00:43 [environ] TMPDIR=/tmp
+2021-10-10 14:00:43 [environ] TENX_SUBCMD=count
+2021-10-10 14:00:43 [environ] SLURM_JOBID=96184
+2021-10-10 14:00:43 [environ] SLURM_CONF=/opt/slurm/slurm.conf
+2021-10-10 14:00:43 [environ] SLURM_NODE_ALIASES=(null)
+2021-10-10 14:00:43 [environ] SLURM_JOB_QOS=normal
+2021-10-10 14:00:43 [environ] SLURM_TOPOLOGY_ADDR_PATTERN=node
+2021-10-10 14:00:43 [environ] SSH_TTY=/dev/pts/0
+2021-10-10 14:00:43 [environ] SLURM_CPUS_ON_NODE=20
+2021-10-10 14:00:43 [environ] SLURM_JOB_NUM_NODES=1
+2021-10-10 14:00:43 [environ] SHELL=/bin/bash
+2021-10-10 14:00:43 [environ] TERM=xterm-256color
+2021-10-10 14:00:43 [environ] SLURM_JOB_UID=1109
+2021-10-10 14:00:43 [environ] TENX_COPYRIGHT=Copyright (c) 2019 10x Genomics, Inc.  All rights reserved.
+2021-10-10 14:00:43 [environ] SLURM_JOB_PARTITION=node
+2021-10-10 14:00:43 [environ] TENX_SCRIPTDIR=/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/bin
+2021-10-10 14:00:43 [environ] SLURM_JOB_USER=mgavery
+2021-10-10 14:00:43 [environ] SHLVL=4
+2021-10-10 14:00:43 [environ] SLURM_SUBMIT_HOST=sedna.cluster
+2021-10-10 14:00:43 [environ] PYTHONPATH=/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/tenkit/lib/python:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/lib/python:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/martian-cs/v3.2.3/adapters/python
+2021-10-10 14:00:43 [environ] SLURM_JOB_ACCOUNT=nwfsc
+2021-10-10 14:00:43 [environ] SLURM_GTIDS=0
+2021-10-10 14:00:43 [environ] LOGNAME=mgavery
+2021-10-10 14:00:43 [environ] XDG_RUNTIME_DIR=/run/user/1109
+2021-10-10 14:00:43 [environ] PYTHONUSERBASE=/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/lib
+2021-10-10 14:00:43 [environ] PATH=/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-tiny-fastq/3.0.0:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-tiny-ref/3.0.0:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/lib/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/tenkit/lib/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/tenkit/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/lz4/v1.8.1.2:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/martian-cs/v3.2.3/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/STAR/5dda596:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-tiny-fastq/3.0.0:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-tiny-ref/3.0.0:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/lib/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/tenkit/lib/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/tenkit/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/lz4/v1.8.1.2:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/martian-cs/v3.2.3/bin:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/STAR/5dda596:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/mgavery/.local/bin:/home/mgavery/bin
+2021-10-10 14:00:43 [environ] SLURM_JOB_ID=96184
+2021-10-10 14:00:43 [environ] TENX_BANNER=cellranger count (3.1.0)
+Copyright (c) 2019 10x Genomics, Inc.  All rights reserved.
+-------------------------------------------------------------------------------
+2021-10-10 14:00:43 [environ] SLURM_LOCALID=0
+2021-10-10 14:00:43 [environ] BASH_FUNC_module%%=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+2021-10-10 14:00:43 [environ] BASH_FUNC_ml%%=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+2021-10-10 14:00:43 [environ] _=/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/martian-cs/v3.2.3/bin/mrp
+2021-10-10 14:00:43 [environ] MROFLAGS=--vdrmode=rolling
+2021-10-10 14:00:43 [options] --localcores=20
+2021-10-10 14:00:43 [options] --localmem=200
+2021-10-10 14:00:43 [environ] MROPATH=/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/tenkit/mro:/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/cellranger-cs/3.1.0/mro
+2021-10-10 14:00:43 [version] MRO Version=3.1.0
+2021-10-10 14:00:43 [options] --jobmode=local
+2021-10-10 14:00:43 [options] --maxjobs=0
+2021-10-10 14:00:43 [options] --jobinterval=0
+2021-10-10 14:00:43 [options] --vdrmode=rolling
+2021-10-10 14:00:43 [options] --stackvars=false
+2021-10-10 14:00:43 [options] --zip=false
+2021-10-10 14:00:43 [options] --limit-loadavg=false
+2021-10-10 14:00:43 [options] --noexit=false
+2021-10-10 14:00:43 [options] --nopreflight=false
+2021-10-10 14:00:43 [jobmngr] Job config = /opt/bioinformatics/bio/cellranger/cellranger-3.1.0/martian-cs/v3.2.3/jobmanagers/config.json
+2021-10-10 14:00:43 [jobmngr] Using 20 cores, per --localcores option.
+2021-10-10 14:00:43 [jobmngr] Using 200 GB, per --localmem option.
+2021-10-10 14:00:43 [jobmngr] WARNING: User-supplied amount 200 GB is higher than the detected cgroup memory limit of 91.8 GB
+2021-10-10 14:00:43 [jobmngr] WARNING: configured to use 200GB of local memory, but only 90.9GB is currently available.
+2021-10-10 14:00:43 [jobmngr] WARNING: detected a cgroup soft memory limit of 91.8GB. If the system runs low on memory, jobs may get killed.
+2021-10-10 14:00:43 [filesys] Pipestance path /home/mgavery/oyster_E1_redo2_roslin-mito
+2021-10-10 14:00:43 [filesys] Pipestance filesystem type nfs
+2021-10-10 14:00:43 [filesys] 169 TB and 4,216,916,010 inodes available.
+2021-10-10 14:00:43 [filesys] Pipestance filesystem nfs mount options: rw,noatime,rw,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.3.1.241,mountvers=3,mountport=20048,mountproto=udp,local_lock=none,addr=10.3.1.241
+2021-10-10 14:00:43 [filesys] Bin path /opt/bioinformatics/bio/cellranger/cellranger-3.1.0/martian-cs/v3.2.3/bin
+2021-10-10 14:00:43 [filesys] Bin filesystem type nfs
+2021-10-10 14:00:43 [filesys] Bin filesystem nfs mount options: rw,noatime,rw,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.3.1.241,mountvers=3,mountport=20048,mountproto=udp,local_lock=none,addr=10.3.1.241
+Serving UI at http://node07.cluster:45377?auth=_qwoBISjbTEbCIAK_V8NIgENndaW0WteyiW04VK1whc
+
+Running preflight checks (please wait)...
+2021-10-10 14:00:43 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:00:43 [jobmngr] cgroup rss usage is 0.0GB, vs. limit of 91.8
+2021-10-10 14:00:43 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.EXPAND_SAMPLE_DEF
+2021-10-10 14:00:43 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.EXPAND_SAMPLE_DEF.fork0.chnk0.main
+2021-10-10 14:00:46 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.EXPAND_SAMPLE_DEF
+2021-10-10 14:00:46 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CELLRANGER_PREFLIGHT
+2021-10-10 14:00:46 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CELLRANGER_PREFLIGHT.fork0.chnk0.main
+2021-10-10 14:00:46 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CELLRANGER_PREFLIGHT_LOCAL
+2021-10-10 14:00:46 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CELLRANGER_PREFLIGHT_LOCAL.fork0.chnk0.main
+2021-10-10 14:00:48 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CELLRANGER_PREFLIGHT_LOCAL
+2021-10-10 14:00:48 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CELLRANGER_PREFLIGHT
+2021-10-10 14:00:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHEMISTRY_DETECTOR.DETECT_CHEMISTRY
+2021-10-10 14:00:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHEMISTRY_DETECTOR.DETECT_CHEMISTRY.fork0.chnk0.main
+2021-10-10 14:00:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.DISABLE_FEATURE_STAGES
+2021-10-10 14:00:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.DISABLE_FEATURE_STAGES.fork0.chnk0.main
+2021-10-10 14:00:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION
+2021-10-10 14:00:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION.fork0.chnk0.main
+2021-10-10 14:00:48 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION
+2021-10-10 14:00:48 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.DISABLE_FEATURE_STAGES
+2021-10-10 14:01:01 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHEMISTRY_DETECTOR.DETECT_CHEMISTRY
+2021-10-10 14:01:01 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SETUP_CHUNKS
+2021-10-10 14:01:01 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SETUP_CHUNKS.fork0.chnk0.main
+2021-10-10 14:01:02 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SETUP_CHUNKS
+2021-10-10 14:01:02 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.split
+2021-10-10 14:01:02 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHECK_BARCODES_COMPATIBILITY
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHECK_BARCODES_COMPATIBILITY.fork0.split
+2021-10-10 14:01:02 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk0.main
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk1.main
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk2.main
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk3.main
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk4.main
+2021-10-10 14:01:02 [jobmngr] Need 4 threads to start the next job (3 available).  Waiting for jobs to complete.
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk5.main
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk6.main
+2021-10-10 14:01:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.chnk7.main
+2021-10-10 14:01:03 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHECK_BARCODES_COMPATIBILITY
+2021-10-10 14:01:03 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHECK_BARCODES_COMPATIBILITY.fork0.join
+2021-10-10 14:01:29 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:01:36 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.CHECK_BARCODES_COMPATIBILITY
+2021-10-10 14:01:42 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:01:59 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:02:00 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS
+2021-10-10 14:02:00 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS.fork0.join
+2021-10-10 14:02:01 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.CHUNK_READS
+2021-10-10 14:02:01 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS
+2021-10-10 14:02:01 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.split
+2021-10-10 14:02:02 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk00.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk01.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk02.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk03.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk04.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk05.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk06.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk07.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk08.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk09.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk10.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk11.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk12.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk13.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk14.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk15.main
+2021-10-10 14:02:02 [jobmngr] Need 6144 MB of memory to start the next job (863 available).  Waiting for jobs to complete.
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk16.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk17.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk18.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk19.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk20.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk21.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk22.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk23.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk24.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk25.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk26.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk27.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk28.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk29.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk30.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk31.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk32.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk33.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk34.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk35.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk36.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk37.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk38.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk39.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk40.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk41.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk42.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk43.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk44.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk45.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk46.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk47.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk48.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk49.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk50.main
+2021-10-10 14:02:02 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.chnk51.main
+2021-10-10 14:02:05 [jobmngr] Need 6144 MB of memory to start the next job (1542 available).  Waiting for jobs to complete.
+2021-10-10 14:02:14 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 14:02:20 [jobmngr] Need 6144 MB of memory to start the next job (1515 available).  Waiting for jobs to complete.
+2021-10-10 14:02:35 [jobmngr] Need 6144 MB of memory to start the next job (1501 available).  Waiting for jobs to complete.
+2021-10-10 14:03:08 [jobmngr] Need 6144 MB of memory to start the next job (1501 available).  Waiting for jobs to complete.
+2021-10-10 14:03:32 [jobmngr] Need 6144 MB of memory to start the next job (1484 available).  Waiting for jobs to complete.
+2021-10-10 14:03:38 [jobmngr] Need 6144 MB of memory to start the next job (1502 available).  Waiting for jobs to complete.
+2021-10-10 14:03:42 [jobmngr] Need 6144 MB of memory to start the next job (1500 available).  Waiting for jobs to complete.
+2021-10-10 14:03:45 [jobmngr] Need 6144 MB of memory to start the next job (1498 available).  Waiting for jobs to complete.
+2021-10-10 14:03:49 [jobmngr] Need 6144 MB of memory to start the next job (1494 available).  Waiting for jobs to complete.
+2021-10-10 14:03:52 [jobmngr] Need 6144 MB of memory to start the next job (1490 available).  Waiting for jobs to complete.
+2021-10-10 14:04:04 [jobmngr] Need 6144 MB of memory to start the next job (1483 available).  Waiting for jobs to complete.
+2021-10-10 14:04:07 [jobmngr] Need 6144 MB of memory to start the next job (1485 available).  Waiting for jobs to complete.
+2021-10-10 14:04:10 [jobmngr] Need 6144 MB of memory to start the next job (1495 available).  Waiting for jobs to complete.
+2021-10-10 14:04:40 [jobmngr] Need 6144 MB of memory to start the next job (1495 available).  Waiting for jobs to complete.
+2021-10-10 14:05:10 [jobmngr] Need 6144 MB of memory to start the next job (1495 available).  Waiting for jobs to complete.
+2021-10-10 14:05:40 [jobmngr] Need 6144 MB of memory to start the next job (1494 available).  Waiting for jobs to complete.
+2021-10-10 14:06:10 [jobmngr] Need 6144 MB of memory to start the next job (1493 available).  Waiting for jobs to complete.
+2021-10-10 14:06:40 [jobmngr] Need 6144 MB of memory to start the next job (1473 available).  Waiting for jobs to complete.
+2021-10-10 14:06:43 [jobmngr] Need 6144 MB of memory to start the next job (1491 available).  Waiting for jobs to complete.
+2021-10-10 14:07:10 [jobmngr] Need 6144 MB of memory to start the next job (1472 available).  Waiting for jobs to complete.
+2021-10-10 14:07:13 [jobmngr] Need 6144 MB of memory to start the next job (1473 available).  Waiting for jobs to complete.
+2021-10-10 14:07:16 [jobmngr] Need 6144 MB of memory to start the next job (1474 available).  Waiting for jobs to complete.
+2021-10-10 14:07:34 [jobmngr] Need 6144 MB of memory to start the next job (1468 available).  Waiting for jobs to complete.
+2021-10-10 14:07:37 [jobmngr] Need 6144 MB of memory to start the next job (1473 available).  Waiting for jobs to complete.
+2021-10-10 14:07:43 [jobmngr] Need 6144 MB of memory to start the next job (1472 available).  Waiting for jobs to complete.
+2021-10-10 14:07:43 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0 chunks running (3/52 completed)
+2021-10-10 14:07:44 [jobmngr] Need 6144 MB of memory to start the next job (1436 available).  Waiting for jobs to complete.
+2021-10-10 14:07:44 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 14:07:44 [jobmngr] Need 6144 MB of memory to start the next job (1394 available).  Waiting for jobs to complete.
+2021-10-10 14:07:44 [jobmngr] Need 6144 MB of memory to start the next job (1434 available).  Waiting for jobs to complete.
+2021-10-10 14:07:45 [jobmngr] Need 6144 MB of memory to start the next job (1434 available).  Waiting for jobs to complete.
+2021-10-10 14:07:45 [jobmngr] Need 6144 MB of memory to start the next job (1442 available).  Waiting for jobs to complete.
+2021-10-10 14:07:46 [jobmngr] Need 6144 MB of memory to start the next job (1442 available).  Waiting for jobs to complete.
+2021-10-10 14:07:47 [jobmngr] Need 6144 MB of memory to start the next job (1411 available).  Waiting for jobs to complete.
+2021-10-10 14:07:47 [jobmngr] Need 6144 MB of memory to start the next job (1437 available).  Waiting for jobs to complete.
+2021-10-10 14:07:48 [jobmngr] Need 6144 MB of memory to start the next job (1437 available).  Waiting for jobs to complete.
+2021-10-10 14:07:48 [jobmngr] Need 6144 MB of memory to start the next job (1428 available).  Waiting for jobs to complete.
+2021-10-10 14:07:48 [jobmngr] Need 6144 MB of memory to start the next job (1440 available).  Waiting for jobs to complete.
+2021-10-10 14:07:48 [jobmngr] Need 6144 MB of memory to start the next job (1440 available).  Waiting for jobs to complete.
+2021-10-10 14:07:48 [jobmngr] Need 6144 MB of memory to start the next job (1442 available).  Waiting for jobs to complete.
+2021-10-10 14:07:49 [jobmngr] Need 6144 MB of memory to start the next job (1442 available).  Waiting for jobs to complete.
+2021-10-10 14:07:49 [jobmngr] Need 6144 MB of memory to start the next job (1436 available).  Waiting for jobs to complete.
+2021-10-10 14:07:49 [jobmngr] Need 6144 MB of memory to start the next job (1455 available).  Waiting for jobs to complete.
+2021-10-10 14:07:49 [jobmngr] Need 6144 MB of memory to start the next job (1455 available).  Waiting for jobs to complete.
+2021-10-10 14:07:52 [jobmngr] Need 6144 MB of memory to start the next job (1425 available).  Waiting for jobs to complete.
+2021-10-10 14:07:52 [jobmngr] Need 6144 MB of memory to start the next job (1474 available).  Waiting for jobs to complete.
+2021-10-10 14:07:55 [jobmngr] Need 6144 MB of memory to start the next job (1515 available).  Waiting for jobs to complete.
+2021-10-10 14:08:07 [jobmngr] Need 6144 MB of memory to start the next job (1498 available).  Waiting for jobs to complete.
+2021-10-10 14:08:19 [jobmngr] Need 6144 MB of memory to start the next job (1486 available).  Waiting for jobs to complete.
+2021-10-10 14:08:40 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:08:46 [jobmngr] Need 6144 MB of memory to start the next job (1492 available).  Waiting for jobs to complete.
+2021-10-10 14:09:10 [jobmngr] Need 6144 MB of memory to start the next job (1484 available).  Waiting for jobs to complete.
+2021-10-10 14:09:16 [jobmngr] Need 6144 MB of memory to start the next job (1492 available).  Waiting for jobs to complete.
+2021-10-10 14:09:30 [jobmngr] Need 6144 MB of memory to start the next job (1485 available).  Waiting for jobs to complete.
+2021-10-10 14:09:33 [jobmngr] Need 6144 MB of memory to start the next job (1485 available).  Waiting for jobs to complete.
+2021-10-10 14:09:39 [jobmngr] Need 6144 MB of memory to start the next job (1479 available).  Waiting for jobs to complete.
+2021-10-10 14:09:42 [jobmngr] Need 6144 MB of memory to start the next job (1482 available).  Waiting for jobs to complete.
+2021-10-10 14:09:43 [jobmngr] Need 6144 MB of memory to start the next job (1482 available).  Waiting for jobs to complete.
+2021-10-10 14:09:46 [jobmngr] Need 6144 MB of memory to start the next job (1499 available).  Waiting for jobs to complete.
+2021-10-10 14:09:49 [jobmngr] Need 6144 MB of memory to start the next job (1492 available).  Waiting for jobs to complete.
+2021-10-10 14:09:53 [jobmngr] Need 6144 MB of memory to start the next job (1491 available).  Waiting for jobs to complete.
+2021-10-10 14:10:11 [jobmngr] Need 6144 MB of memory to start the next job (1479 available).  Waiting for jobs to complete.
+2021-10-10 14:10:17 [jobmngr] Need 6144 MB of memory to start the next job (1485 available).  Waiting for jobs to complete.
+2021-10-10 14:10:20 [jobmngr] Need 6144 MB of memory to start the next job (1486 available).  Waiting for jobs to complete.
+2021-10-10 14:10:44 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:10:47 [jobmngr] Need 6144 MB of memory to start the next job (1486 available).  Waiting for jobs to complete.
+2021-10-10 14:10:53 [jobmngr] Need 6144 MB of memory to start the next job (1487 available).  Waiting for jobs to complete.
+2021-10-10 14:11:14 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:11:20 [jobmngr] Need 6144 MB of memory to start the next job (1485 available).  Waiting for jobs to complete.
+2021-10-10 14:11:44 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:11:50 [jobmngr] Need 6144 MB of memory to start the next job (1486 available).  Waiting for jobs to complete.
+2021-10-10 14:11:59 [jobmngr] Need 6144 MB of memory to start the next job (1481 available).  Waiting for jobs to complete.
+2021-10-10 14:12:05 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:12:14 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:12:20 [jobmngr] Need 6144 MB of memory to start the next job (1487 available).  Waiting for jobs to complete.
+2021-10-10 14:12:41 [jobmngr] Need 6144 MB of memory to start the next job (1473 available).  Waiting for jobs to complete.
+2021-10-10 14:12:44 [jobmngr] Need 6144 MB of memory to start the next job (1475 available).  Waiting for jobs to complete.
+2021-10-10 14:12:50 [jobmngr] Need 6144 MB of memory to start the next job (1481 available).  Waiting for jobs to complete.
+2021-10-10 14:12:56 [jobmngr] Need 6144 MB of memory to start the next job (1479 available).  Waiting for jobs to complete.
+2021-10-10 14:13:02 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:13:11 [jobmngr] Need 6144 MB of memory to start the next job (1480 available).  Waiting for jobs to complete.
+2021-10-10 14:13:20 [jobmngr] Need 6144 MB of memory to start the next job (1482 available).  Waiting for jobs to complete.
+2021-10-10 14:13:26 [jobmngr] Need 6144 MB of memory to start the next job (1482 available).  Waiting for jobs to complete.
+2021-10-10 14:13:28 [jobmngr] Need 6144 MB of memory to start the next job (1482 available).  Waiting for jobs to complete.
+2021-10-10 14:13:28 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0 chunks running (20/52 completed)
+2021-10-10 14:13:28 [jobmngr] Need 6144 MB of memory to start the next job (1446 available).  Waiting for jobs to complete.
+2021-10-10 14:13:28 [jobmngr] Need 6144 MB of memory to start the next job (1430 available).  Waiting for jobs to complete.
+2021-10-10 14:13:29 [jobmngr] Need 6144 MB of memory to start the next job (1410 available).  Waiting for jobs to complete.
+2021-10-10 14:13:29 [jobmngr] 108.7GB less memory than expected was free
+2021-10-10 14:13:29 [jobmngr] Need 6144 MB of memory to start the next job (1378 available).  Waiting for jobs to complete.
+2021-10-10 14:13:29 [jobmngr] Need 6144 MB of memory to start the next job (1386 available).  Waiting for jobs to complete.
+2021-10-10 14:13:29 [jobmngr] Need 6144 MB of memory to start the next job (1386 available).  Waiting for jobs to complete.
+2021-10-10 14:13:29 [jobmngr] Need 6144 MB of memory to start the next job (1393 available).  Waiting for jobs to complete.
+2021-10-10 14:13:32 [jobmngr] Need 6144 MB of memory to start the next job (1501 available).  Waiting for jobs to complete.
+2021-10-10 14:13:32 [jobmngr] Need 6144 MB of memory to start the next job (1501 available).  Waiting for jobs to complete.
+2021-10-10 14:13:34 [jobmngr] Need 6144 MB of memory to start the next job (1470 available).  Waiting for jobs to complete.
+2021-10-10 14:13:35 [jobmngr] Need 6144 MB of memory to start the next job (1462 available).  Waiting for jobs to complete.
+2021-10-10 14:13:35 [jobmngr] Need 6144 MB of memory to start the next job (1460 available).  Waiting for jobs to complete.
+2021-10-10 14:13:38 [jobmngr] Need 6144 MB of memory to start the next job (1503 available).  Waiting for jobs to complete.
+2021-10-10 14:13:40 [jobmngr] Need 6144 MB of memory to start the next job (1503 available).  Waiting for jobs to complete.
+2021-10-10 14:13:43 [jobmngr] Need 6144 MB of memory to start the next job (1510 available).  Waiting for jobs to complete.
+2021-10-10 14:13:58 [jobmngr] Need 6144 MB of memory to start the next job (1487 available).  Waiting for jobs to complete.
+2021-10-10 14:14:22 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:14:28 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:14:34 [jobmngr] Need 6144 MB of memory to start the next job (1479 available).  Waiting for jobs to complete.
+2021-10-10 14:14:52 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:14:55 [jobmngr] Need 6144 MB of memory to start the next job (1479 available).  Waiting for jobs to complete.
+2021-10-10 14:15:01 [jobmngr] Need 6144 MB of memory to start the next job (1479 available).  Waiting for jobs to complete.
+2021-10-10 14:15:07 [jobmngr] Need 6144 MB of memory to start the next job (1480 available).  Waiting for jobs to complete.
+2021-10-10 14:15:09 [jobmngr] Need 6144 MB of memory to start the next job (1480 available).  Waiting for jobs to complete.
+2021-10-10 14:15:12 [jobmngr] Need 6144 MB of memory to start the next job (1442 available).  Waiting for jobs to complete.
+2021-10-10 14:15:15 [jobmngr] Need 6144 MB of memory to start the next job (1480 available).  Waiting for jobs to complete.
+2021-10-10 14:15:23 [jobmngr] Need 6144 MB of memory to start the next job (1474 available).  Waiting for jobs to complete.
+2021-10-10 14:15:26 [jobmngr] Need 6144 MB of memory to start the next job (1487 available).  Waiting for jobs to complete.
+2021-10-10 14:15:27 [jobmngr] Need 6144 MB of memory to start the next job (1487 available).  Waiting for jobs to complete.
+2021-10-10 14:15:31 [jobmngr] Need 6144 MB of memory to start the next job (1482 available).  Waiting for jobs to complete.
+2021-10-10 14:15:55 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:16:07 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:16:25 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:16:31 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:16:37 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:16:58 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:17:01 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:17:07 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:17:28 [jobmngr] Need 6144 MB of memory to start the next job (1474 available).  Waiting for jobs to complete.
+2021-10-10 14:17:31 [jobmngr] Need 6144 MB of memory to start the next job (1475 available).  Waiting for jobs to complete.
+2021-10-10 14:17:37 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:17:58 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:18:10 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:18:25 [jobmngr] Need 6144 MB of memory to start the next job (1472 available).  Waiting for jobs to complete.
+2021-10-10 14:18:28 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:18:31 [jobmngr] Need 6144 MB of memory to start the next job (1476 available).  Waiting for jobs to complete.
+2021-10-10 14:18:31 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0 chunks running (35/52 completed)
+2021-10-10 14:18:34 [jobmngr] Need 6144 MB of memory to start the next job (1477 available).  Waiting for jobs to complete.
+2021-10-10 14:18:40 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:18:55 [jobmngr] Need 6144 MB of memory to start the next job (1475 available).  Waiting for jobs to complete.
+2021-10-10 14:18:58 [jobmngr] Need 6144 MB of memory to start the next job (1478 available).  Waiting for jobs to complete.
+2021-10-10 14:19:06 [jobmngr] Need 6144 MB of memory to start the next job (1475 available).  Waiting for jobs to complete.
+2021-10-10 14:19:10 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 14:19:15 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:19:26 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:21:01 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:23:49 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0 chunks running (50/52 completed)
+2021-10-10 14:24:01 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:24:31 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS
+2021-10-10 14:24:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS.fork0.join
+2021-10-10 14:25:54 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.EXTRACT_READS
+2021-10-10 14:25:57 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS
+2021-10-10 14:25:57 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.split
+2021-10-10 14:25:58 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk00.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk01.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk02.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk03.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk04.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk05.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk06.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk07.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk08.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk09.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk10.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk11.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk12.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk13.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk14.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk15.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk16.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk17.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk18.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk19.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk20.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk21.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk22.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk23.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk24.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk25.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk26.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk27.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk28.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk29.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk30.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk31.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk32.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk33.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk34.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk35.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk36.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk37.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk38.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk39.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk40.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk41.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk42.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk43.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk44.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk45.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk46.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk47.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk48.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk49.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk50.main
+2021-10-10 14:25:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.chnk51.main
+2021-10-10 14:26:01 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:26:01 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:26:01 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 14:26:03 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 14:26:03 [jobmngr] 108.7GB less memory than expected was free
+2021-10-10 14:26:04 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:26:04 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 14:26:05 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:26:06 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:26:06 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 14:26:06 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS
+2021-10-10 14:26:06 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS.fork0.join
+2021-10-10 14:26:07 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_READ_REPORTS
+2021-10-10 14:26:07 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS
+2021-10-10 14:26:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.split
+2021-10-10 14:26:08 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk00.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk01.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk02.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk03.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk04.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk05.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk06.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk07.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk08.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk09.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk10.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk11.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk12.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk13.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk14.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk15.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk16.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk17.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk18.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk19.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk20.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk21.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk22.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk23.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk24.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk25.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk26.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk27.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk28.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk29.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk30.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk31.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk32.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk33.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk34.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk35.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk36.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk37.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk38.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk39.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk40.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk41.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk42.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk43.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk44.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk45.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk46.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk47.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk48.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk49.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk50.main
+2021-10-10 14:26:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.chnk51.main
+2021-10-10 14:26:26 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:27:24 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:27:54 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:28:10 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:28:25 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:30:05 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:31:14 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0 chunks running (13/52 completed)
+2021-10-10 14:31:25 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:31:35 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:31:53 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:32:56 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:33:02 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:34:23 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:34:32 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:35:58 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:36:07 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:37:24 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0 chunks running (34/52 completed)
+2021-10-10 14:37:40 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:39:19 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:40:52 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:42:09 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:42:15 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS
+2021-10-10 14:42:15 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS.fork0.join
+2021-10-10 14:42:15 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ALIGN_READS
+2021-10-10 14:42:18 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS
+2021-10-10 14:42:18 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.split
+2021-10-10 14:42:19 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk00.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk01.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk02.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk03.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk04.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk05.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk06.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk07.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk08.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk09.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk10.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk11.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk12.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk13.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk14.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk15.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk16.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk17.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk18.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk19.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk20.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk21.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk22.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk23.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk24.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk25.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk26.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk27.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk28.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk29.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk30.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk31.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk32.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk33.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk34.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk35.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk36.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk37.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk38.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk39.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk40.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk41.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk42.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk43.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk44.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk45.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk46.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk47.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk48.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk49.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk50.main
+2021-10-10 14:42:19 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.chnk51.main
+2021-10-10 14:43:15 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:43:48 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:44:13 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:44:44 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:45:08 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:45:36 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:46:03 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:46:30 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:47:07 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 14:47:20 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0 chunks running (5/52 completed)
+2021-10-10 14:47:23 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 14:47:23 [jobmngr] 109.4GB less memory than expected was free
+2021-10-10 14:47:24 [jobmngr] 109.4GB less memory than expected was free
+2021-10-10 14:47:29 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:47:52 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:48:18 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:48:22 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:48:31 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:48:50 [jobmngr] 108.4GB less memory than expected was free
+2021-10-10 14:52:18 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 14:52:21 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0 chunks running (29/52 completed)
+2021-10-10 14:52:23 [jobmngr] 109.6GB less memory than expected was free
+2021-10-10 14:52:27 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 14:52:29 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 14:52:32 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:52:41 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:52:50 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:53:13 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 14:54:31 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:54:58 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:55:22 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:55:49 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:55:58 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 14:56:23 [jobmngr] 109.3GB less memory than expected was free
+2021-10-10 14:56:33 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 14:56:53 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 14:56:53 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS
+2021-10-10 14:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0.join
+2021-10-10 15:02:54 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0 join_running
+2021-10-10 15:08:55 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0 join_running
+2021-10-10 15:14:55 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0 join_running
+2021-10-10 15:20:56 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS.fork0 join_running
+2021-10-10 15:24:45 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.ATTACH_BCS_AND_UMIS
+2021-10-10 15:24:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC
+2021-10-10 15:24:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.split
+2021-10-10 15:24:50 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk00.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk01.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk02.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk03.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk04.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk05.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk06.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk07.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk08.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk09.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk10.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk11.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk12.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk13.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk14.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk15.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk16.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk17.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk18.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk19.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk20.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk21.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk22.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk23.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk24.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk25.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk26.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk27.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk28.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk29.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk30.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk31.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk32.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk33.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk34.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk35.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk36.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk37.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk38.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk39.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk40.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk41.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk42.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk43.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk44.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk45.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk46.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk47.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk48.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk49.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk50.main
+2021-10-10 15:24:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.chnk51.main
+2021-10-10 15:27:22 [jobmngr] 110.9GB less memory than expected was free
+2021-10-10 15:27:25 [jobmngr] 111.1GB less memory than expected was free
+2021-10-10 15:29:51 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0 chunks running (13/52 completed)
+2021-10-10 15:30:01 [jobmngr] 110.9GB less memory than expected was free
+2021-10-10 15:32:31 [jobmngr] 109.8GB less memory than expected was free
+2021-10-10 15:34:55 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0 chunks running (35/52 completed)
+2021-10-10 15:34:59 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 15:35:06 [jobmngr] 110.6GB less memory than expected was free
+2021-10-10 15:35:37 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 15:37:33 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 15:37:37 [jobmngr] 110.5GB less memory than expected was free
+2021-10-10 15:37:37 [jobmngr] 112.1GB less memory than expected was free
+2021-10-10 15:37:42 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:37:46 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC
+2021-10-10 15:37:46 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC.fork0.join
+2021-10-10 15:37:47 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.BUCKET_BY_BC
+2021-10-10 15:37:50 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC
+2021-10-10 15:37:50 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.split
+2021-10-10 15:37:51 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk00.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk01.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk02.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk03.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk04.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk05.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk06.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk07.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk08.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk09.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk10.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk11.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk12.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk13.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk14.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk15.main
+2021-10-10 15:37:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.chnk16.main
+2021-10-10 15:38:06 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:38:21 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:38:52 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:39:22 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:39:55 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:40:22 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:40:55 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:41:25 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:42:10 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 15:42:31 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 15:42:54 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0 chunks running (4/17 completed)
+2021-10-10 15:42:54 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 15:43:53 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 15:44:30 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 15:45:15 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 15:45:41 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:46:14 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC
+2021-10-10 15:46:14 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC.fork0.join
+2021-10-10 15:46:20 [jobmngr] 109.3GB less memory than expected was free
+2021-10-10 15:46:24 [jobmngr] 109.4GB less memory than expected was free
+2021-10-10 15:46:39 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_BC
+2021-10-10 15:46:42 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES
+2021-10-10 15:46:42 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.split
+2021-10-10 15:48:30 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk00.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk01.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk02.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk03.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk04.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk05.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk06.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk07.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk08.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk09.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk10.main
+2021-10-10 15:48:30 [jobmngr] Need 8192 MB of memory to start the next job (7017 available).  Waiting for jobs to complete.
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk11.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk12.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk13.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk14.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk15.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk16.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk17.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk18.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk19.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk20.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk21.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk22.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk23.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk24.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk25.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk26.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk27.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk28.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk29.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk30.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk31.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk32.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk33.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk34.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk35.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk36.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk37.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk38.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk39.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk40.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk41.main
+2021-10-10 15:48:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.chnk42.main
+2021-10-10 15:48:33 [jobmngr] Need 8192 MB of memory to start the next job (7088 available).  Waiting for jobs to complete.
+2021-10-10 15:49:06 [jobmngr] Need 8192 MB of memory to start the next job (7086 available).  Waiting for jobs to complete.
+2021-10-10 15:49:36 [jobmngr] Need 8192 MB of memory to start the next job (7059 available).  Waiting for jobs to complete.
+2021-10-10 15:49:39 [jobmngr] Need 8192 MB of memory to start the next job (7080 available).  Waiting for jobs to complete.
+2021-10-10 15:50:00 [jobmngr] Need 8192 MB of memory to start the next job (2961 available).  Waiting for jobs to complete.
+2021-10-10 15:50:03 [jobmngr] Need 8192 MB of memory to start the next job (2962 available).  Waiting for jobs to complete.
+2021-10-10 15:50:09 [jobmngr] Need 8192 MB of memory to start the next job (2989 available).  Waiting for jobs to complete.
+2021-10-10 15:50:19 [jobmngr] Need 8192 MB of memory to start the next job (2977 available).  Waiting for jobs to complete.
+2021-10-10 15:50:28 [jobmngr] Need 8192 MB of memory to start the next job (2971 available).  Waiting for jobs to complete.
+2021-10-10 15:50:29 [jobmngr] Need 8192 MB of memory to start the next job (2965 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2964 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2966 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2966 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2975 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2975 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2977 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2977 available).  Waiting for jobs to complete.
+2021-10-10 15:50:30 [jobmngr] Need 8192 MB of memory to start the next job (2979 available).  Waiting for jobs to complete.
+2021-10-10 15:50:31 [jobmngr] Need 8192 MB of memory to start the next job (2979 available).  Waiting for jobs to complete.
+2021-10-10 15:50:32 [jobmngr] Need 8192 MB of memory to start the next job (2978 available).  Waiting for jobs to complete.
+2021-10-10 15:50:35 [jobmngr] Need 8192 MB of memory to start the next job (2991 available).  Waiting for jobs to complete.
+2021-10-10 15:50:56 [jobmngr] Need 8192 MB of memory to start the next job (2966 available).  Waiting for jobs to complete.
+2021-10-10 15:51:05 [jobmngr] Need 8192 MB of memory to start the next job (2992 available).  Waiting for jobs to complete.
+2021-10-10 15:51:26 [jobmngr] Need 8192 MB of memory to start the next job (2966 available).  Waiting for jobs to complete.
+2021-10-10 15:51:32 [jobmngr] Need 8192 MB of memory to start the next job (2961 available).  Waiting for jobs to complete.
+2021-10-10 15:51:38 [jobmngr] Need 8192 MB of memory to start the next job (2987 available).  Waiting for jobs to complete.
+2021-10-10 15:52:00 [jobmngr] Need 8192 MB of memory to start the next job (2962 available).  Waiting for jobs to complete.
+2021-10-10 15:52:00 [jobmngr] Need 8192 MB of memory to start the next job (2956 available).  Waiting for jobs to complete.
+2021-10-10 15:52:03 [jobmngr] Need 8192 MB of memory to start the next job (2962 available).  Waiting for jobs to complete.
+2021-10-10 15:52:09 [jobmngr] Need 8192 MB of memory to start the next job (2984 available).  Waiting for jobs to complete.
+2021-10-10 15:52:19 [jobmngr] Need 8192 MB of memory to start the next job (2971 available).  Waiting for jobs to complete.
+2021-10-10 15:52:27 [jobmngr] Need 8192 MB of memory to start the next job (2963 available).  Waiting for jobs to complete.
+2021-10-10 15:52:28 [jobmngr] Need 8192 MB of memory to start the next job (2959 available).  Waiting for jobs to complete.
+2021-10-10 15:52:29 [jobmngr] Need 8192 MB of memory to start the next job (2959 available).  Waiting for jobs to complete.
+2021-10-10 15:52:29 [jobmngr] Need 8192 MB of memory to start the next job (2960 available).  Waiting for jobs to complete.
+2021-10-10 15:52:29 [jobmngr] Need 8192 MB of memory to start the next job (2960 available).  Waiting for jobs to complete.
+2021-10-10 15:52:29 [jobmngr] Need 8192 MB of memory to start the next job (2966 available).  Waiting for jobs to complete.
+2021-10-10 15:52:29 [jobmngr] Need 8192 MB of memory to start the next job (2966 available).  Waiting for jobs to complete.
+2021-10-10 15:52:29 [jobmngr] Need 8192 MB of memory to start the next job (2967 available).  Waiting for jobs to complete.
+2021-10-10 15:52:30 [jobmngr] Need 8192 MB of memory to start the next job (2967 available).  Waiting for jobs to complete.
+2021-10-10 15:52:32 [jobmngr] Need 8192 MB of memory to start the next job (2967 available).  Waiting for jobs to complete.
+2021-10-10 15:52:32 [jobmngr] Need 8192 MB of memory to start the next job (2974 available).  Waiting for jobs to complete.
+2021-10-10 15:52:32 [jobmngr] Need 8192 MB of memory to start the next job (2974 available).  Waiting for jobs to complete.
+2021-10-10 15:52:35 [jobmngr] Need 8192 MB of memory to start the next job (2983 available).  Waiting for jobs to complete.
+2021-10-10 15:52:53 [jobmngr] Need 8192 MB of memory to start the next job (2961 available).  Waiting for jobs to complete.
+2021-10-10 15:52:59 [jobmngr] Need 8192 MB of memory to start the next job (2956 available).  Waiting for jobs to complete.
+2021-10-10 15:53:05 [jobmngr] Need 8192 MB of memory to start the next job (2983 available).  Waiting for jobs to complete.
+2021-10-10 15:53:32 [jobmngr] Need 8192 MB of memory to start the next job (2951 available).  Waiting for jobs to complete.
+2021-10-10 15:53:35 [jobmngr] Need 8192 MB of memory to start the next job (2982 available).  Waiting for jobs to complete.
+2021-10-10 15:53:58 [jobmngr] Need 8192 MB of memory to start the next job (2953 available).  Waiting for jobs to complete.
+2021-10-10 15:53:58 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0 chunks running (22/43 completed)
+2021-10-10 15:54:00 [jobmngr] Need 8192 MB of memory to start the next job (2950 available).  Waiting for jobs to complete.
+2021-10-10 15:54:00 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:54:03 [jobmngr] Need 8192 MB of memory to start the next job (2957 available).  Waiting for jobs to complete.
+2021-10-10 15:54:09 [jobmngr] Need 8192 MB of memory to start the next job (2975 available).  Waiting for jobs to complete.
+2021-10-10 15:54:17 [jobmngr] Need 8192 MB of memory to start the next job (2968 available).  Waiting for jobs to complete.
+2021-10-10 15:54:27 [jobmngr] Need 8192 MB of memory to start the next job (2954 available).  Waiting for jobs to complete.
+2021-10-10 15:54:28 [jobmngr] Need 8192 MB of memory to start the next job (2954 available).  Waiting for jobs to complete.
+2021-10-10 15:54:28 [jobmngr] Need 8192 MB of memory to start the next job (2958 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2958 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2957 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2961 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2961 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2962 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2962 available).  Waiting for jobs to complete.
+2021-10-10 15:54:29 [jobmngr] Need 8192 MB of memory to start the next job (2969 available).  Waiting for jobs to complete.
+2021-10-10 15:54:31 [jobmngr] Need 4096 MB of memory to start the next job (2969 available).  Waiting for jobs to complete.
+2021-10-10 15:55:02 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:55:23 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:55:32 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:55:57 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:56:15 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 15:56:30 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES
+2021-10-10 15:56:30 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES.fork0.join
+2021-10-10 15:56:49 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.MARK_DUPLICATES
+2021-10-10 15:56:51 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES
+2021-10-10 15:56:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.split
+2021-10-10 15:56:51 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS
+2021-10-10 15:56:51 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.split
+2021-10-10 15:56:52 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk00.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk01.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk02.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk03.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk04.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk05.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk06.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk07.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk08.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk09.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk10.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk11.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk12.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk13.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk14.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk15.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk16.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk17.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk18.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk19.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk20.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk21.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk22.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk23.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk24.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk25.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk26.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk27.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk28.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk29.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk30.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk31.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk32.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk33.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk34.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk35.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk36.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk37.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk38.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk39.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk40.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk41.main
+2021-10-10 15:56:52 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk42.main
+2021-10-10 15:56:53 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk00.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk01.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk02.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk03.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk04.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk05.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk06.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk07.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk08.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk09.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk10.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk11.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk12.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk13.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk14.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk15.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk16.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk17.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk18.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk19.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk20.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk21.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk22.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk23.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk24.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk25.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk26.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk27.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk28.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk29.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk30.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk31.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk32.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk33.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk34.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk35.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk36.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk37.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk38.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk39.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk40.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk41.main
+2021-10-10 15:56:53 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.chnk42.main
+2021-10-10 15:56:59 [jobmngr] 108.5GB less memory than expected was free
+2021-10-10 15:59:00 [jobmngr] 108.7GB less memory than expected was free
+2021-10-10 15:59:01 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 16:01:08 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 16:01:10 [jobmngr] Need 8192 MB of memory to start the next job (5612 available).  Waiting for jobs to complete.
+2021-10-10 16:01:10 [jobmngr] Need 8192 MB of memory to start the next job (5626 available).  Waiting for jobs to complete.
+2021-10-10 16:01:10 [jobmngr] Need 8192 MB of memory to start the next job (7674 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (1522 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (3554 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (5580 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (7621 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (1428 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (1432 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (3480 available).  Waiting for jobs to complete.
+2021-10-10 16:01:11 [jobmngr] Need 8192 MB of memory to start the next job (5520 available).  Waiting for jobs to complete.
+2021-10-10 16:01:12 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 16:01:12 [jobmngr] Need 8192 MB of memory to start the next job (7534 available).  Waiting for jobs to complete.
+2021-10-10 16:01:18 [jobmngr] Need 8192 MB of memory to start the next job (7512 available).  Waiting for jobs to complete.
+2021-10-10 16:01:40 [jobmngr] Need 8192 MB of memory to start the next job (7498 available).  Waiting for jobs to complete.
+2021-10-10 16:01:43 [jobmngr] Need 8192 MB of memory to start the next job (7499 available).  Waiting for jobs to complete.
+2021-10-10 16:01:49 [jobmngr] Need 8192 MB of memory to start the next job (7499 available).  Waiting for jobs to complete.
+2021-10-10 16:02:10 [jobmngr] Need 8192 MB of memory to start the next job (7499 available).  Waiting for jobs to complete.
+2021-10-10 16:02:37 [jobmngr] Need 8192 MB of memory to start the next job (7499 available).  Waiting for jobs to complete.
+2021-10-10 16:02:43 [jobmngr] Need 8192 MB of memory to start the next job (7499 available).  Waiting for jobs to complete.
+2021-10-10 16:02:46 [jobmngr] Need 8192 MB of memory to start the next job (7501 available).  Waiting for jobs to complete.
+2021-10-10 16:02:48 [jobmngr] Need 8192 MB of memory to start the next job (1357 available).  Waiting for jobs to complete.
+2021-10-10 16:02:48 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0 chunks running (42/43 completed)
+2021-10-10 16:02:49 [jobmngr] Need 8192 MB of memory to start the next job (3370 available).  Waiting for jobs to complete.
+2021-10-10 16:02:49 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0 chunks running (0/43 completed)
+2021-10-10 16:02:49 [jobmngr] Need 8192 MB of memory to start the next job (3380 available).  Waiting for jobs to complete.
+2021-10-10 16:02:49 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS
+2021-10-10 16:02:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.join
+2021-10-10 16:03:07 [jobmngr] Need 8192 MB of memory to start the next job (3376 available).  Waiting for jobs to complete.
+2021-10-10 16:03:10 [jobmngr] Need 8192 MB of memory to start the next job (3387 available).  Waiting for jobs to complete.
+2021-10-10 16:03:22 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:04:03 [jobmngr] Need 8192 MB of memory to start the next job (3375 available).  Waiting for jobs to complete.
+2021-10-10 16:04:06 [jobmngr] Need 8192 MB of memory to start the next job (3387 available).  Waiting for jobs to complete.
+2021-10-10 16:04:12 [jobmngr] Need 8192 MB of memory to start the next job (3391 available).  Waiting for jobs to complete.
+2021-10-10 16:04:15 [jobmngr] Need 8192 MB of memory to start the next job (3398 available).  Waiting for jobs to complete.
+2021-10-10 16:04:18 [jobmngr] Need 8192 MB of memory to start the next job (3415 available).  Waiting for jobs to complete.
+2021-10-10 16:04:24 [jobmngr] Need 8192 MB of memory to start the next job (3396 available).  Waiting for jobs to complete.
+2021-10-10 16:04:27 [jobmngr] Need 8192 MB of memory to start the next job (3400 available).  Waiting for jobs to complete.
+2021-10-10 16:04:45 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:04:46 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:04:46 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:04:48 [jobmngr] Need 8192 MB of memory to start the next job (3320 available).  Waiting for jobs to complete.
+2021-10-10 16:04:49 [jobmngr] Need 8192 MB of memory to start the next job (3260 available).  Waiting for jobs to complete.
+2021-10-10 16:04:49 [jobmngr] Need 8192 MB of memory to start the next job (3317 available).  Waiting for jobs to complete.
+2021-10-10 16:04:50 [jobmngr] Need 8192 MB of memory to start the next job (3317 available).  Waiting for jobs to complete.
+2021-10-10 16:04:50 [jobmngr] Need 8192 MB of memory to start the next job (3343 available).  Waiting for jobs to complete.
+2021-10-10 16:04:51 [jobmngr] Need 8192 MB of memory to start the next job (3343 available).  Waiting for jobs to complete.
+2021-10-10 16:04:51 [jobmngr] Need 8192 MB of memory to start the next job (3343 available).  Waiting for jobs to complete.
+2021-10-10 16:04:51 [jobmngr] Need 8192 MB of memory to start the next job (3348 available).  Waiting for jobs to complete.
+2021-10-10 16:04:52 [jobmngr] Need 8192 MB of memory to start the next job (3348 available).  Waiting for jobs to complete.
+2021-10-10 16:04:55 [jobmngr] Need 8192 MB of memory to start the next job (3361 available).  Waiting for jobs to complete.
+2021-10-10 16:04:56 [jobmngr] Need 8192 MB of memory to start the next job (3361 available).  Waiting for jobs to complete.
+2021-10-10 16:04:59 [jobmngr] Need 8192 MB of memory to start the next job (3402 available).  Waiting for jobs to complete.
+2021-10-10 16:05:20 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:05:29 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:05:35 [jobmngr] Need 8192 MB of memory to start the next job (3386 available).  Waiting for jobs to complete.
+2021-10-10 16:05:50 [jobmngr] Need 8192 MB of memory to start the next job (3386 available).  Waiting for jobs to complete.
+2021-10-10 16:05:59 [jobmngr] Need 8192 MB of memory to start the next job (3387 available).  Waiting for jobs to complete.
+2021-10-10 16:06:02 [jobmngr] Need 8192 MB of memory to start the next job (3391 available).  Waiting for jobs to complete.
+2021-10-10 16:06:08 [jobmngr] Need 8192 MB of memory to start the next job (3389 available).  Waiting for jobs to complete.
+2021-10-10 16:06:25 [jobmngr] Need 8192 MB of memory to start the next job (3381 available).  Waiting for jobs to complete.
+2021-10-10 16:06:28 [jobmngr] Need 8192 MB of memory to start the next job (3384 available).  Waiting for jobs to complete.
+2021-10-10 16:06:40 [jobmngr] Need 8192 MB of memory to start the next job (3388 available).  Waiting for jobs to complete.
+2021-10-10 16:06:41 [jobmngr] Need 8192 MB of memory to start the next job (3388 available).  Waiting for jobs to complete.
+2021-10-10 16:06:44 [jobmngr] Need 8192 MB of memory to start the next job (3386 available).  Waiting for jobs to complete.
+2021-10-10 16:06:56 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:07:02 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:07:05 [jobmngr] Need 8192 MB of memory to start the next job (3384 available).  Waiting for jobs to complete.
+2021-10-10 16:07:17 [jobmngr] Need 8192 MB of memory to start the next job (3390 available).  Waiting for jobs to complete.
+2021-10-10 16:07:44 [jobmngr] Need 8192 MB of memory to start the next job (3388 available).  Waiting for jobs to complete.
+2021-10-10 16:07:45 [jobmngr] Need 8192 MB of memory to start the next job (3388 available).  Waiting for jobs to complete.
+2021-10-10 16:07:48 [jobmngr] Need 8192 MB of memory to start the next job (3393 available).  Waiting for jobs to complete.
+2021-10-10 16:07:54 [jobmngr] Need 8192 MB of memory to start the next job (3403 available).  Waiting for jobs to complete.
+2021-10-10 16:07:57 [jobmngr] Need 8192 MB of memory to start the next job (3414 available).  Waiting for jobs to complete.
+2021-10-10 16:08:03 [jobmngr] Need 8192 MB of memory to start the next job (3410 available).  Waiting for jobs to complete.
+2021-10-10 16:08:18 [jobmngr] Need 8192 MB of memory to start the next job (3374 available).  Waiting for jobs to complete.
+2021-10-10 16:08:19 [jobmngr] Need 8192 MB of memory to start the next job (3374 available).  Waiting for jobs to complete.
+2021-10-10 16:08:19 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0 chunks running (14/43 completed)
+2021-10-10 16:08:22 [jobmngr] Need 8192 MB of memory to start the next job (3365 available).  Waiting for jobs to complete.
+2021-10-10 16:08:26 [jobmngr] Need 8192 MB of memory to start the next job (3365 available).  Waiting for jobs to complete.
+2021-10-10 16:08:26 [jobmngr] Need 8192 MB of memory to start the next job (3333 available).  Waiting for jobs to complete.
+2021-10-10 16:08:26 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:08:28 [jobmngr] Need 8192 MB of memory to start the next job (3311 available).  Waiting for jobs to complete.
+2021-10-10 16:08:28 [jobmngr] Need 8192 MB of memory to start the next job (3311 available).  Waiting for jobs to complete.
+2021-10-10 16:08:29 [jobmngr] Need 8192 MB of memory to start the next job (3305 available).  Waiting for jobs to complete.
+2021-10-10 16:08:29 [jobmngr] Need 8192 MB of memory to start the next job (3355 available).  Waiting for jobs to complete.
+2021-10-10 16:08:29 [jobmngr] Need 8192 MB of memory to start the next job (3355 available).  Waiting for jobs to complete.
+2021-10-10 16:08:29 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:08:31 [jobmngr] Need 8192 MB of memory to start the next job (3328 available).  Waiting for jobs to complete.
+2021-10-10 16:08:31 [jobmngr] Need 8192 MB of memory to start the next job (3354 available).  Waiting for jobs to complete.
+2021-10-10 16:08:34 [jobmngr] Need 8192 MB of memory to start the next job (3392 available).  Waiting for jobs to complete.
+2021-10-10 16:08:40 [jobmngr] Need 8192 MB of memory to start the next job (3388 available).  Waiting for jobs to complete.
+2021-10-10 16:08:55 [jobmngr] Need 8192 MB of memory to start the next job (3382 available).  Waiting for jobs to complete.
+2021-10-10 16:09:01 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:09:07 [jobmngr] Need 8192 MB of memory to start the next job (3381 available).  Waiting for jobs to complete.
+2021-10-10 16:09:10 [jobmngr] Need 8192 MB of memory to start the next job (3382 available).  Waiting for jobs to complete.
+2021-10-10 16:09:25 [jobmngr] Need 8192 MB of memory to start the next job (3387 available).  Waiting for jobs to complete.
+2021-10-10 16:09:34 [jobmngr] Need 8192 MB of memory to start the next job (3389 available).  Waiting for jobs to complete.
+2021-10-10 16:09:43 [jobmngr] Need 8192 MB of memory to start the next job (3380 available).  Waiting for jobs to complete.
+2021-10-10 16:09:46 [jobmngr] Need 8192 MB of memory to start the next job (3382 available).  Waiting for jobs to complete.
+2021-10-10 16:09:52 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:09:57 [jobmngr] Need 8192 MB of memory to start the next job (3379 available).  Waiting for jobs to complete.
+2021-10-10 16:10:00 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:10:17 [jobmngr] Need 8192 MB of memory to start the next job (3380 available).  Waiting for jobs to complete.
+2021-10-10 16:10:20 [jobmngr] Need 8192 MB of memory to start the next job (3384 available).  Waiting for jobs to complete.
+2021-10-10 16:10:44 [jobmngr] Need 8192 MB of memory to start the next job (3382 available).  Waiting for jobs to complete.
+2021-10-10 16:10:47 [jobmngr] Need 8192 MB of memory to start the next job (3386 available).  Waiting for jobs to complete.
+2021-10-10 16:10:56 [jobmngr] Need 8192 MB of memory to start the next job (3386 available).  Waiting for jobs to complete.
+2021-10-10 16:11:17 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:11:19 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:11:19 [jobmngr] Need 6 threads to start the next job (1 available).  Waiting for jobs to complete.
+2021-10-10 16:11:22 [jobmngr] Need 8192 MB of memory to start the next job (3384 available).  Waiting for jobs to complete.
+2021-10-10 16:11:28 [jobmngr] Need 8192 MB of memory to start the next job (3390 available).  Waiting for jobs to complete.
+2021-10-10 16:11:34 [jobmngr] Need 8192 MB of memory to start the next job (3406 available).  Waiting for jobs to complete.
+2021-10-10 16:11:40 [jobmngr] Need 8192 MB of memory to start the next job (3403 available).  Waiting for jobs to complete.
+2021-10-10 16:11:55 [jobmngr] Need 8192 MB of memory to start the next job (3374 available).  Waiting for jobs to complete.
+2021-10-10 16:11:55 [jobmngr] Need 6 threads to start the next job (2 available).  Waiting for jobs to complete.
+2021-10-10 16:11:58 [jobmngr] Need 8192 MB of memory to start the next job (3366 available).  Waiting for jobs to complete.
+2021-10-10 16:12:01 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:12:04 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:12:04 [jobmngr] Need 6 threads to start the next job (3 available).  Waiting for jobs to complete.
+2021-10-10 16:12:04 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:12:06 [jobmngr] Need 8192 MB of memory to start the next job (3323 available).  Waiting for jobs to complete.
+2021-10-10 16:12:06 [jobmngr] Need 6 threads to start the next job (4 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] Need 8192 MB of memory to start the next job (3302 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] Need 6 threads to start the next job (5 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 16:12:07 [jobmngr] Need 8192 MB of memory to start the next job (3150 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] Need 8192 MB of memory to start the next job (3296 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] Need 8192 MB of memory to start the next job (3296 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] Need 8192 MB of memory to start the next job (3245 available).  Waiting for jobs to complete.
+2021-10-10 16:12:07 [jobmngr] Need 8192 MB of memory to start the next job (3258 available).  Waiting for jobs to complete.
+2021-10-10 16:12:10 [jobmngr] Need 8192 MB of memory to start the next job (3385 available).  Waiting for jobs to complete.
+2021-10-10 16:12:16 [jobmngr] Need 8192 MB of memory to start the next job (3380 available).  Waiting for jobs to complete.
+2021-10-10 16:12:17 [jobmngr] Need 4096 MB of memory to start the next job (3380 available).  Waiting for jobs to complete.
+2021-10-10 16:12:20 [jobmngr] Need 4096 MB of memory to start the next job (3382 available).  Waiting for jobs to complete.
+2021-10-10 16:12:35 [jobmngr] Need 4096 MB of memory to start the next job (3376 available).  Waiting for jobs to complete.
+2021-10-10 16:12:59 [jobmngr] Need 4096 MB of memory to start the next job (3369 available).  Waiting for jobs to complete.
+2021-10-10 16:13:02 [jobmngr] Need 4096 MB of memory to start the next job (3374 available).  Waiting for jobs to complete.
+2021-10-10 16:13:11 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0 join_running
+2021-10-10 16:13:20 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0 chunks running (33/43 completed)
+2021-10-10 16:13:35 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:15:34 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 16:15:46 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 16:15:58 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:15:58 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES
+2021-10-10 16:15:58 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0.join
+2021-10-10 16:19:10 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0 join_running
+2021-10-10 16:21:58 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0 join_running
+2021-10-10 16:22:55 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:25:11 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0 join_running
+2021-10-10 16:26:44 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:26:59 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:27:20 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:27:59 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES.fork0 join_running
+2021-10-10 16:29:14 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:29:26 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:30:35 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 16:30:35 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.COUNT_GENES
+2021-10-10 16:30:37 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.FILTER_BARCODES
+2021-10-10 16:30:37 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.FILTER_BARCODES.fork0.split
+2021-10-10 16:30:38 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.FILTER_BARCODES
+2021-10-10 16:30:38 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.FILTER_BARCODES.fork0.join
+2021-10-10 16:31:11 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0 join_running
+2021-10-10 16:32:14 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:32:14 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS
+2021-10-10 16:35:30 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 16:35:30 [jobmngr] cgroup rss usage is 0.0GB, vs. limit of 91.8
+2021-10-10 16:35:30 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.FILTER_BARCODES
+2021-10-10 16:35:31 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT.fork0.chnk0.main
+2021-10-10 16:35:31 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.split
+2021-10-10 16:35:31 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk00.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk01.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk02.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk03.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk04.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk05.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk06.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk07.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk08.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk09.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk10.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk11.main
+2021-10-10 16:35:31 [jobmngr] Need 8192 MB of memory to start the next job (1919 available).  Waiting for jobs to complete.
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk12.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk13.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk14.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk15.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk16.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk17.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk18.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk19.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk20.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk21.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk22.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk23.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk24.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk25.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk26.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk27.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk28.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk29.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk30.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk31.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk32.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk33.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk34.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk35.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk36.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk37.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk38.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk39.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk40.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk41.main
+2021-10-10 16:35:31 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.chnk42.main
+2021-10-10 16:35:33 [jobmngr] Need 8192 MB of memory to start the next job (2943 available).  Waiting for jobs to complete.
+2021-10-10 16:35:33 [jobmngr] Need 8192 MB of memory to start the next job (3404 available).  Waiting for jobs to complete.
+2021-10-10 16:35:33 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.ANALYZER_PREFLIGHT
+2021-10-10 16:35:33 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2021-10-10 16:35:33 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.PREPROCESS_MATRIX.fork0.split
+2021-10-10 16:35:45 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:36:09 [jobmngr] Need 8192 MB of memory to start the next job (3356 available).  Waiting for jobs to complete.
+2021-10-10 16:36:15 [jobmngr] Need 8192 MB of memory to start the next job (3353 available).  Waiting for jobs to complete.
+2021-10-10 16:36:30 [jobmngr] Need 8192 MB of memory to start the next job (3358 available).  Waiting for jobs to complete.
+2021-10-10 16:36:36 [jobmngr] Need 8192 MB of memory to start the next job (3359 available).  Waiting for jobs to complete.
+2021-10-10 16:36:42 [jobmngr] Need 8192 MB of memory to start the next job (3360 available).  Waiting for jobs to complete.
+2021-10-10 16:36:43 [jobmngr] Need 8192 MB of memory to start the next job (3360 available).  Waiting for jobs to complete.
+2021-10-10 16:36:43 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:36:46 [jobmngr] Need 8192 MB of memory to start the next job (3362 available).  Waiting for jobs to complete.
+2021-10-10 16:36:52 [jobmngr] Need 8192 MB of memory to start the next job (3366 available).  Waiting for jobs to complete.
+2021-10-10 16:36:58 [jobmngr] Need 8192 MB of memory to start the next job (3365 available).  Waiting for jobs to complete.
+2021-10-10 16:37:10 [jobmngr] Need 8192 MB of memory to start the next job (3361 available).  Waiting for jobs to complete.
+2021-10-10 16:37:19 [jobmngr] Need 8192 MB of memory to start the next job (3360 available).  Waiting for jobs to complete.
+2021-10-10 16:37:24 [jobmngr] Need 8192 MB of memory to start the next job (3358 available).  Waiting for jobs to complete.
+2021-10-10 16:37:24 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:37:28 [jobmngr] Need 8192 MB of memory to start the next job (3362 available).  Waiting for jobs to complete.
+2021-10-10 16:37:43 [jobmngr] Need 8192 MB of memory to start the next job (3362 available).  Waiting for jobs to complete.
+2021-10-10 16:37:46 [jobmngr] Need 8192 MB of memory to start the next job (3359 available).  Waiting for jobs to complete.
+2021-10-10 16:37:46 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:37:48 [jobmngr] Need 8192 MB of memory to start the next job (3325 available).  Waiting for jobs to complete.
+2021-10-10 16:37:48 [jobmngr] Need 8192 MB of memory to start the next job (3323 available).  Waiting for jobs to complete.
+2021-10-10 16:37:48 [jobmngr] Need 8192 MB of memory to start the next job (3326 available).  Waiting for jobs to complete.
+2021-10-10 16:37:48 [jobmngr] Need 8192 MB of memory to start the next job (3326 available).  Waiting for jobs to complete.
+2021-10-10 16:37:49 [jobmngr] Need 8192 MB of memory to start the next job (3311 available).  Waiting for jobs to complete.
+2021-10-10 16:37:49 [jobmngr] Need 8192 MB of memory to start the next job (3312 available).  Waiting for jobs to complete.
+2021-10-10 16:37:51 [jobmngr] Need 8192 MB of memory to start the next job (3312 available).  Waiting for jobs to complete.
+2021-10-10 16:37:51 [jobmngr] Need 8192 MB of memory to start the next job (3341 available).  Waiting for jobs to complete.
+2021-10-10 16:37:52 [jobmngr] Need 8192 MB of memory to start the next job (3341 available).  Waiting for jobs to complete.
+2021-10-10 16:37:52 [jobmngr] Need 8192 MB of memory to start the next job (3345 available).  Waiting for jobs to complete.
+2021-10-10 16:37:54 [jobmngr] Need 8192 MB of memory to start the next job (3345 available).  Waiting for jobs to complete.
+2021-10-10 16:37:55 [jobmngr] Need 8192 MB of memory to start the next job (3342 available).  Waiting for jobs to complete.
+2021-10-10 16:37:55 [jobmngr] Need 8192 MB of memory to start the next job (3344 available).  Waiting for jobs to complete.
+2021-10-10 16:37:58 [jobmngr] Need 8192 MB of memory to start the next job (3387 available).  Waiting for jobs to complete.
+2021-10-10 16:38:31 [jobmngr] Need 8192 MB of memory to start the next job (3354 available).  Waiting for jobs to complete.
+2021-10-10 16:38:34 [jobmngr] Need 8192 MB of memory to start the next job (3358 available).  Waiting for jobs to complete.
+2021-10-10 16:38:40 [jobmngr] Need 8192 MB of memory to start the next job (3359 available).  Waiting for jobs to complete.
+2021-10-10 16:38:46 [jobmngr] Need 8192 MB of memory to start the next job (3360 available).  Waiting for jobs to complete.
+2021-10-10 16:38:52 [jobmngr] Need 8192 MB of memory to start the next job (3358 available).  Waiting for jobs to complete.
+2021-10-10 16:38:58 [jobmngr] Need 8192 MB of memory to start the next job (3360 available).  Waiting for jobs to complete.
+2021-10-10 16:39:04 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:39:04 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:39:04 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:39:07 [jobmngr] Need 8192 MB of memory to start the next job (3364 available).  Waiting for jobs to complete.
+2021-10-10 16:39:42 [jobmngr] Need 8192 MB of memory to start the next job (3359 available).  Waiting for jobs to complete.
+2021-10-10 16:39:42 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:39:45 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:39:54 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:40:04 [jobmngr] Need 8192 MB of memory to start the next job (3361 available).  Waiting for jobs to complete.
+2021-10-10 16:40:04 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:40:06 [jobmngr] Need 8192 MB of memory to start the next job (3323 available).  Waiting for jobs to complete.
+2021-10-10 16:40:06 [jobmngr] Need 8192 MB of memory to start the next job (3325 available).  Waiting for jobs to complete.
+2021-10-10 16:40:09 [jobmngr] Need 8192 MB of memory to start the next job (3325 available).  Waiting for jobs to complete.
+2021-10-10 16:40:09 [jobmngr] Need 8192 MB of memory to start the next job (3337 available).  Waiting for jobs to complete.
+2021-10-10 16:40:09 [jobmngr] Need 8192 MB of memory to start the next job (3337 available).  Waiting for jobs to complete.
+2021-10-10 16:40:09 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:40:09 [jobmngr] Need 8192 MB of memory to start the next job (3312 available).  Waiting for jobs to complete.
+2021-10-10 16:40:10 [jobmngr] Need 8192 MB of memory to start the next job (3282 available).  Waiting for jobs to complete.
+2021-10-10 16:40:10 [jobmngr] Need 8192 MB of memory to start the next job (3309 available).  Waiting for jobs to complete.
+2021-10-10 16:40:13 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:40:16 [jobmngr] Need 8192 MB of memory to start the next job (3383 available).  Waiting for jobs to complete.
+2021-10-10 16:40:16 [jobmngr] Need 8192 MB of memory to start the next job (3340 available).  Waiting for jobs to complete.
+2021-10-10 16:40:16 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:40:19 [jobmngr] Need 8192 MB of memory to start the next job (3327 available).  Waiting for jobs to complete.
+2021-10-10 16:40:19 [jobmngr] Need 8192 MB of memory to start the next job (3346 available).  Waiting for jobs to complete.
+2021-10-10 16:40:22 [jobmngr] Need 8192 MB of memory to start the next job (3386 available).  Waiting for jobs to complete.
+2021-10-10 16:40:52 [jobmngr] Need 8192 MB of memory to start the next job (3362 available).  Waiting for jobs to complete.
+2021-10-10 16:40:58 [jobmngr] Need 8192 MB of memory to start the next job (3361 available).  Waiting for jobs to complete.
+2021-10-10 16:41:01 [jobmngr] Need 8192 MB of memory to start the next job (3362 available).  Waiting for jobs to complete.
+2021-10-10 16:41:04 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:41:07 [runtime] (update)          ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0 chunks running (22/43 completed)
+2021-10-10 16:41:13 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:41:16 [jobmngr] Need 8192 MB of memory to start the next job (3365 available).  Waiting for jobs to complete.
+2021-10-10 16:41:25 [jobmngr] Need 8192 MB of memory to start the next job (3363 available).  Waiting for jobs to complete.
+2021-10-10 16:41:25 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:41:28 [jobmngr] Need 8192 MB of memory to start the next job (3369 available).  Waiting for jobs to complete.
+2021-10-10 16:41:34 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:41:52 [jobmngr] Need 8192 MB of memory to start the next job (3366 available).  Waiting for jobs to complete.
+2021-10-10 16:42:01 [jobmngr] Need 8192 MB of memory to start the next job (3369 available).  Waiting for jobs to complete.
+2021-10-10 16:42:01 [jobmngr] Need 8192 MB of memory to start the next job (3369 available).  Waiting for jobs to complete.
+2021-10-10 16:42:01 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:42:04 [jobmngr] Need 8192 MB of memory to start the next job (3366 available).  Waiting for jobs to complete.
+2021-10-10 16:42:10 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:42:22 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:42:23 [jobmngr] Need 8192 MB of memory to start the next job (3367 available).  Waiting for jobs to complete.
+2021-10-10 16:42:26 [jobmngr] Need 8192 MB of memory to start the next job (3330 available).  Waiting for jobs to complete.
+2021-10-10 16:42:26 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 16:42:26 [jobmngr] Need 8192 MB of memory to start the next job (3100 available).  Waiting for jobs to complete.
+2021-10-10 16:42:26 [jobmngr] Need 8192 MB of memory to start the next job (3292 available).  Waiting for jobs to complete.
+2021-10-10 16:42:27 [jobmngr] Need 8192 MB of memory to start the next job (3292 available).  Waiting for jobs to complete.
+2021-10-10 16:42:27 [jobmngr] Need 8192 MB of memory to start the next job (3328 available).  Waiting for jobs to complete.
+2021-10-10 16:42:28 [jobmngr] Need 8192 MB of memory to start the next job (3328 available).  Waiting for jobs to complete.
+2021-10-10 16:42:29 [jobmngr] Need 8192 MB of memory to start the next job (3311 available).  Waiting for jobs to complete.
+2021-10-10 16:42:29 [jobmngr] Need 8192 MB of memory to start the next job (3336 available).  Waiting for jobs to complete.
+2021-10-10 16:42:32 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:42:33 [jobmngr] Need 8192 MB of memory to start the next job (3242 available).  Waiting for jobs to complete.
+2021-10-10 16:42:33 [jobmngr] Need 8192 MB of memory to start the next job (3336 available).  Waiting for jobs to complete.
+2021-10-10 16:42:36 [jobmngr] Need 8192 MB of memory to start the next job (3375 available).  Waiting for jobs to complete.
+2021-10-10 16:42:38 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2021-10-10 16:42:38 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.PREPROCESS_MATRIX.fork0.join
+2021-10-10 16:42:48 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:42:48 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.PREPROCESS_MATRIX
+2021-10-10 16:42:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA
+2021-10-10 16:42:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA.fork0.split
+2021-10-10 16:42:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2021-10-10 16:42:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS.fork0.split
+2021-10-10 16:42:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_FBPCA
+2021-10-10 16:42:48 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_FBPCA
+2021-10-10 16:42:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CORRECT_CHEMISTRY_BATCH
+2021-10-10 16:42:48 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CORRECT_CHEMISTRY_BATCH
+2021-10-10 16:42:48 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2021-10-10 16:42:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS.fork0.join
+2021-10-10 16:42:48 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA
+2021-10-10 16:42:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA.fork0.chnk0.main
+2021-10-10 16:42:49 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_MULTIGENOME_ANALYSIS
+2021-10-10 16:43:04 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:43:04 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA
+2021-10-10 16:43:04 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA.fork0.join
+2021-10-10 16:43:05 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_PCA
+2021-10-10 16:43:05 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION_OUTPUT
+2021-10-10 16:43:05 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION_OUTPUT.fork0.chnk0.main
+2021-10-10 16:43:06 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.CHOOSE_DIMENSION_REDUCTION_OUTPUT
+2021-10-10 16:43:06 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS
+2021-10-10 16:43:06 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.split
+2021-10-10 16:43:06 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE
+2021-10-10 16:43:06 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE.fork0.split
+2021-10-10 16:43:06 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2021-10-10 16:43:06 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.split
+2021-10-10 16:43:06 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP
+2021-10-10 16:43:06 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP.fork0.split
+2021-10-10 16:43:07 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk0.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk1.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk2.main
+2021-10-10 16:43:07 [jobmngr] Need 3072 MB of memory to start the next job (2418 available).  Waiting for jobs to complete.
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk3.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk4.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk5.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk6.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk7.main
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.chnk8.main
+2021-10-10 16:43:07 [jobmngr] Need 3072 MB of memory to start the next job (370 available).  Waiting for jobs to complete.
+2021-10-10 16:43:07 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.chnk0.main
+2021-10-10 16:43:07 [jobmngr] Need 3072 MB of memory to start the next job (1360 available).  Waiting for jobs to complete.
+2021-10-10 16:43:07 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE
+2021-10-10 16:43:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE.fork0.chnk0.main
+2021-10-10 16:43:09 [jobmngr] Need 3072 MB of memory to start the next job (1358 available).  Waiting for jobs to complete.
+2021-10-10 16:43:09 [jobmngr] Need 3072 MB of memory to start the next job (1458 available).  Waiting for jobs to complete.
+2021-10-10 16:43:09 [jobmngr] Need 3072 MB of memory to start the next job (1458 available).  Waiting for jobs to complete.
+2021-10-10 16:43:09 [jobmngr] 108.7GB less memory than expected was free
+2021-10-10 16:43:09 [jobmngr] Need 3072 MB of memory to start the next job (1337 available).  Waiting for jobs to complete.
+2021-10-10 16:43:09 [jobmngr] Need 3072 MB of memory to start the next job (1360 available).  Waiting for jobs to complete.
+2021-10-10 16:43:09 [jobmngr] Need 3072 MB of memory to start the next job (2384 available).  Waiting for jobs to complete.
+2021-10-10 16:43:10 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP
+2021-10-10 16:43:10 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP.fork0.chnk0.main
+2021-10-10 16:43:10 [jobmngr] Need 4 threads to start the next job (2 available).  Waiting for jobs to complete.
+2021-10-10 16:43:12 [jobmngr] Need 3072 MB of memory to start the next job (2316 available).  Waiting for jobs to complete.
+2021-10-10 16:43:12 [jobmngr] Need 4 threads to start the next job (3 available).  Waiting for jobs to complete.
+2021-10-10 16:43:12 [jobmngr] Need 3072 MB of memory to start the next job (2394 available).  Waiting for jobs to complete.
+2021-10-10 16:43:13 [jobmngr] Need 3072 MB of memory to start the next job (2394 available).  Waiting for jobs to complete.
+2021-10-10 16:43:13 [jobmngr] Need 3072 MB of memory to start the next job (1337 available).  Waiting for jobs to complete.
+2021-10-10 16:43:16 [jobmngr] Need 3072 MB of memory to start the next job (2347 available).  Waiting for jobs to complete.
+2021-10-10 16:43:16 [jobmngr] Need 3072 MB of memory to start the next job (2347 available).  Waiting for jobs to complete.
+2021-10-10 16:43:16 [jobmngr] Need 3072 MB of memory to start the next job (2400 available).  Waiting for jobs to complete.
+2021-10-10 16:43:16 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2021-10-10 16:43:16 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING.fork0.join
+2021-10-10 16:43:16 [jobmngr] Need 3072 MB of memory to start the next job (2403 available).  Waiting for jobs to complete.
+2021-10-10 16:43:16 [jobmngr] Need 3072 MB of memory to start the next job (2403 available).  Waiting for jobs to complete.
+2021-10-10 16:43:16 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS
+2021-10-10 16:43:16 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS.fork0.join
+2021-10-10 16:43:18 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_KMEANS
+2021-10-10 16:43:21 [jobmngr] 108.6GB less memory than expected was free
+2021-10-10 16:43:25 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_GRAPH_CLUSTERING
+2021-10-10 16:43:25 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2021-10-10 16:43:25 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS.fork0.split
+2021-10-10 16:43:26 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2021-10-10 16:43:26 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS.fork0.chnk0.main
+2021-10-10 16:43:27 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2021-10-10 16:43:27 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS.fork0.join
+2021-10-10 16:43:40 [jobmngr] 108.7GB less memory than expected was free
+2021-10-10 16:43:40 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE
+2021-10-10 16:43:40 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE.fork0.join
+2021-10-10 16:43:41 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_TSNE
+2021-10-10 16:43:47 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.MERGE_CLUSTERS
+2021-10-10 16:43:47 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.COMBINE_CLUSTERING
+2021-10-10 16:43:47 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.COMBINE_CLUSTERING.fork0.chnk0.main
+2021-10-10 16:43:48 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.COMBINE_CLUSTERING
+2021-10-10 16:43:48 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2021-10-10 16:43:48 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.split
+2021-10-10 16:43:49 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:43:49 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk00.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk01.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk02.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk03.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk04.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk05.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk06.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk07.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk08.main
+2021-10-10 16:43:49 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.chnk09.main
+2021-10-10 16:43:54 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP
+2021-10-10 16:43:54 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP.fork0.join
+2021-10-10 16:44:27 [jobmngr] Need 4 threads to start the next job (1 available).  Waiting for jobs to complete.
+2021-10-10 16:44:33 [jobmngr] Need 4 threads to start the next job (1 available).  Waiting for jobs to complete.
+2021-10-10 16:44:33 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:44:55 [jobmngr] Need 4 threads to start the next job (2 available).  Waiting for jobs to complete.
+2021-10-10 16:44:55 [jobmngr] Need 4 threads to start the next job (3 available).  Waiting for jobs to complete.
+2021-10-10 16:44:55 [jobmngr] 108.8GB less memory than expected was free
+2021-10-10 16:45:01 [jobmngr] Need 4 threads to start the next job (1 available).  Waiting for jobs to complete.
+2021-10-10 16:45:01 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 16:45:01 [jobmngr] Need 4 threads to start the next job (2 available).  Waiting for jobs to complete.
+2021-10-10 16:45:02 [jobmngr] Need 4 threads to start the next job (3 available).  Waiting for jobs to complete.
+2021-10-10 16:45:05 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES
+2021-10-10 16:45:05 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES.fork0.join
+2021-10-10 16:46:07 [jobmngr] 108.9GB less memory than expected was free
+2021-10-10 16:46:07 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_UMAP
+2021-10-10 16:46:40 [jobmngr] 109.0GB less memory than expected was free
+2021-10-10 16:47:04 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2021-10-10 16:47:04 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION.fork0.join
+2021-10-10 16:47:07 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.RUN_DIFFERENTIAL_EXPRESSION
+2021-10-10 16:47:07 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2021-10-10 16:47:07 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.split
+2021-10-10 16:47:08 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2021-10-10 16:47:08 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.chnk0.main
+2021-10-10 16:47:11 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2021-10-10 16:47:11 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS.fork0.join
+2021-10-10 16:47:12 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:47:12 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SC_RNA_ANALYZER.SUMMARIZE_ANALYSIS
+2021-10-10 16:47:45 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:48:15 [jobmngr] 109.2GB less memory than expected was free
+2021-10-10 16:48:15 [jobmngr] cgroup rss usage is 0.0GB, vs. limit of 91.8
+2021-10-10 16:48:15 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.REPORT_MOLECULES
+2021-10-10 16:48:18 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS
+2021-10-10 16:48:18 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS.fork0.split
+2021-10-10 16:48:20 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS
+2021-10-10 16:48:20 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS.fork0.chnk0.main
+2021-10-10 16:48:20 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS.fork0.chnk1.main
+2021-10-10 16:52:24 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:52:24 [jobmngr] cgroup rss usage is 0.0GB, vs. limit of 91.8
+2021-10-10 16:52:24 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS
+2021-10-10 16:52:24 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS.fork0.join
+2021-10-10 16:52:25 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUBSAMPLE_READS
+2021-10-10 16:52:25 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS
+2021-10-10 16:52:25 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS.fork0.split
+2021-10-10 16:52:26 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS
+2021-10-10 16:52:26 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS.fork0.chnk0.main
+2021-10-10 16:52:27 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS
+2021-10-10 16:52:27 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS.fork0.join
+2021-10-10 16:52:28 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SUMMARIZE_BASIC_REPORTS
+2021-10-10 16:52:28 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER.CALL_PROTOSPACERS
+2021-10-10 16:52:28 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER.CALL_PROTOSPACERS
+2021-10-10 16:52:28 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER._PERTURBATIONS_BY_FEATURE
+2021-10-10 16:52:28 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER._PERTURBATIONS_BY_FEATURE
+2021-10-10 16:52:28 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER._PERTURBATIONS_BY_TARGET
+2021-10-10 16:52:28 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER._PERTURBATIONS_BY_TARGET
+2021-10-10 16:52:28 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SUMMARIZE_REPORTS
+2021-10-10 16:52:28 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SUMMARIZE_REPORTS.fork0.chnk0.main
+2021-10-10 16:52:28 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER.SUMMARIZE_CRISPR_ANALYSIS
+2021-10-10 16:52:28 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER.SUMMARIZE_CRISPR_ANALYSIS
+2021-10-10 16:52:28 [runtime] (disabled)        ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._CRISPR_ANALYZER
+2021-10-10 16:52:44 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:52:44 [jobmngr] cgroup rss usage is 0.0GB, vs. limit of 91.8
+2021-10-10 16:52:44 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER.SUMMARIZE_REPORTS
+2021-10-10 16:52:44 [runtime] (ready)           ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS
+2021-10-10 16:52:44 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS.fork0.split
+2021-10-10 16:52:44 [runtime] (split_complete)  ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS
+2021-10-10 16:52:44 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS.fork0.chnk0.main
+2021-10-10 16:53:10 [jobmngr] 109.1GB less memory than expected was free
+2021-10-10 16:53:10 [jobmngr] cgroup rss usage is 0.0GB, vs. limit of 91.8
+2021-10-10 16:53:10 [runtime] (chunks_complete) ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS
+2021-10-10 16:53:10 [runtime] (run:local)       ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS.fork0.join
+2021-10-10 16:53:10 [runtime] (join_complete)   ID.oyster_E1_redo2_roslin-mito.SC_RNA_COUNTER_CS.CLOUPE_PREPROCESS
+2021-10-10 16:53:10 [runtime] VDR killed 2579 files, 232 GB.
+
+Outputs:
+- Run summary HTML:                         /home/mgavery/oyster_E1_redo2_roslin-mito/outs/web_summary.html
+- Run summary CSV:                          /home/mgavery/oyster_E1_redo2_roslin-mito/outs/metrics_summary.csv
+- BAM:                                      /home/mgavery/oyster_E1_redo2_roslin-mito/outs/possorted_genome_bam.bam
+- BAM index:                                /home/mgavery/oyster_E1_redo2_roslin-mito/outs/possorted_genome_bam.bam.bai
+- Filtered feature-barcode matrices MEX:    /home/mgavery/oyster_E1_redo2_roslin-mito/outs/filtered_feature_bc_matrix
+- Filtered feature-barcode matrices HDF5:   /home/mgavery/oyster_E1_redo2_roslin-mito/outs/filtered_feature_bc_matrix.h5
+- Unfiltered feature-barcode matrices MEX:  /home/mgavery/oyster_E1_redo2_roslin-mito/outs/raw_feature_bc_matrix
+- Unfiltered feature-barcode matrices HDF5: /home/mgavery/oyster_E1_redo2_roslin-mito/outs/raw_feature_bc_matrix.h5
+- Secondary analysis output CSV:            /home/mgavery/oyster_E1_redo2_roslin-mito/outs/analysis
+- Per-molecule read information:            /home/mgavery/oyster_E1_redo2_roslin-mito/outs/molecule_info.h5
+- CRISPR-specific analysis:                 null
+- Loupe Cell Browser file:                  /home/mgavery/oyster_E1_redo2_roslin-mito/outs/cloupe.cloupe
+- Feature Reference:                        null
+
+2021-10-10 16:53:10 [perform] Serializing pipestance performance data.
+Waiting 6 seconds for UI to do final refresh.
+Pipestance completed successfully!
+
+2021-10-10 16:53:17 Shutting down.
+2021-10-10 16:53:17 [jobmngr] Highest memory usage observed: {
+  "rss": 46319505408,
+  "shared": 991399936,
+  "vmem": 69384810496,
+  "text": 84914176,
+  "stack": 48807374848,
+  "proc_count": 692
+}

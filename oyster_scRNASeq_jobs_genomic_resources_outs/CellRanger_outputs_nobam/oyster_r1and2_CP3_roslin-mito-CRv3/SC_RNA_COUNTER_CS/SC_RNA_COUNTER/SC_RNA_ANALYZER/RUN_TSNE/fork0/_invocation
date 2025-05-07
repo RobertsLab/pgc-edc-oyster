@@ -1,0 +1,16 @@
+@include "_sc_rna_analyzer_stages.mro"
+
+call RUN_TSNE(
+    matrix_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-ubfcf6f713e/files/preprocessed_matrix_h5.h5",
+    pca_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-ubfcf6f72ee/files/pca_h5.h5",
+    skip = false,
+    random_seed = null,
+    perplexity = null,
+    input_pcs = null,
+    max_dims = null,
+    max_iter = null,
+    stop_lying_iter = null,
+    mom_switch_iter = null,
+    theta = null,
+    is_antibody_only = false,
+)

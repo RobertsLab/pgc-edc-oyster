@@ -1,0 +1,20 @@
+{
+    "__mem_gb": 8,
+    "__threads": 1,
+    "__vmem_gb": 11,
+    "bam_compression_ratio": 0.08846572528095917,
+    "chunk_end": 325311570003514,
+    "chunk_size_gb": 5.247215378022651,
+    "chunk_start": 292645796446208,
+    "filter_umis": true,
+    "input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_BC/fork0/join-u9fbc636b3e/files/default.bam",
+    "library_info": [
+        {
+            "gem_group": 1,
+            "library_id": "0",
+            "library_type": "Gene Expression"
+        }
+    ],
+    "major_barcode_proportion": 0.020895522388059702,
+    "reference_path": "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3"
+}

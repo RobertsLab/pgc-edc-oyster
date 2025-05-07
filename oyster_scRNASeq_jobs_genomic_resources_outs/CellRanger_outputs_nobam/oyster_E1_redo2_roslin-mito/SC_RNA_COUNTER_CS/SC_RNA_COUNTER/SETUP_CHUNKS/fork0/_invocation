@@ -1,0 +1,35 @@
+@include "_common_stages.mro"
+
+call SETUP_CHUNKS(
+    sample_id = "oyster_E1_redo2_roslin-mito",
+    sample_def = [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "E1"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo/outs/fastq_path/HGKT3BGXK"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "E1"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo_2/outs/fastq_path/HHLK5BGXJ"
+        }
+    ],
+    library_type_filter = null,
+    chemistry_name = "SC3Pv3",
+    custom_chemistry_def = null,
+    default_library_type = null,
+)

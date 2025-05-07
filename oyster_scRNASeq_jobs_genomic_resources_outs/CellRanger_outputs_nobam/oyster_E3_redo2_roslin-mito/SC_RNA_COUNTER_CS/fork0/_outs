@@ -1,0 +1,15 @@
+{
+    "analysis": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/join-u7e5363d734/files/analysis_csv",
+    "cloupe": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/CLOUPE_PREPROCESS/fork0/join-u7e5363d85a/files/output_for_cloupe.cloupe",
+    "crispr_analysis": null,
+    "feature_reference": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SUMMARIZE_REPORTS/fork0/chnk0-u7e5363d84b/files/feature_reference.csv",
+    "filtered_feature_bc_matrix": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u7e5363d351/files/filtered_matrices_mex",
+    "filtered_feature_bc_matrix_h5": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u7e5363d351/files/filtered_matrices_h5.h5",
+    "metrics_summary": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SUMMARIZE_REPORTS/fork0/chnk0-u7e5363d84b/files/metrics_summary_csv.csv",
+    "molecule_info": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/REPORT_MOLECULES/fork0/join-u7e5363d467/files/output.h5",
+    "possorted_genome_bam": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_POS/fork0/join-u7e5363cb32/files/output.bam",
+    "possorted_genome_bam_index": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_POS/fork0/join-u7e5363cb32/files/output.bam.bai",
+    "raw_feature_bc_matrix": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/join-u7e5363cb32/files/matrices_mex",
+    "raw_feature_bc_matrix_h5": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/join-u7e5363cb32/files/matrices_h5.h5",
+    "web_summary": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SUMMARIZE_REPORTS/fork0/chnk0-u7e5363d84b/files/web_summary.html"
+}

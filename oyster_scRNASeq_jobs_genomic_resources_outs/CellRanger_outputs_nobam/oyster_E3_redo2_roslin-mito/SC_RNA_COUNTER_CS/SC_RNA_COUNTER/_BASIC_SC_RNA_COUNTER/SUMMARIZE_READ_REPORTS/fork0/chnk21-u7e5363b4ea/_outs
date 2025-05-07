@@ -1,0 +1,14 @@
+{
+    "read_groups": null, 
+    "bam_comments": null, 
+    "gem_groups": null, 
+    "barcode_counts": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_READ_REPORTS/fork0/chnk21-u7e5363b4ea/files/barcode_counts.json", 
+    "tags": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_READ_REPORTS/fork0/chnk21-u7e5363b4ea/files/tags.fastq.lz4", 
+    "align": null, 
+    "feature_counts": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_READ_REPORTS/fork0/chnk21-u7e5363b4ea/files/feature_counts.json", 
+    "read2s": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_READ_REPORTS/fork0/chnk21-u7e5363b4ea/files/read2s.fastq", 
+    "library_ids": null, 
+    "library_types": null, 
+    "summary": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_READ_REPORTS/fork0/chnk21-u7e5363b4ea/files/summary.json", 
+    "read1s": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_READ_REPORTS/fork0/chnk21-u7e5363b4ea/files/read1s.fastq"
+}

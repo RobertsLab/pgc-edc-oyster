@@ -1,0 +1,180 @@
+{
+    "chunks": [
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk00-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk01-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk02-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk03-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk04-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk05-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk06-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk07-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk08-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk09-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk10-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk11-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk12-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk13-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk14-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk15-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk16-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk17-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk18-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk19-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk20-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk21-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk22-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk23-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk24-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk25-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk26-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk27-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk28-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk29-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk30-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk31-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk32-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk33-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk34-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk35-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk36-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk37-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk38-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk39-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk40-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk41-u9fbc636dbe/files/alignments.bam"
+        }, 
+        {
+            "__mem_gb": 2, 
+            "chunk_input": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/MARK_DUPLICATES/fork0/chnk42-u9fbc636dbe/files/alignments.bam"
+        }
+    ], 
+    "join": {
+        "__threads": 6, 
+        "__mem_gb": 4
+    }
+}

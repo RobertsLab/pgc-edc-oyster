@@ -1,0 +1,31 @@
+[stdout]
+Checking sample info...
+Checking FASTQ folder...
+Checking libraries...
+Checking reference...
+Checking reference_path (/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3) on node05.cluster...
+Checking chemistry...
+Checking system environment...
+Checking optional arguments...
+mrc: '3.1.0-v3.2.3'
+
+mrp: '3.1.0-v3.2.3'
+
+Anaconda: Python 2.7.14 :: Anaconda, Inc.
+
+numpy: 1.14.2
+
+scipy: 1.0.1
+
+pysam: 0.14.1
+
+h5py: 2.8.0
+
+pandas: 0.22.0
+
+STAR: STAR_2.5.1b
+
+samtools: samtools 1.7
+Using htslib 1.7
+Copyright (C) 2018 Genome Research Ltd.
+

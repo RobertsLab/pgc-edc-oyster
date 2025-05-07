@@ -1,0 +1,13 @@
+@include "_sc_rna_analyzer_stages.mro"
+
+call PREPROCESS_MATRIX(
+    matrix_h5 = "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u13af6f490c/files/filtered_matrices_h5.h5",
+    skip = false,
+    random_seed = null,
+    use_genes = null,
+    exclude_genes = null,
+    use_bcs = null,
+    num_bcs = null,
+    force_cells = null,
+    is_antibody_only = false,
+)

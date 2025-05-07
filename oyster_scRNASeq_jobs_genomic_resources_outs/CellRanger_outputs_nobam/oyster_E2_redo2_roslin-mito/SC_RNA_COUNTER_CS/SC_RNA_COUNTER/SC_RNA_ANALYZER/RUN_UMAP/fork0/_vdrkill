@@ -1,0 +1,34 @@
+{
+    "count": 8,
+    "size": 671878,
+    "timestamp": "2021-10-10 20:08:57",
+    "paths": [
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/chnk0-u0a9c63a9e5/files/umap_csv",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/chnk0-u0a9c63a9e5/files/umap_h5.h5",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u0a9c63a9e1/files/umap_csv",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u0a9c63a9e1/files/umap_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-10-10T20:05:05-07:00",
+            "DeltaBytes": 6410
+        },
+        {
+            "Timestamp": "2021-10-10T20:05:09-07:00",
+            "DeltaBytes": 348620
+        },
+        {
+            "Timestamp": "2021-10-10T20:07:20-07:00",
+            "DeltaBytes": 343649
+        },
+        {
+            "Timestamp": "2021-10-10T20:07:23.348922188-07:00",
+            "DeltaBytes": -335279
+        },
+        {
+            "Timestamp": "2021-10-10T20:08:57.52873245-07:00",
+            "DeltaBytes": -336599
+        }
+    ]
+}

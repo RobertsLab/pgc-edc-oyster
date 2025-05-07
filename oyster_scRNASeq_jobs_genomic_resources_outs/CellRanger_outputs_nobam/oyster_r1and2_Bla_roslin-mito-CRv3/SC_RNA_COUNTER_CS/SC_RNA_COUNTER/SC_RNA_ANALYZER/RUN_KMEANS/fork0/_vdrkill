@@ -1,0 +1,50 @@
+{
+    "count": 56,
+    "size": 3789128,
+    "timestamp": "2021-04-08 17:33:56",
+    "paths": [
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk0-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk0-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk1-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk1-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk2-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk2-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk3-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk3-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk4-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk4-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk5-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk5-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk6-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk6-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk7-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk7-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk8-u2da76fa0d2/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/chnk8-u2da76fa0d2/files/kmeans_h5.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/join-u2da76fa0d1/files/kmeans_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_KMEANS/fork0/join-u2da76fa0d1/files/kmeans_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-04-08T17:33:21-07:00",
+            "DeltaBytes": 6966
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:26-07:00",
+            "DeltaBytes": 1976533
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:30-07:00",
+            "DeltaBytes": 1883421
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:31.288948102-07:00",
+            "DeltaBytes": -1916578
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:56.73124741-07:00",
+            "DeltaBytes": -1872550
+        }
+    ]
+}

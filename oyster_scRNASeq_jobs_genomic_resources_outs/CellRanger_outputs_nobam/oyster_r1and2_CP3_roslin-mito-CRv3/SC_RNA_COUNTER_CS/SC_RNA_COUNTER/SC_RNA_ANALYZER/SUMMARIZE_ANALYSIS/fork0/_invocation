@@ -1,0 +1,23 @@
+@include "_sc_rna_analyzer_stages.mro"
+
+call SUMMARIZE_ANALYSIS(
+    matrix_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-ubfcf6f713e/files/preprocessed_matrix_h5.h5",
+    pca_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-ubfcf6f72ee/files/pca_h5.h5",
+    clustering_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-ubfcf6f7326/files/clustering_h5.h5",
+    diffexp_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-ubfcf6f7327/files/diffexp_h5.h5",
+    tsne_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_TSNE/fork0/join-ubfcf6f72ef/files/tsne_h5.h5",
+    umap_h5 = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-ubfcf6f72ef/files/umap_h5.h5",
+    pca_csv = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-ubfcf6f72ee/files/pca_csv",
+    clustering_csv = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-ubfcf6f7326/files/clustering_csv",
+    diffexp_csv = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-ubfcf6f7327/files/diffexp_csv",
+    tsne_csv = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_TSNE/fork0/join-ubfcf6f72ef/files/tsne_csv",
+    umap_csv = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-ubfcf6f72ef/files/umap_csv",
+    multi_genome_summary = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-ubfcf6f72d7/files/multi_genome_summary.json",
+    multi_genome_csv = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-ubfcf6f72d7/files/multi_genome_csv",
+    multi_genome_json = "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-ubfcf6f72d7/files/multi_genome_json",
+    is_multi_genome = false,
+    chemistry_batch_correction = false,
+    batch_score_before_correction = null,
+    batch_score_after_correction = null,
+    skip = false,
+)

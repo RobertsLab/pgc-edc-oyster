@@ -1,0 +1,10 @@
+[stdout]
+Median UMIs of initial cell calls: 1864.0
+Min UMIs: 500
+Number of candidate bcs: 20000
+Range candidate bc umis: 1144, 1421
+Number of distinct N supplied: 278
+Range of N: 277
+Number of features: 28830
+....................................................................................................
+291442750 10153705 (38222, 7625)

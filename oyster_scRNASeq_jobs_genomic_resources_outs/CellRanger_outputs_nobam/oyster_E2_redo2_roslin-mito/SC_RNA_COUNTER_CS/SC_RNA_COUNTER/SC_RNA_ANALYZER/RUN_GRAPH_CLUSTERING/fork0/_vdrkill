@@ -1,0 +1,38 @@
+{
+    "count": 10,
+    "size": 48778661,
+    "timestamp": "2021-10-10 20:05:38",
+    "paths": [
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/chnk0-u0a9c63a9e2/files/chunked_neighbors.h5",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u0a9c63a9e1/files/clusters_csv",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u0a9c63a9e1/files/louvain.out",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u0a9c63a9e1/files/matrix.bin",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u0a9c63a9e1/files/0_submatrix.h5",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u0a9c63a9e1/files/neighbor_index.pickle",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u0a9c63a9e1/files/use_bcs.h5",
+        "/home/mgavery/oyster_E2_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u0a9c63a9e1/files/clusters_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-10-10T20:05:05-07:00",
+            "DeltaBytes": 1269121
+        },
+        {
+            "Timestamp": "2021-10-10T20:05:06-07:00",
+            "DeltaBytes": 38696158
+        },
+        {
+            "Timestamp": "2021-10-10T20:05:11-07:00",
+            "DeltaBytes": 8837809
+        },
+        {
+            "Timestamp": "2021-10-10T20:05:20.888268431-07:00",
+            "DeltaBytes": -48763651
+        },
+        {
+            "Timestamp": "2021-10-10T20:05:38.408994085-07:00",
+            "DeltaBytes": -15010
+        }
+    ]
+}

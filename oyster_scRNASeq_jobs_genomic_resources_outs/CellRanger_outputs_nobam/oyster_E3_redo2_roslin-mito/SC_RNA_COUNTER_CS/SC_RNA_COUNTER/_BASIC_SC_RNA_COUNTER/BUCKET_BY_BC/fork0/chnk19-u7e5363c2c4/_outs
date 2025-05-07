@@ -1,0 +1,21 @@
+{
+    "buckets": {
+        "CG-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-CG-1.bam", 
+        "TG-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-TG-1.bam", 
+        "CT-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-CT-1.bam", 
+        "GG-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-GG-1.bam", 
+        "TC-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-TC-1.bam", 
+        "GA-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-GA-1.bam", 
+        "CA-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-CA-1.bam", 
+        "CC-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-CC-1.bam", 
+        "AT-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-AT-1.bam", 
+        "GT-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-GT-1.bam", 
+        "AC-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-AC-1.bam", 
+        "AA-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-AA-1.bam", 
+        "AG-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-AG-1.bam", 
+        "GC-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-GC-1.bam", 
+        "TA-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-TA-1.bam", 
+        "TT-1": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-TT-1.bam", 
+        "": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/BUCKET_BY_BC/fork0/chnk19-u7e5363c2c4/files/bc-.bam"
+    }
+}

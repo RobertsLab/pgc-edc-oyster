@@ -1,0 +1,29 @@
+[stdout]
+(26454, 17285) 16863273
+(17285, 10)
+413200
+[2473 2201 2196 1968 1372 1188 1077  952  838  649  506  468  417  343
+  310  222  105]
+max=16
+Comparing clusters (1,2)
+	Computing params on (26454,4674) matrix
+	Running DE on 2473 vs 2201 cells
+	Found 0 DE genes. Merging clusters (1,2)
+652180
+[4674 2196 1968 1372 1188 1077  952  838  649  506  468  417  343  310
+  222  105]
+max=15
+Comparing clusters (1,3)
+	Computing params on (26454,6642) matrix
+	Running DE on 4674 vs 1968 cells
+	Found 0 DE genes. Merging clusters (1,3)
+786104
+[6642 2196 1372 1188 1077  952  838  649  506  468  417  343  310  222
+  105]
+max=14
+Comparing clusters (1,6)
+	Computing params on (26454,7594) matrix
+	Running DE on 6642 vs 952 cells
+Comparing clusters (9,10)
+	Computing params on (26454,974) matrix
+	Running DE on 506 vs 468 cells

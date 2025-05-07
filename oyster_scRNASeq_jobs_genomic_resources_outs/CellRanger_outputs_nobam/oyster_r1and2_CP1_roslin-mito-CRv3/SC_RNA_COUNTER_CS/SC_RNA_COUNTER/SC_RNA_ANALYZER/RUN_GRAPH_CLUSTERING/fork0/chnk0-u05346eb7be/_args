@@ -1,0 +1,21 @@
+{
+    "__mem_gb": 1,
+    "__threads": 1,
+    "__vmem_gb": 4,
+    "balltree_leaf_size": null,
+    "input_pcs": null,
+    "k_nearest": 236,
+    "matrix_h5": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u05346eb5b0/files/preprocessed_matrix_h5.h5",
+    "neighbor_a": null,
+    "neighbor_b": null,
+    "neighbor_index": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u05346eb7bd/files/neighbor_index.pickle",
+    "num_bcs": null,
+    "num_neighbors": null,
+    "pca_h5": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-u05346eb7bd/files/pca_h5.h5",
+    "row_start": 0,
+    "similarity_type": "nn",
+    "skip": false,
+    "submatrix": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u05346eb7bd/files/0_submatrix.h5",
+    "total_rows": 7625,
+    "use_bcs": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u05346eb7bd/files/use_bcs.h5"
+}

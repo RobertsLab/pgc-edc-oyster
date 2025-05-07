@@ -1,0 +1,16 @@
+{
+    "chunks": [
+        {
+            "total_rows": 7625, 
+            "row_start": 0, 
+            "neighbor_index": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u05346eb7bd/files/neighbor_index.pickle", 
+            "submatrix": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u05346eb7bd/files/0_submatrix.h5", 
+            "k_nearest": 236, 
+            "use_bcs": "/home/mgavery/oyster_r1and2_CP1_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u05346eb7bd/files/use_bcs.h5"
+        }
+    ], 
+    "join": {
+        "__threads": 1, 
+        "__mem_gb": 3
+    }
+}

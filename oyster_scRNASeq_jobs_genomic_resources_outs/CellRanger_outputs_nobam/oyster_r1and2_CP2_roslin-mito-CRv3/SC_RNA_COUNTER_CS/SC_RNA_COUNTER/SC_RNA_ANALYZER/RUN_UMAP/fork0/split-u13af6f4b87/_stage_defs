@@ -1,0 +1,13 @@
+{
+    "chunks": [
+        {
+            "__threads": 4, 
+            "__mem_gb": 3, 
+            "umap_dims": 2, 
+            "feature_type": "Gene Expression"
+        }
+    ], 
+    "join": {
+        "__mem_gb": 1
+    }
+}

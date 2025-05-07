@@ -1,0 +1,21 @@
+{
+    "batch_score_after_correction": null,
+    "batch_score_before_correction": null,
+    "chemistry_batch_correction": false,
+    "clustering_csv": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-u315963d45c/files/clustering_csv",
+    "clustering_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/COMBINE_CLUSTERING/fork0/chnk0-u315963d45c/files/clustering_h5.h5",
+    "diffexp_csv": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-u315963d45d/files/diffexp_csv",
+    "diffexp_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_DIFFERENTIAL_EXPRESSION/fork0/join-u315963d45d/files/diffexp_h5.h5",
+    "is_multi_genome": false,
+    "matrix_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u315963d27f/files/preprocessed_matrix_h5.h5",
+    "multi_genome_csv": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-u315963d42c/files/multi_genome_csv",
+    "multi_genome_json": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-u315963d42c/files/multi_genome_json",
+    "multi_genome_summary": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_MULTIGENOME_ANALYSIS/fork0/join-u315963d42c/files/multi_genome_summary.json",
+    "pca_csv": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-u315963d43d/files/pca_csv",
+    "pca_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-u315963d43d/files/pca_h5.h5",
+    "skip": false,
+    "tsne_csv": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_TSNE/fork0/join-u315963d43d/files/tsne_csv",
+    "tsne_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_TSNE/fork0/join-u315963d43d/files/tsne_h5.h5",
+    "umap_csv": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u315963d43d/files/umap_csv",
+    "umap_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_UMAP/fork0/join-u315963d43d/files/umap_h5.h5"
+}

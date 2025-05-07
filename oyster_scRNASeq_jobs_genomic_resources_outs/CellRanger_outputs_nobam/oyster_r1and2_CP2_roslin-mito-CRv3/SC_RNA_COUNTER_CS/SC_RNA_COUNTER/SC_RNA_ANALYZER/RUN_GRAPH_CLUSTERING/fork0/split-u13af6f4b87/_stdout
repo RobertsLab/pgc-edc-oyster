@@ -1,0 +1,17 @@
+[stdout]
+load	self_premaxrss_mb	106.9
+load	children_premaxrss_mb	106.9
+load	self_postmaxrss_mb	116.7
+load	children_postmaxrss_mb	45.4
+load	elapsed_sec	0
+nn_build	self_premaxrss_mb	116.7
+nn_build	children_premaxrss_mb	116.7
+nn_build	self_postmaxrss_mb	116.7
+nn_build	children_postmaxrss_mb	45.4
+nn_build	elapsed_sec	0
+Using 284 neighbors
+chunk_pca	self_premaxrss_mb	116.7
+chunk_pca	children_premaxrss_mb	116.7
+chunk_pca	self_postmaxrss_mb	116.7
+chunk_pca	children_postmaxrss_mb	45.4
+chunk_pca	elapsed_sec	0

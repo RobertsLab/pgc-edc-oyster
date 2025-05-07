@@ -1,0 +1,38 @@
+{
+    "count": 10,
+    "size": 70314790,
+    "timestamp": "2021-04-08 17:33:56",
+    "paths": [
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/chnk0-u2da76fa0d2/files/chunked_neighbors.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u2da76fa0d1/files/clusters_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u2da76fa0d1/files/louvain.out",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u2da76fa0d1/files/matrix.bin",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u2da76fa0d1/files/0_submatrix.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u2da76fa0d1/files/neighbor_index.pickle",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/split-u2da76fa0d1/files/use_bcs.h5",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/RUN_GRAPH_CLUSTERING/fork0/join-u2da76fa0d1/files/clusters_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-04-08T17:33:21-07:00",
+            "DeltaBytes": 1688310
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:22-07:00",
+            "DeltaBytes": 55490526
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:28-07:00",
+            "DeltaBytes": 13160932
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:39.836414808-07:00",
+            "DeltaBytes": -70299510
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:56.00074418-07:00",
+            "DeltaBytes": -15280
+        }
+    ]
+}

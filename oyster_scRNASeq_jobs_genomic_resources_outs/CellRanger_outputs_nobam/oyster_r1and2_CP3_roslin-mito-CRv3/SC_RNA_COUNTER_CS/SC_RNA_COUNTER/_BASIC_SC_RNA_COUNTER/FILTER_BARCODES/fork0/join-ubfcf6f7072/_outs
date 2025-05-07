@@ -1,0 +1,8 @@
+{
+    "nonambient_calls": null, 
+    "filtered_matrices_h5": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/filtered_matrices_h5.h5", 
+    "aggregate_barcodes": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/aggregate_barcodes.csv", 
+    "filtered_barcodes": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/filtered_barcodes.csv", 
+    "summary": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/summary.json", 
+    "filtered_matrices_mex": "/home/mgavery/oyster_r1and2_CP3_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-ubfcf6f7072/files/filtered_matrices_mex"
+}

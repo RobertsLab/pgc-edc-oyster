@@ -1,0 +1,30 @@
+@include "_common_stages.mro"
+
+call DISABLE_FEATURE_STAGES(
+    sample_def = [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "E2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo/outs/fastq_path/HGKT3BGXK"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "E2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo_2/outs/fastq_path/HHLK5BGXJ"
+        }
+    ],
+)

@@ -1,0 +1,18 @@
+[stdout]
+(26861, 9359) 11763234
+(9359, 10)
+331668
+[1807 1440  993  790  778  643  530  512  457  387  296  293  249  184]
+max=13
+Comparing clusters (1,2)
+	Computing params on (26861,3247) matrix
+	Running DE on 1807 vs 1440 cells
+Comparing clusters (5,8)
+	Computing params on (26861,1290) matrix
+	Running DE on 778 vs 512 cells
+Comparing clusters (13,14)
+	Computing params on (26861,433) matrix
+	Running DE on 249 vs 184 cells
+Comparing clusters (7,11)
+	Computing params on (26861,826) matrix
+	Running DE on 530 vs 296 cells

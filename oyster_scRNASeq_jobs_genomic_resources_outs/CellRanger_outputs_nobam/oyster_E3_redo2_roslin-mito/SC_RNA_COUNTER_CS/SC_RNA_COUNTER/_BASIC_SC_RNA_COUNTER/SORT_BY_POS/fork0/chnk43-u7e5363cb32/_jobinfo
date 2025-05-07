@@ -1,0 +1,176 @@
+{
+    "name": "ID.oyster_E3_redo2_roslin-mito.SC_RNA_COUNTER_CS.SC_RNA_COUNTER._BASIC_SC_RNA_COUNTER.SORT_BY_POS.fork0.chnk43",
+    "pid": 2738461,
+    "host": "node07.cluster",
+    "type": "local",
+    "cwd": "/home/mgavery/oyster_E3_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SORT_BY_POS/fork0/chnk43-u7e5363cb32/files",
+    "python": {
+        "binpath": "/opt/bioinformatics/bio/cellranger/cellranger-3.1.0/miniconda-cr-cs/4.3.21-miniconda-cr-cs-c10/bin/python",
+        "version": "2.7.14 |Anaconda, Inc.| (default, Mar 27 2018, 17:29:31) \n[GCC 7.2.0]"
+    },
+    "rusage": {
+        "self": {
+            "ru_maxrss": 30724,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 453,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 0.00301,
+            "ru_stime": 0.011666,
+            "ru_inblock": 8,
+            "ru_oublock": 48,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 0
+        },
+        "children": {
+            "ru_maxrss": 846552,
+            "ru_ixrss": 0,
+            "ru_idrss": 0,
+            "ru_minflt": 74413,
+            "ru_majflt": 0,
+            "ru_nswap": 0,
+            "ru_utime": 113.925914,
+            "ru_stime": 1.928595,
+            "ru_inblock": 8,
+            "ru_oublock": 1546912,
+            "ru_msgsnd": 0,
+            "ru_msgrcv": 0,
+            "ru_nsignals": 0,
+            "ru_nivcsw": 254
+        }
+    },
+    "used_bytes": {
+        "rss": 955600896,
+        "shared": 38678528,
+        "vmem": 2029424640,
+        "text": 2904064,
+        "stack": 1085407232,
+        "proc_count": 24
+    },
+    "io": {
+        "total": {
+            "read": {
+                "sysc": 30109,
+                "bytes": 768475136
+            },
+            "write": {
+                "sysc": 849,
+                "bytes": 0
+            }
+        },
+        "max": {
+            "read": {
+                "sysc": 1390.0747926272486,
+                "bytes": 18453091.239049893
+            },
+            "write": {
+                "sysc": 17.598239172983067,
+                "bytes": 0
+            }
+        },
+        "dev": {
+            "read": {
+                "sysc": 330.77490641217844,
+                "bytes": 4650369.554438816
+            },
+            "write": {
+                "sysc": 4.1568359138341595,
+                "bytes": 0
+            }
+        }
+    },
+    "wallclock": {
+        "start": "2021-10-10 22:31:23",
+        "end": "2021-10-10 22:33:06",
+        "duration_seconds": 103.739264037
+    },
+    "threads": 1,
+    "memGB": 2,
+    "vmemGB": 5,
+    "profile_mode": "disable",
+    "stackvars_flag": "disable",
+    "monitor_flag": "disable",
+    "invocation": {
+        "call": "SC_RNA_COUNTER_CS",
+        "args": {
+            "chemistry": "SC3Pv3",
+            "feature_reference": null,
+            "force_cells": null,
+            "no_secondary_analysis": false,
+            "r1_length": null,
+            "r2_length": null,
+            "recovered_cells": null,
+            "reference_path": "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+            "sample_def": [
+                {
+                    "gem_group": null,
+                    "lanes": null,
+                    "sample_names": [
+                        "E3"
+                    ],
+                    "sample_indices": [
+                        "any"
+                    ],
+                    "fastq_mode": "ILMN_BCL2FASTQ",
+                    "read_path": "/home/mgavery/oyster_embryo_r2-redo/outs/fastq_path/HGKT3BGXK"
+                },
+                {
+                    "gem_group": null,
+                    "lanes": null,
+                    "sample_names": [
+                        "E3"
+                    ],
+                    "sample_indices": [
+                        "any"
+                    ],
+                    "fastq_mode": "ILMN_BCL2FASTQ",
+                    "read_path": "/home/mgavery/oyster_embryo_r2-redo_2/outs/fastq_path/HHLK5BGXJ"
+                }
+            ],
+            "sample_desc": "",
+            "sample_id": "oyster_E3_redo2_roslin-mito"
+        },
+        "sweepargs": []
+    },
+    "version": {
+        "martian": "'3.1.0-v3.2.3'",
+        "pipelines": "3.1.0"
+    },
+    "sge": {
+        "SLURM_CLUSTER_NAME": "sedna",
+        "SLURM_CONF": "/opt/slurm/slurm.conf",
+        "SLURM_CPUS_ON_NODE": "20",
+        "SLURM_CPUS_PER_TASK": "20",
+        "SLURM_GTIDS": "0",
+        "SLURM_JOBID": "96186",
+        "SLURM_JOB_ACCOUNT": "nwfsc",
+        "SLURM_JOB_CPUS_PER_NODE": "20",
+        "SLURM_JOB_GID": "1109",
+        "SLURM_JOB_ID": "96186",
+        "SLURM_JOB_NAME": "CellRanger_count_E3_redo2_roslin-mito",
+        "SLURM_JOB_NODELIST": "node07",
+        "SLURM_JOB_NUM_NODES": "1",
+        "SLURM_JOB_PARTITION": "node",
+        "SLURM_JOB_QOS": "normal",
+        "SLURM_JOB_UID": "1109",
+        "SLURM_JOB_USER": "mgavery",
+        "SLURM_LOCALID": "0",
+        "SLURM_MEM_PER_CPU": "4700",
+        "SLURM_NNODES": "1",
+        "SLURM_NODEID": "0",
+        "SLURM_NODELIST": "node07",
+        "SLURM_NODE_ALIASES": "(null)",
+        "SLURM_PRIO_PROCESS": "0",
+        "SLURM_PROCID": "0",
+        "SLURM_SUBMIT_DIR": "/home/mgavery/job_files",
+        "SLURM_SUBMIT_HOST": "sedna.cluster",
+        "SLURM_TASKS_PER_NODE": "1",
+        "SLURM_TASK_PID": "2719273",
+        "SLURM_TOPOLOGY_ADDR": "node07",
+        "SLURM_TOPOLOGY_ADDR_PATTERN": "node",
+        "SLURM_WORKING_CLUSTER": "sedna:sedna.cluster:6817:8960:109"
+    }
+}

@@ -1,0 +1,37 @@
+@include "_common_stages.mro"
+
+call SETUP_CHUNKS(
+    sample_id = "oyster_r1and2_CP1_roslin-mito-CRv3",
+    sample_def = [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "CP1",
+                "CP1_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/HHWNKBGXF"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "CP1",
+                "CP1_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path/HHWHYBGXF"
+        }
+    ],
+    library_type_filter = null,
+    chemistry_name = "SC3Pv3",
+    custom_chemistry_def = null,
+    default_library_type = null,
+)

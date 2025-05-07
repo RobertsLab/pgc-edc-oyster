@@ -1,0 +1,11 @@
+{
+    "exclude_genes": null,
+    "force_cells": null,
+    "is_antibody_only": false,
+    "matrix_h5": "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u13af6f490c/files/filtered_matrices_h5.h5",
+    "num_bcs": null,
+    "random_seed": null,
+    "skip": false,
+    "use_bcs": null,
+    "use_genes": null
+}

@@ -1,0 +1,97 @@
+[stderr]
+HDF5-DIAG: Error detected in HDF5 (1.8.18) thread 23281535010560:
+  #000: H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: H5Gloc.c line 385 in H5G_loc_find_cb(): object 'pattern' doesn't exist
+    major: Symbol table
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.8.18) thread 23281535010560:
+  #000: H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: H5Gloc.c line 385 in H5G_loc_find_cb(): object 'read' doesn't exist
+    major: Symbol table
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.8.18) thread 23281535010560:
+  #000: H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: H5Gloc.c line 385 in H5G_loc_find_cb(): object 'sequence' doesn't exist
+    major: Symbol table
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.8.18) thread 23281610958592:
+  #000: H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: H5Gloc.c line 385 in H5G_loc_find_cb(): object 'pattern' doesn't exist
+    major: Symbol table
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.8.18) thread 23281610958592:
+  #000: H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: H5Gloc.c line 385 in H5G_loc_find_cb(): object 'read' doesn't exist
+    major: Symbol table
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.8.18) thread 23281610958592:
+  #000: H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: H5Gloc.c line 385 in H5G_loc_find_cb(): object 'sequence' doesn't exist
+    major: Symbol table
+    minor: Object not found

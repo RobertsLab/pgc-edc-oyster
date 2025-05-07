@@ -1,0 +1,28 @@
+{
+    "count": 4,
+    "size": 213310,
+    "timestamp": "2021-04-08 17:33:56",
+    "paths": [
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/MERGE_CLUSTERS/fork0/join-u2da76fa0e3/files/clusters_csv",
+        "/home/mgavery/oyster_r1and2_Bla_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/MERGE_CLUSTERS/fork0/join-u2da76fa0e3/files/clusters_h5.h5"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-04-08T17:33:39-07:00",
+            "DeltaBytes": 6445
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:41-07:00",
+            "DeltaBytes": 6750
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:42-07:00",
+            "DeltaBytes": 221350
+        },
+        {
+            "Timestamp": "2021-04-08T17:33:56.737433825-07:00",
+            "DeltaBytes": -213310
+        }
+    ]
+}

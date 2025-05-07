@@ -1,0 +1,12 @@
+{
+    "balltree_leaf_size": null,
+    "input_pcs": null,
+    "matrix_h5": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u9fbc6378c5/files/preprocessed_matrix_h5.h5",
+    "neighbor_a": null,
+    "neighbor_b": null,
+    "num_bcs": null,
+    "num_neighbors": null,
+    "pca_h5": "/home/mgavery/oyster_E1_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/CHOOSE_DIMENSION_REDUCTION_OUTPUT/fork0/chnk0-u9fbc637a89/files/pca_h5.h5",
+    "similarity_type": "nn",
+    "skip": false
+}

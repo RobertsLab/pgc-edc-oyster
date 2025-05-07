@@ -1,0 +1,53 @@
+@include "chemistry_detector.mro"
+
+call CHEMISTRY_DETECTOR(
+    sample_id = "oyster_r1and2_Bla_roslin-mito-CRv3",
+    sample_def = [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/HHWNKBGXF"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path/HHWHYBGXF"
+        }
+    ],
+    reference_path = "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    vdj_reference_path = null,
+    chemistry_name_spec = "SC3Pv3",
+    allowed_chems = [
+        "auto",
+        "custom",
+        "threeprime",
+        "fiveprime",
+        "SC3P_auto",
+        "SC5P_auto",
+        "SC3Pv1",
+        "SC3Pv2",
+        "SC3Pv3",
+        "SC5P-PE",
+        "SC5P-R2",
+        "SC5P-R1",
+        "SC-FB"
+    ],
+    r1_length = null,
+    r2_length = null,
+)

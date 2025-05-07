@@ -1,0 +1,13 @@
+@include "_cloupe_stages.mro"
+
+call CLOUPE_PREPROCESS(
+    pipestance_type = "SC_RNA_COUNTER_CS",
+    sample_id = "oyster_r1and2_CP2_roslin-mito-CRv3",
+    sample_desc = "",
+    analysis = "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/SUMMARIZE_ANALYSIS/fork0/join-u13af6f4c6a/files/analysis",
+    filtered_gene_bc_matrices_h5 = "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u13af6f490c/files/filtered_matrices_h5.h5",
+    metrics_json = "/home/mgavery/oyster_r1and2_CP2_roslin-mito-CRv3/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SUMMARIZE_REPORTS/fork0/chnk0-u13af6f4d67/files/metrics_summary_json.json",
+    aggregation_csv = null,
+    gem_group_index_json = null,
+    no_secondary_analysis = false,
+)

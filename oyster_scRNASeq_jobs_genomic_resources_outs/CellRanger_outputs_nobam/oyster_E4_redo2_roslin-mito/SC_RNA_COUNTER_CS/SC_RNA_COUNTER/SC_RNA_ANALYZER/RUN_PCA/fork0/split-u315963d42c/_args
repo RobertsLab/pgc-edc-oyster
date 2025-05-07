@@ -1,0 +1,9 @@
+{
+    "is_antibody_only": false,
+    "matrix_h5": "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/SC_RNA_ANALYZER/PREPROCESS_MATRIX/fork0/join-u315963d27f/files/preprocessed_matrix_h5.h5",
+    "num_bcs": null,
+    "num_genes": null,
+    "num_pcs": null,
+    "random_seed": null,
+    "skip": false
+}

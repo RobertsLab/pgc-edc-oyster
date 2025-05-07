@@ -1,0 +1,52 @@
+{
+    "__mem_gb": 8,
+    "__threads": 1,
+    "__vmem_gb": 11,
+    "allowed_chems": [
+        "auto",
+        "custom",
+        "threeprime",
+        "fiveprime",
+        "SC3P_auto",
+        "SC5P_auto",
+        "SC3Pv1",
+        "SC3Pv2",
+        "SC3Pv3",
+        "SC5P-PE",
+        "SC5P-R2",
+        "SC5P-R1",
+        "SC-FB"
+    ],
+    "chemistry_name_spec": "SC3Pv3",
+    "r1_length": null,
+    "r2_length": null,
+    "reference_path": "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    "sample_def": [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "E2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo/outs/fastq_path/HGKT3BGXK"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "E2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo_2/outs/fastq_path/HHLK5BGXJ"
+        }
+    ],
+    "sample_id": "oyster_E2_redo2_roslin-mito",
+    "vdj_reference_path": null
+}

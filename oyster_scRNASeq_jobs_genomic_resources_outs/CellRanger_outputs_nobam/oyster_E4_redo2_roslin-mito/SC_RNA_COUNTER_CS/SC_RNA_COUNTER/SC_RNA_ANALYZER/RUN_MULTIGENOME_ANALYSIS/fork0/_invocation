@@ -1,0 +1,8 @@
+@include "_sc_rna_analyzer_stages.mro"
+
+call RUN_MULTIGENOME_ANALYSIS(
+    raw_matrices_h5 = "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/COUNT_GENES/fork0/join-u315963c9be/files/matrices_h5.h5",
+    filtered_matrices_h5 = "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/FILTER_BARCODES/fork0/join-u315963d175/files/filtered_matrices_h5.h5",
+    is_multi_genome = false,
+    skip = false,
+)

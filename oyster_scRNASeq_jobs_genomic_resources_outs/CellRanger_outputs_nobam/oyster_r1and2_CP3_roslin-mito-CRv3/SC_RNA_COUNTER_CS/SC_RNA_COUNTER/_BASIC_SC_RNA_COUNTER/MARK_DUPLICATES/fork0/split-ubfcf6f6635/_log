@@ -1,0 +1,36 @@
+2021-04-08 13:23:17 [time] __start__
+2021-04-08 13:23:17 [monitor] cgroup memory limit of 98566144000 bytes detected
+[2021-04-08 13:23:19][INFO] Found first block at real offset 4002
+[2021-04-08 13:24:47][INFO] Found 1765513 blocks
+[2021-04-08 13:24:47][INFO] size_gb=20.876758168, chunk_size_gb=0.5, num_chunks=42
+[2021-04-08 13:24:47][INFO] Found first block at real offset 4002
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+[2021-04-08 13:24:47][WARN] Taking a long time to find a chunk boundary. Check your chunk_bound_key function?
+2021-04-08 13:25:04 [time] __end__

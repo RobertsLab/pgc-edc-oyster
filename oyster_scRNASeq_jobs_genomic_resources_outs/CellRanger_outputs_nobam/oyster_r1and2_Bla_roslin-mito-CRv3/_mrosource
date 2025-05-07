@@ -1,0 +1,2035 @@
+#
+# @include "_chemistry_detector_stages.mro"
+#
+
+filetype fastq;
+filetype json;
+filetype txt;
+#
+# @include "_sc_rna_analyzer_stages.mro"
+#
+
+#
+# Copyright (c) 2019 10X Genomics, Inc. All rights reserved.
+#
+filetype csv;
+filetype h5;
+filetype html;
+filetype json;
+filetype pickle;
+filetype binary;
+#
+# @include "_common_stages.mro"
+#
+
+#
+# Copyright (c) 2017 10X Genomics, Inc. All rights reserved.
+#
+filetype bam;
+filetype bam.bai;
+filetype csv;
+filetype fastq;
+filetype json;
+filetype pickle;
+#
+# @include "_basic_sc_rna_counter_stages.mro"
+#
+
+#
+# Copyright (c) 2019 10X Genomics, Inc. All rights reserved.
+#
+filetype bam;
+filetype bam.bai;
+filetype csv;
+filetype fastq;
+filetype json;
+filetype h5;
+filetype pickle;
+filetype bincode;
+#
+# @include "_sc_rna_counter_stages.mro"
+#
+
+#
+# Copyright (c) 2015 10X Genomics, Inc. All rights reserved.
+#
+filetype csv;
+filetype json;
+filetype h5;
+filetype html;
+#
+# @include "_sc_crispr_analyzer_stages.mro"
+#
+
+#
+# Copyright (c) 2018 10X Genomics, Inc. All rights reserved.
+#
+filetype csv;
+filetype pdf;
+filetype h5;
+filetype json;
+#
+# @include "_crispr_analyzer.mro"
+#
+
+filetype pdf;
+filetype csv;
+filetype h5;
+filetype json;
+#
+# @include "_cloupe_stages.mro"
+#
+
+#
+# Copyright (c) 2016 10X Genomics, Inc. All rights reserved.
+#
+filetype cloupe;
+filetype csv;
+filetype json;
+filetype h5;
+
+#
+# @include "_chemistry_detector_stages.mro"
+#
+
+stage DETECT_CHEMISTRY(
+    in  string   sample_id,
+    in  map[]    sample_def,
+    in  path     reference_path,
+    in  path     vdj_reference_path,
+    in  string   chemistry_name_spec  "Specified chemistry name",
+    in  string[] allowed_chems        "Restricted set of chem names",
+    in  int      r1_length,
+    in  int      r2_length,
+    out json     summary,
+    out string   chemistry_type,
+    out txt      report,
+    out bool     is_antibody_only,
+    src py       "stages/chemistry_detector/detect_chemistry",
+) using (
+    mem_gb   = 8,
+    volatile = strict,
+)
+
+#
+# @include "chemistry_detector.mro"
+#
+
+pipeline CHEMISTRY_DETECTOR(
+    in  string   sample_id,
+    in  map[]    sample_def,
+    in  path     reference_path,
+    in  path     vdj_reference_path,
+    in  string   chemistry_name_spec,
+    in  string[] allowed_chems,
+    in  int      r1_length,
+    in  int      r2_length,
+    out json     summary,
+    out txt      report,
+    out string   chemistry_type,
+    out bool     is_antibody_only,
+)
+{
+    call DETECT_CHEMISTRY(
+        sample_id           = self.sample_id,
+        reference_path      = self.reference_path,
+        vdj_reference_path  = self.vdj_reference_path,
+        sample_def          = self.sample_def,
+        chemistry_name_spec = self.chemistry_name_spec,
+        allowed_chems       = self.allowed_chems,
+        r1_length           = self.r1_length,
+        r2_length           = self.r2_length,
+    )
+
+    return (
+        summary          = DETECT_CHEMISTRY.summary,
+        chemistry_type   = DETECT_CHEMISTRY.chemistry_type,
+        report           = DETECT_CHEMISTRY.report,
+        is_antibody_only = DETECT_CHEMISTRY.is_antibody_only,
+    )
+}
+
+#
+# @include "_sc_rna_analyzer_stages.mro"
+#
+
+stage ANALYZER_PREFLIGHT(
+    in  bool   skip,
+    in  h5     raw_matrices_h5,
+    in  h5     filtered_matrices_h5,
+    in  csv    use_genes,
+    in  csv    exclude_genes,
+    in  csv    use_bcs,
+    in  int    num_analysis_bcs,
+    in  int    force_cells,
+    in  int    random_seed,
+    in  int    num_pca_bcs,
+    in  int    num_pca_genes,
+    in  int    num_principal_comps,
+    in  int    cbc_knn,
+    in  float  cbc_alpha,
+    in  float  cbc_sigma,
+    in  bool   cbc_realign_panorama,
+    in  int    max_clusters,
+    in  int    graphclust_neighbors,
+    in  float  neighbor_a,
+    in  float  neighbor_b,
+    in  int    tsne_perplexity,
+    in  int    tsne_input_pcs,
+    in  int    tsne_max_dims,
+    in  int    tsne_max_iter,
+    in  int    tsne_stop_lying_iter,
+    in  int    tsne_mom_switch_iter,
+    in  float  tsne_theta,
+    in  int    umap_n_neighbors,
+    in  int    umap_input_pcs,
+    in  int    umap_max_dims,
+    in  float  umap_min_dist,
+    in  string umap_metric,
+    out bool   skip,
+    out bool   is_antibody_only,
+    src py     "stages/analyzer/analyzer_preflight",
+) using (
+    volatile = strict,
+)
+
+stage REANALYZER_PREFLIGHT(
+    in  h5 filtered_matrices_h5,
+    src py "stages/analyzer/reanalyzer_preflight",
+) using (
+    volatile = strict,
+)
+
+stage PREPROCESS_MATRIX(
+    in  h5   matrix_h5,
+    in  bool skip,
+    in  int  random_seed,
+    in  csv  use_genes,
+    in  csv  exclude_genes,
+    in  csv  use_bcs,
+    in  int  num_bcs,
+    in  int  force_cells,
+    in  bool is_antibody_only,
+    out h5   cloupe_matrix_h5,
+    out h5   preprocessed_matrix_h5,
+    out bool is_multi_genome,
+    src py   "stages/analyzer/preprocess_matrix",
+) split (
+) using (
+    volatile = strict,
+)
+
+stage RUN_MULTIGENOME_ANALYSIS(
+    in  h5   raw_matrices_h5,
+    in  h5   filtered_matrices_h5,
+    in  bool is_multi_genome,
+    in  bool skip,
+    out path multi_genome_csv,
+    out path multi_genome_json,
+    out json multi_genome_summary,
+    src py   "stages/analyzer/run_multigenome_analysis",
+) split (
+) using (
+    volatile = strict,
+)
+
+stage RUN_PCA(
+    in  h5   matrix_h5,
+    in  bool skip,
+    in  int  random_seed,
+    in  int  num_bcs,
+    in  int  num_genes,
+    in  int  num_pcs,
+    in  bool is_antibody_only,
+    out h5   pca_h5,
+    out path pca_csv,
+    src py   "stages/analyzer/run_pca",
+) split (
+) using (
+    volatile = strict,
+)
+
+stage RUN_KMEANS(
+    in  h5   matrix_h5,
+    in  h5   pca_h5,
+    in  bool skip,
+    in  int  random_seed,
+    in  int  max_clusters,
+    in  int  num_bcs,
+    in  int  num_pcs,
+    out h5   kmeans_h5,
+    out path kmeans_csv,
+    src py   "stages/analyzer/run_kmeans",
+) split (
+    in  int  n_clusters,
+) using (
+    volatile = strict,
+)
+
+stage RUN_GRAPH_CLUSTERING(
+    in  h5     matrix_h5,
+    in  h5     pca_h5,
+    in  int    num_neighbors       "Use this many neighbors",
+    in  float  neighbor_a          "Use larger of (a+b*log10(n_cells) neighbors or num_neighbors",
+    in  float  neighbor_b          "Use larger of (a+b*log10(n_cells) neighbors or num_neighbors",
+    in  int    num_bcs             "Use this many cell-barcodes in clustering",
+    in  int    input_pcs           "Use top N PCs",
+    in  int    balltree_leaf_size,
+    in  string similarity_type     "Type of similarity to use (nn or snn)",
+    in  bool   skip,
+    out h5     chunked_neighbors,
+    out h5     clusters_h5,
+    out path   clusters_csv,
+    src py     "stages/analyzer/run_graph_clustering",
+) split (
+    in  pickle neighbor_index,
+    in  h5     submatrix,
+    in  int    row_start,
+    in  int    total_rows,
+    in  int    k_nearest,
+    in  h5     use_bcs,
+) using (
+    volatile = strict,
+)
+
+stage MERGE_CLUSTERS(
+    in  h5   matrix_h5,
+    in  h5   pca_h5,
+    in  h5   clusters_h5,
+    in  bool skip,
+    out h5   clusters_h5,
+    out path clusters_csv,
+    src py   "stages/analyzer/merge_clusters",
+) split (
+) using (
+    volatile = strict,
+)
+
+stage COMBINE_CLUSTERING(
+    in  bool skip,
+    in  h5   kmeans_h5,
+    in  path kmeans_csv,
+    in  h5   graphclust_h5,
+    in  path graphclust_csv,
+    out h5   clustering_h5,
+    out path clustering_csv,
+    src py   "stages/analyzer/combine_clustering",
+) using (
+    volatile = strict,
+)
+
+stage RUN_DIFFERENTIAL_EXPRESSION(
+    in  h5     matrix_h5,
+    in  h5     clustering_h5,
+    in  bool   skip,
+    in  int    random_seed,
+    in  int    max_clusters,
+    in  bool   is_antibody_only,
+    out h5     diffexp_h5,
+    out path   diffexp_csv,
+    src py     "stages/analyzer/run_differential_expression",
+) split (
+    in  string clustering_key,
+) using (
+    volatile = strict,
+)
+
+stage RUN_TSNE(
+    in  h5     matrix_h5,
+    in  h5     pca_h5,
+    in  bool   skip,
+    in  int    random_seed,
+    in  int    perplexity,
+    in  int    input_pcs,
+    in  int    max_dims,
+    in  int    max_iter,
+    in  int    stop_lying_iter,
+    in  int    mom_switch_iter,
+    in  float  theta,
+    in  bool   is_antibody_only,
+    out h5     tsne_h5,
+    out path   tsne_csv,
+    src py     "stages/analyzer/run_tsne",
+) split (
+    in  int    tsne_dims,
+    in  string feature_type,
+) using (
+    volatile = strict,
+)
+
+stage RUN_UMAP(
+    in  h5     matrix_h5,
+    in  h5     pca_h5,
+    in  bool   skip,
+    in  int    random_seed,
+    in  int    n_neighbors,
+    in  int    input_pcs,
+    in  int    max_dims,
+    in  float  min_dist,
+    in  string metric,
+    in  bool   is_antibody_only,
+    out h5     umap_h5,
+    out path   umap_csv,
+    src py     "stages/analyzer/run_umap",
+) split (
+    in  int    umap_dims,
+    in  string feature_type,
+) using (
+    volatile = strict,
+)
+
+stage SUMMARIZE_ANALYSIS(
+    in  h5    matrix_h5,
+    in  h5    pca_h5,
+    in  h5    clustering_h5,
+    in  h5    diffexp_h5,
+    in  h5    tsne_h5,
+    in  h5    umap_h5,
+    in  path  pca_csv,
+    in  path  clustering_csv,
+    in  path  diffexp_csv,
+    in  path  tsne_csv,
+    in  path  umap_csv,
+    in  json  multi_genome_summary,
+    in  path  multi_genome_csv,
+    in  path  multi_genome_json,
+    in  bool  is_multi_genome,
+    in  bool  chemistry_batch_correction,
+    in  float batch_score_before_correction,
+    in  float batch_score_after_correction,
+    in  bool  skip,
+    out path  analysis,
+    out path  analysis_csv,
+    out json  summary,
+    src py    "stages/analyzer/summarize_analysis",
+) split (
+) using (
+    volatile = strict,
+)
+
+stage PARSE_PARAM_CSV(
+    in  csv    params_csv,
+    out csv    params_csv,
+    out int    num_analysis_bcs,
+    out int    random_seed,
+    out int    num_pca_bcs,
+    out int    num_pca_genes,
+    out int    num_principal_comps,
+    out int    cbc_knn,
+    out float  cbc_alpha,
+    out float  cbc_sigma,
+    out bool   cbc_realign_panorama,
+    out int    max_clusters,
+    out int    graphclust_neighbors,
+    out float  neighbor_a,
+    out float  neighbor_b,
+    out int    tsne_perplexity,
+    out int    tsne_input_pcs,
+    out int    tsne_max_dims,
+    out int    tsne_max_iter,
+    out int    tsne_stop_lying_iter,
+    out int    tsne_mom_switch_iter,
+    out float  tsne_theta,
+    out int    umap_n_neighbors,
+    out int    umap_input_pcs,
+    out int    umap_max_dims,
+    out float  umap_min_dist,
+    out string umap_metric,
+    src py     "stages/analyzer/parse_csv",
+) using (
+    volatile = strict,
+)
+
+stage SUMMARIZE_REANALYSIS(
+    in  string sample_id,
+    in  string sample_desc,
+    in  h5     filtered_matrices,
+    in  path   analysis,
+    in  json   analyze_matrices_summary,
+    out html   web_summary,
+    out json   summary,
+    src py     "stages/analyzer/summarize_reanalysis",
+) split (
+) using (
+    volatile = strict,
+)
+
+stage RUN_FBPCA(
+    in  h5     matrix_h5,
+    in  map[]  library_info,
+    in  int    num_pcs,
+    in  bool   skip,
+    in  bool   is_antibody_only,
+    out pickle dimred_matrix,
+    out pickle matrix_barcode_feature_info,
+    src py     "stages/analyzer/run_fbpca",
+) split (
+)
+
+stage CORRECT_CHEMISTRY_BATCH(
+    in  pickle dimred_matrix,
+    in  pickle matrix_barcode_feature_info,
+    in  map[]  library_info,
+    in  int    cbc_knn,
+    in  float  cbc_alpha,
+    in  float  cbc_sigma,
+    in  bool   cbc_realign_panorama,
+    in  bool   skip,
+    out float  batch_score_before_correction,
+    out float  batch_score_after_correction,
+    out h5     aligned_pca_h5,
+    out path   aligned_pca_csv,
+    src py     "stages/analyzer/correct_chemistry_batch",
+) split (
+    in  int    batch_id,
+    in  map    batch_to_bc_indices,
+    in  pickle ordered_dimred_matrix,
+    in  pickle idx_to_batch_id,
+    in  bool   need_reorder_barcode,
+    in  pickle barcode_reorder_index,
+    out binary batch_nearest_neighbor,
+) using (
+    mem_gb = 4,
+)
+
+stage CHOOSE_DIMENSION_REDUCTION(
+    in  bool chemistry_batch_correction,
+    out bool disable_run_pca,
+    out bool disable_correct_chemistry_batch,
+    src py   "stages/analyzer/choose_dimension_reduction",
+)
+
+stage CHOOSE_DIMENSION_REDUCTION_OUTPUT(
+    in  bool   skip,
+    in  h5[]   pca_h5_list,
+    in  path[] pca_csv_list,
+    out h5     pca_h5,
+    out path   pca_csv,
+    src py     "stages/analyzer/choose_dimension_reduction_output",
+)
+
+#
+# @include "sc_rna_analyzer.mro"
+#
+
+pipeline SC_RNA_ANALYZER(
+    in  h5     raw_matrices_h5,
+    in  h5     filtered_matrices_h5,
+    in  map[]  aggr_library_info,
+    in  bool   no_secondary_analysis,
+    in  csv    use_genes,
+    in  csv    exclude_genes,
+    in  csv    use_bcs,
+    in  int    num_analysis_bcs,
+    in  int    random_seed,
+    in  int    num_pca_bcs,
+    in  int    num_pca_genes,
+    in  int    num_principal_comps,
+    in  bool   chemistry_batch_correction,
+    in  int    cbc_knn,
+    in  float  cbc_alpha,
+    in  float  cbc_sigma,
+    in  bool   cbc_realign_panorama,
+    in  int    max_clusters,
+    in  int    graphclust_neighbors,
+    in  float  neighbor_a,
+    in  float  neighbor_b,
+    in  int    tsne_perplexity,
+    in  int    tsne_input_pcs,
+    in  int    tsne_max_dims,
+    in  int    tsne_max_iter,
+    in  int    tsne_stop_lying_iter,
+    in  int    tsne_mom_switch_iter,
+    in  float  tsne_theta,
+    in  int    umap_n_neighbors,
+    in  int    umap_input_pcs,
+    in  int    umap_max_dims,
+    in  float  umap_min_dist,
+    in  string umap_metric,
+    in  int    force_cells,
+    out path   analysis,
+    out path   analysis_csv,
+    out h5     cloupe_matrix_h5,
+    out json   summary,
+)
+{
+    call ANALYZER_PREFLIGHT(
+        skip                 = self.no_secondary_analysis,
+        raw_matrices_h5      = self.raw_matrices_h5,
+        filtered_matrices_h5 = self.filtered_matrices_h5,
+        use_genes            = self.use_genes,
+        exclude_genes        = self.exclude_genes,
+        use_bcs              = self.use_bcs,
+        num_analysis_bcs     = self.num_analysis_bcs,
+        force_cells          = self.force_cells,
+        random_seed          = self.random_seed,
+        num_pca_bcs          = self.num_pca_bcs,
+        num_pca_genes        = self.num_pca_genes,
+        num_principal_comps  = self.num_principal_comps,
+        cbc_knn              = self.cbc_knn,
+        cbc_alpha            = self.cbc_alpha,
+        cbc_sigma            = self.cbc_sigma,
+        cbc_realign_panorama = self.cbc_realign_panorama,
+        max_clusters         = self.max_clusters,
+        graphclust_neighbors = self.graphclust_neighbors,
+        neighbor_a           = self.neighbor_a,
+        neighbor_b           = self.neighbor_b,
+        tsne_perplexity      = self.tsne_perplexity,
+        tsne_input_pcs       = self.tsne_input_pcs,
+        tsne_max_dims        = self.tsne_max_dims,
+        tsne_max_iter        = self.tsne_max_iter,
+        tsne_stop_lying_iter = self.tsne_stop_lying_iter,
+        tsne_mom_switch_iter = self.tsne_mom_switch_iter,
+        tsne_theta           = self.tsne_theta,
+        umap_n_neighbors     = self.umap_n_neighbors,
+        umap_input_pcs       = self.umap_input_pcs,
+        umap_max_dims        = self.umap_max_dims,
+        umap_min_dist        = self.umap_min_dist,
+        umap_metric          = self.umap_metric,
+    ) using (
+        volatile = true,
+    )
+
+    call PREPROCESS_MATRIX(
+        matrix_h5        = self.filtered_matrices_h5,
+        random_seed      = self.random_seed,
+        use_genes        = self.use_genes,
+        exclude_genes    = self.exclude_genes,
+        use_bcs          = self.use_bcs,
+        num_bcs          = self.num_analysis_bcs,
+        force_cells      = self.force_cells,
+        is_antibody_only = ANALYZER_PREFLIGHT.is_antibody_only,
+        skip             = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call RUN_MULTIGENOME_ANALYSIS(
+        raw_matrices_h5      = self.raw_matrices_h5,
+        filtered_matrices_h5 = self.filtered_matrices_h5,
+        is_multi_genome      = PREPROCESS_MATRIX.is_multi_genome,
+        skip                 = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call CHOOSE_DIMENSION_REDUCTION(
+        chemistry_batch_correction = self.chemistry_batch_correction,
+    ) using (
+        local = true,
+    )
+
+    call RUN_PCA(
+        matrix_h5        = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        random_seed      = self.random_seed,
+        num_bcs          = self.num_pca_bcs,
+        num_genes        = self.num_pca_genes,
+        num_pcs          = self.num_principal_comps,
+        is_antibody_only = ANALYZER_PREFLIGHT.is_antibody_only,
+        skip             = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        disabled = CHOOSE_DIMENSION_REDUCTION.disable_run_pca,
+        volatile = true,
+    )
+
+    call RUN_FBPCA(
+        matrix_h5        = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        library_info     = self.aggr_library_info,
+        num_pcs          = self.num_principal_comps,
+        skip             = ANALYZER_PREFLIGHT.skip,
+        is_antibody_only = ANALYZER_PREFLIGHT.is_antibody_only,
+    ) using (
+        disabled = CHOOSE_DIMENSION_REDUCTION.disable_correct_chemistry_batch,
+        volatile = true,
+    )
+
+    call CORRECT_CHEMISTRY_BATCH(
+        dimred_matrix               = RUN_FBPCA.dimred_matrix,
+        matrix_barcode_feature_info = RUN_FBPCA.matrix_barcode_feature_info,
+        library_info                = self.aggr_library_info,
+        cbc_knn                     = self.cbc_knn,
+        cbc_alpha                   = self.cbc_alpha,
+        cbc_sigma                   = self.cbc_sigma,
+        cbc_realign_panorama        = self.cbc_realign_panorama,
+        skip                        = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        disabled = CHOOSE_DIMENSION_REDUCTION.disable_correct_chemistry_batch,
+        volatile = true,
+    )
+
+    call CHOOSE_DIMENSION_REDUCTION_OUTPUT(
+        skip         = ANALYZER_PREFLIGHT.skip,
+        pca_h5_list  = [
+            RUN_PCA.pca_h5,
+            CORRECT_CHEMISTRY_BATCH.aligned_pca_h5,
+        ],
+        pca_csv_list = [
+            RUN_PCA.pca_csv,
+            CORRECT_CHEMISTRY_BATCH.aligned_pca_csv,
+        ],
+    )
+
+    call RUN_KMEANS(
+        matrix_h5    = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        pca_h5       = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_h5,
+        random_seed  = self.random_seed,
+        max_clusters = self.max_clusters,
+        skip         = ANALYZER_PREFLIGHT.skip,
+        num_bcs      = null,
+        num_pcs      = null,
+    ) using (
+        volatile = true,
+    )
+
+    call RUN_GRAPH_CLUSTERING(
+        matrix_h5          = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        pca_h5             = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_h5,
+        num_neighbors      = self.graphclust_neighbors,
+        neighbor_a         = self.neighbor_a,
+        neighbor_b         = self.neighbor_b,
+        input_pcs          = null,
+        num_bcs            = null,
+        similarity_type    = "nn",
+        balltree_leaf_size = null,
+        skip               = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call MERGE_CLUSTERS(
+        matrix_h5   = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        pca_h5      = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_h5,
+        clusters_h5 = RUN_GRAPH_CLUSTERING.clusters_h5,
+        skip        = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call COMBINE_CLUSTERING(
+        kmeans_h5      = RUN_KMEANS.kmeans_h5,
+        kmeans_csv     = RUN_KMEANS.kmeans_csv,
+        graphclust_h5  = MERGE_CLUSTERS.clusters_h5,
+        graphclust_csv = MERGE_CLUSTERS.clusters_csv,
+        skip           = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call RUN_DIFFERENTIAL_EXPRESSION(
+        matrix_h5        = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        clustering_h5    = COMBINE_CLUSTERING.clustering_h5,
+        random_seed      = self.random_seed,
+        max_clusters     = self.max_clusters,
+        is_antibody_only = ANALYZER_PREFLIGHT.is_antibody_only,
+        skip             = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call RUN_TSNE(
+        matrix_h5        = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        pca_h5           = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_h5,
+        random_seed      = self.random_seed,
+        perplexity       = self.tsne_perplexity,
+        input_pcs        = self.tsne_input_pcs,
+        max_dims         = self.tsne_max_dims,
+        max_iter         = self.tsne_max_iter,
+        stop_lying_iter  = self.tsne_stop_lying_iter,
+        mom_switch_iter  = self.tsne_mom_switch_iter,
+        theta            = self.tsne_theta,
+        is_antibody_only = ANALYZER_PREFLIGHT.is_antibody_only,
+        skip             = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call RUN_UMAP(
+        matrix_h5        = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        pca_h5           = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_h5,
+        random_seed      = self.random_seed,
+        n_neighbors      = self.umap_n_neighbors,
+        input_pcs        = self.umap_input_pcs,
+        max_dims         = self.umap_max_dims,
+        min_dist         = self.umap_min_dist,
+        metric           = self.umap_metric,
+        is_antibody_only = ANALYZER_PREFLIGHT.is_antibody_only,
+        skip             = ANALYZER_PREFLIGHT.skip,
+    ) using (
+        volatile = true,
+    )
+
+    call SUMMARIZE_ANALYSIS(
+        matrix_h5                     = PREPROCESS_MATRIX.preprocessed_matrix_h5,
+        pca_h5                        = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_h5,
+        clustering_h5                 = COMBINE_CLUSTERING.clustering_h5,
+        diffexp_h5                    = RUN_DIFFERENTIAL_EXPRESSION.diffexp_h5,
+        tsne_h5                       = RUN_TSNE.tsne_h5,
+        umap_h5                       = RUN_UMAP.umap_h5,
+        pca_csv                       = CHOOSE_DIMENSION_REDUCTION_OUTPUT.pca_csv,
+        clustering_csv                = COMBINE_CLUSTERING.clustering_csv,
+        diffexp_csv                   = RUN_DIFFERENTIAL_EXPRESSION.diffexp_csv,
+        tsne_csv                      = RUN_TSNE.tsne_csv,
+        umap_csv                      = RUN_UMAP.umap_csv,
+        multi_genome_summary          = RUN_MULTIGENOME_ANALYSIS.multi_genome_summary,
+        multi_genome_csv              = RUN_MULTIGENOME_ANALYSIS.multi_genome_csv,
+        multi_genome_json             = RUN_MULTIGENOME_ANALYSIS.multi_genome_json,
+        is_multi_genome               = PREPROCESS_MATRIX.is_multi_genome,
+        chemistry_batch_correction    = self.chemistry_batch_correction,
+        batch_score_before_correction = CORRECT_CHEMISTRY_BATCH.batch_score_before_correction,
+        batch_score_after_correction  = CORRECT_CHEMISTRY_BATCH.batch_score_after_correction,
+        skip                          = ANALYZER_PREFLIGHT.skip,
+    )
+
+    return (
+        analysis         = SUMMARIZE_ANALYSIS.analysis,
+        analysis_csv     = SUMMARIZE_ANALYSIS.analysis_csv,
+        cloupe_matrix_h5 = PREPROCESS_MATRIX.cloupe_matrix_h5,
+        summary          = SUMMARIZE_ANALYSIS.summary,
+    )
+}
+
+#
+# @include "_common_stages.mro"
+#
+
+# Convert sample_def = { "libraries_csv": "/path/to/libraries.csv" } into a
+# standard sample_def map used by the rest of the pipeline. Only used by the
+# CS pipeline to handle the --libraries cmd-line argument.
+stage EXPAND_SAMPLE_DEF(
+    in  map[] raw_sample_def,
+    out map[] sample_def,
+    src py    "stages/common/expand_sample_def",
+)
+
+stage CELLRANGER_PREFLIGHT(
+    in  map[]    sample_def,
+    in  string   chemistry_name,
+    in  map      custom_chemistry_def,
+    in  path     reference_path,
+    in  csv      feature_reference,
+    in  bool     check_executables,
+    in  int      recovered_cells,
+    in  int      force_cells,
+    in  string[] allowed_chems,
+    in  int      r1_length,
+    in  int      r2_length,
+    src py       "stages/common/cellranger_preflight",
+) using (
+    mem_gb = 2,
+)
+
+stage CELLRANGER_PREFLIGHT_LOCAL(
+    in  map[]    sample_def,
+    in  string   chemistry_name,
+    in  map      custom_chemistry_def,
+    in  path     reference_path,
+    in  csv      feature_reference,
+    in  bool     check_executables,
+    in  int      recovered_cells,
+    in  int      force_cells,
+    in  string[] allowed_chems,
+    in  int      r1_length,
+    in  int      r2_length,
+    src py       "stages/common/cellranger_preflight",
+) using (
+    mem_gb = 2,
+)
+
+stage DISABLE_FEATURE_STAGES(
+    in  map[] sample_def,
+    out bool  disable_crispr,
+    out bool  disable_antibody,
+    src py    "stages/common/disable_feature_stages",
+)
+
+stage SETUP_CHUNKS(
+    in  string   sample_id,
+    in  map[]    sample_def,
+    in  string[] library_type_filter,
+    in  string   chemistry_name,
+    in  map      custom_chemistry_def,
+    in  string   default_library_type,
+    out map[]    chunks,
+    out map      chemistry_def,
+    out string   barcode_whitelist,
+    out map[]    library_info,
+    src py       "stages/common/setup_chunks",
+)
+
+stage CHUNK_READS(
+    in  map[] chunks,
+    in  int   reads_per_file,
+    out map[] out_chunks,
+    src py    "stages/common/chunk_reads",
+) split (
+    in  map   read_chunk,
+) using (
+    mem_gb = 2,
+)
+
+stage EXTRACT_READS(
+    in  map[]    chunks,
+    in  map      chemistry_def,
+    in  string   barcode_whitelist,
+    in  int      reads_per_file,
+    in  float    subsample_rate,
+    in  int      initial_reads,
+    in  map[]    primers,
+    in  map      align,
+    in  int      r1_length,
+    in  int      r2_length,
+    in  bool     skip_metrics,
+    in  path     reference_path,
+    in  csv      feature_reference,
+    in  bool     augment_fastq,
+    in  map[]    library_info,
+    out pickle   chunked_reporter,
+    out json     summary,
+    out json     barcode_counts,
+    out json     feature_counts,
+    out fastq[]  reads,
+    out fastq[]  read2s,
+    out fastq[]  tags,
+    out int[]    gem_groups,
+    out string[] library_types,
+    out string[] library_ids,
+    out string[] read_groups,
+    out map      align,
+    out string[] bam_comments,
+    src py       "stages/common/extract_reads",
+) split (
+    in  map      read_chunks,
+    in  bool     reads_interleaved,
+    in  int      chunk_initial_reads,
+    in  float    chunk_subsample_rate,
+    in  string   read_group,
+    in  string   library_type,
+    in  map      chemistry,
+    in  string   library_id,
+    in  int      gem_group,
+    out fastq    read,
+) using (
+    mem_gb = 2,
+)
+
+#
+# @include "_basic_sc_rna_counter_stages.mro"
+#
+
+stage SUMMARIZE_READ_REPORTS(
+    in  json     extract_reads_summary,
+    in  json     barcode_counts,
+    in  json     feature_counts,
+    in  int[]    gem_groups,
+    in  string[] library_types,
+    in  string[] library_ids,
+    in  string[] read_groups,
+    in  map      align,
+    in  string[] bam_comments,
+    in  fastq[]  read1s,
+    in  fastq[]  read2s,
+    in  fastq[]  tags,
+    in  bool     retain_fastqs,
+    in  map      chemistry_def,
+    out json     summary,
+    out json     barcode_counts,
+    out json     feature_counts,
+    out int[]    gem_groups,
+    out string[] library_types,
+    out string[] library_ids,
+    out string[] read_groups,
+    out map      align,
+    out string[] bam_comments,
+    out fastq[]  read1s,
+    out fastq[]  read2s,
+    out fastq[]  tags,
+    src py       "stages/counter/summarize_read_reports",
+) split (
+    in  fastq    read1,
+    in  fastq    read2,
+    in  fastq    chunk_tags,
+) using (
+    volatile = strict,
+)
+
+stage ALIGN_READS(
+    in  fastq[]  reads,
+    in  fastq[]  read2s,
+    in  string[] read_groups,
+    in  string[] library_types,
+    in  path     reference_path,
+    in  int      threads,
+    in  int      max_hits_per_read,
+    out bam[]    genome_output,
+    src py       "stages/counter/align_reads",
+) split (
+    in  fastq    read_chunk,
+    in  fastq    read2_chunk,
+    in  string   read_group,
+    in  string   library_type,
+)
+
+stage ATTACH_BCS_AND_UMIS(
+    in  bam[]    genome_inputs,
+    in  fastq[]  tags,
+    in  path     reference_path,
+    in  csv      feature_reference,
+    in  int[]    gem_groups,
+    in  string[] library_types,
+    in  string[] library_ids,
+    in  map      chemistry_def,
+    in  map      annotation_params,
+    in  string   barcode_whitelist,
+    in  json     barcode_counts,
+    in  json     feature_counts,
+    in  float    barcode_confidence_threshold,
+    in  int      umi_min_qual_threshold,
+    in  string[] bam_comments,
+    in  bool     rescue_multimappers,
+    in  bool     correct_barcodes,
+    in  bool     skip_metrics,
+    in  map      skip_translate,
+    in  bool     is_antibody_only,
+    in  map[]    library_info,
+    out bam[]    output,
+    out int[]    num_alignments,
+    out bincode  chunked_reporter,
+    out json     summary,
+    out csv      barcodes_detected,
+    out path     gene_index_tab,
+    out json     chunk_metadata,
+    src py       "stages/counter/attach_bcs_and_umis",
+) split (
+    in  bam      chunk_genome_input,
+    in  fastq    chunk_tags,
+    in  int      gem_group,
+    in  string   library_type,
+    in  string   library_id,
+    in  json     library_info_json,
+    in  json     bam_comments_json,
+) using (
+    # No index file is generated for the bam.
+    mem_gb   = 2,
+    volatile = strict,
+)
+
+stage BUCKET_BY_BC(
+    in  int   nbases,
+    in  bam[] inputs,
+    in  int[] num_alignments,
+    out map   buckets,
+    src py    "stages/counter/bucket_reads_by_bc",
+) split (
+    in  bam   chunk_input,
+    in  map[] read_groups,
+)
+
+stage SORT_BY_BC(
+    in  map    buckets,
+    out int    total_reads,
+    out bam,
+    src py     "stages/counter/sort_reads_by_bc",
+) split (
+    in  string prefix,
+    in  bam[]  bucket,
+) using (
+    # No index file is generated for the bam.
+    volatile = strict,
+)
+
+stage MARK_DUPLICATES(
+    in  bam     input,
+    in  path    reference_path,
+    in  bool    filter_umis,
+    in  map[]   library_info,
+    out bam[]   output,
+    out csv     barcode_summary,
+    out json    summary,
+    src comp    "cr_stage martian mark_duplicates",
+) split (
+    in  int     chunk_start,
+    in  int     chunk_end,
+    out json    metrics,
+    out bincode chunk_barcode_summary,
+    out bam     alignments,
+) using (
+    mem_gb   = 4,
+    volatile = strict,
+)
+
+stage REPORT_MOLECULES(
+    in  bam[]  inputs,
+    in  path   reference_path,
+    in  csv    feature_reference,
+    in  map    align,
+    in  string barcode_whitelist,
+    in  json   extract_reads_summary,
+    in  json   attach_bcs_and_umis_summary,
+    in  json   mark_duplicates_summary,
+    in  csv    filtered_barcodes,
+    in  int    recovered_cells,
+    in  int    force_cells,
+    out h5     output,
+    src py     "stages/counter/report_molecules",
+) split (
+    in  string chunk_start,
+    in  string chunk_end,
+) using (
+    mem_gb   = 2,
+    volatile = strict,
+)
+
+stage SORT_BY_POS(
+    in  bam[]   inputs,
+    in  int     num_threads,
+    in  int     mem_gb,
+    out bam     output,
+    out bam.bai index,
+    src py      "stages/counter/sort_reads_by_pos",
+) split (
+    in  bam     chunk_input,
+) using (
+    volatile = strict,
+) retain (
+    index,
+)
+
+stage COUNT_GENES(
+    in  string sample_id,
+    in  bam[]  inputs,
+    in  path   reference_path,
+    in  csv    feature_reference,
+    in  map    chemistry_def,
+    in  string barcode_whitelist,
+    in  bool   is_antibody_only,
+    in  csv    barcodes_detected,
+    in  int[]  gem_groups,
+    in  map    align,
+    out h5     matrices_h5,
+    out path   matrices_mex,
+    out pickle chunked_reporter,
+    out json   reporter_summary,
+    out h5     barcode_summary,
+    src py     "stages/counter/count_genes",
+) split (
+    in  bam    chunk_input,
+) using (
+    mem_gb   = 2,
+    volatile = strict,
+)
+
+stage FILTER_BARCODES(
+    in  string sample_id,
+    in  h5     matrices_h5,
+    in  csv    barcode_correction_csv,
+    in  json   raw_fastq_summary,
+    in  json   attach_bcs_summary,
+    in  int    recovered_cells,
+    in  int    force_cells,
+    in  h5     barcode_summary,
+    in  string barcode_whitelist,
+    in  bool   is_antibody_only,
+    in  path   reference_path,
+    in  int[]  gem_groups,
+    in  map    chemistry_def,
+    in  json   cell_barcodes           "Cell barcode override",
+    out json   summary,
+    out csv    filtered_barcodes,
+    out csv    aggregate_barcodes,
+    out h5     filtered_matrices_h5,
+    out path   filtered_matrices_mex,
+    out csv    nonambient_calls,
+    src py     "stages/counter/filter_barcodes",
+) split (
+) using (
+    mem_gb   = 8,
+    volatile = strict,
+)
+
+stage SUBSAMPLE_READS(
+    in  h5     molecule_info,
+    in  csv    filtered_barcodes,
+    out json   summary,
+    src py     "stages/counter/subsample_reads",
+) split (
+    in  int    chunk_start,
+    in  int    chunk_len,
+    in  map[]  subsample_info,
+    out pickle metrics,
+) using (
+    mem_gb   = 2,
+    volatile = strict,
+)
+
+stage SUMMARIZE_BASIC_REPORTS(
+    in  json   extract_reads_summary,
+    in  path   reference_path,
+    in  map    align,
+    in  json   attach_bcs_and_umis_summary,
+    in  json   mark_duplicates_summary,
+    in  json   count_genes_reporter_summary,
+    in  json   filter_barcodes_summary,
+    in  json   subsample_molecules_summary,
+    in  h5     raw_gene_bc_matrices_h5,
+    in  h5     filtered_gene_bc_matrices_h5,
+    in  string barcode_whitelist,
+    in  int[]  gem_groups,
+    out json   summary,
+    src py     "stages/counter/summarize_basic_reports",
+) split (
+) using (
+    mem_gb   = 2,
+    volatile = strict,
+)
+
+stage CHECK_BARCODES_COMPATIBILITY(
+    in  map[]    chunks,
+    in  string   barcode_whitelist,
+    in  int      num_reads_to_check_barcode,
+    in  float    barcode_compatibility_cutoff,
+    out bool     barcode_compatible,
+    out map      barcode_compatibility_info,
+    out map      skip_translate,
+    src py       "stages/counter/check_barcodes_compatibility",
+) split (
+    in  map      read_chunks,
+    in  map      chemistry,
+    in  bool     reads_interleaved,
+    out string[] sampled_barcodes,
+) using (
+    mem_gb = 2,
+)
+
+#
+# @include "_basic_sc_rna_counter.mro"
+#
+
+pipeline _BASIC_SC_RNA_COUNTER(
+    in  string  sample_id,
+    in  map     chemistry_def,
+    in  string  barcode_whitelist,
+    in  bool    is_antibody_only,
+    in  map[]   chunks,
+    in  float   barcode_confidence_threshold,
+    in  int     umi_min_qual_threshold,
+    in  map     align,
+    in  int     align_threads,
+    in  path    reference_path,
+    in  int     recovered_cells,
+    in  int     force_cells,
+    in  json    cell_barcodes                  "Cell barcode override",
+    in  bool    correct_barcodes,
+    in  bool    rescue_multimappers,
+    in  bool    skip_metrics,
+    in  map     skip_translate,
+    in  map     annotation_params,
+    in  bool    filter_umis,
+    in  bool    retain_fastqs,
+    in  float   subsample_rate,
+    in  int     initial_reads,
+    in  map[]   primers,
+    in  int     r1_length,
+    in  int     r2_length,
+    in  csv     feature_reference,
+    in  map[]   library_info,
+    out csv     filtered_barcodes,
+    out csv     barcode_correction_csv,
+    out bam     possorted_genome_bam,
+    out bam.bai possorted_genome_bam_index,
+    out json    summary,
+    out h5      barcode_summary,
+    out h5      molecule_info,
+    out h5      raw_gene_bc_matrices_h5,
+    out path    raw_gene_bc_matrices_mex,
+    out h5      filtered_gene_bc_matrices_h5,
+    out path    filtered_gene_bc_matrices_mex,
+    out map     align,
+    out int[]   gem_groups,
+    out fastq[] read1s,
+)
+{
+    call CHUNK_READS(
+        chunks         = self.chunks,
+        reads_per_file = 5000000,
+    ) using (
+        volatile = true,
+    )
+
+    call EXTRACT_READS(
+        chunks            = CHUNK_READS.out_chunks,
+        chemistry_def     = self.chemistry_def,
+        barcode_whitelist = self.barcode_whitelist,
+        reads_per_file    = 5000000,
+        subsample_rate    = self.subsample_rate,
+        initial_reads     = self.initial_reads,
+        primers           = self.primers,
+        align             = self.align,
+        r1_length         = self.r1_length,
+        r2_length         = self.r2_length,
+        skip_metrics      = false,
+        reference_path    = self.reference_path,
+        feature_reference = self.feature_reference,
+        augment_fastq     = false,
+        library_info      = self.library_info,
+    ) using (
+        volatile = true,
+    )
+
+    call SUMMARIZE_READ_REPORTS(
+        extract_reads_summary = EXTRACT_READS.summary,
+        barcode_counts        = EXTRACT_READS.barcode_counts,
+        feature_counts        = EXTRACT_READS.feature_counts,
+        gem_groups            = EXTRACT_READS.gem_groups,
+        library_types         = EXTRACT_READS.library_types,
+        library_ids           = EXTRACT_READS.library_ids,
+        read_groups           = EXTRACT_READS.read_groups,
+        align                 = EXTRACT_READS.align,
+        bam_comments          = EXTRACT_READS.bam_comments,
+        read1s                = EXTRACT_READS.reads,
+        read2s                = EXTRACT_READS.read2s,
+        tags                  = EXTRACT_READS.tags,
+        retain_fastqs         = self.retain_fastqs,
+        chemistry_def         = self.chemistry_def,
+    ) using (
+        volatile = true,
+    )
+
+    call ALIGN_READS(
+        reads             = EXTRACT_READS.reads,
+        read2s            = EXTRACT_READS.read2s,
+        read_groups       = SUMMARIZE_READ_REPORTS.read_groups,
+        library_types     = SUMMARIZE_READ_REPORTS.library_types,
+        reference_path    = self.reference_path,
+        threads           = self.align_threads,
+        max_hits_per_read = -1,
+    ) using (
+        volatile = true,
+    )
+
+    call ATTACH_BCS_AND_UMIS(
+        genome_inputs                = ALIGN_READS.genome_output,
+        tags                         = SUMMARIZE_READ_REPORTS.tags,
+        reference_path               = self.reference_path,
+        feature_reference            = self.feature_reference,
+        gem_groups                   = SUMMARIZE_READ_REPORTS.gem_groups,
+        library_types                = SUMMARIZE_READ_REPORTS.library_types,
+        library_ids                  = SUMMARIZE_READ_REPORTS.library_ids,
+        chemistry_def                = self.chemistry_def,
+        annotation_params            = self.annotation_params,
+        barcode_whitelist            = self.barcode_whitelist,
+        barcode_counts               = SUMMARIZE_READ_REPORTS.barcode_counts,
+        feature_counts               = SUMMARIZE_READ_REPORTS.feature_counts,
+        barcode_confidence_threshold = self.barcode_confidence_threshold,
+        umi_min_qual_threshold       = self.umi_min_qual_threshold,
+        bam_comments                 = SUMMARIZE_READ_REPORTS.bam_comments,
+        rescue_multimappers          = self.rescue_multimappers,
+        skip_metrics                 = self.skip_metrics,
+        skip_translate               = self.skip_translate,
+        is_antibody_only             = self.is_antibody_only,
+        correct_barcodes             = self.correct_barcodes,
+        library_info                 = self.library_info,
+    ) using (
+        volatile = true,
+    )
+
+    call BUCKET_BY_BC(
+        nbases         = 2,
+        inputs         = ATTACH_BCS_AND_UMIS.output,
+        num_alignments = ATTACH_BCS_AND_UMIS.num_alignments,
+    ) using (
+        volatile = true,
+    )
+
+    call SORT_BY_BC(
+        buckets = BUCKET_BY_BC.buckets,
+    ) using (
+        volatile = true,
+    )
+
+    call MARK_DUPLICATES(
+        input          = SORT_BY_BC,
+        reference_path = self.reference_path,
+        filter_umis    = self.filter_umis,
+        library_info   = self.library_info,
+    ) using (
+        volatile = true,
+    )
+
+    call SORT_BY_POS(
+        inputs      = MARK_DUPLICATES.output,
+        num_threads = 6,
+        mem_gb      = 2,
+    )
+
+    call COUNT_GENES(
+        sample_id         = self.sample_id,
+        inputs            = MARK_DUPLICATES.output,
+        reference_path    = self.reference_path,
+        feature_reference = self.feature_reference,
+        gem_groups        = SUMMARIZE_READ_REPORTS.gem_groups,
+        align             = SUMMARIZE_READ_REPORTS.align,
+        chemistry_def     = self.chemistry_def,
+        barcode_whitelist = self.barcode_whitelist,
+        is_antibody_only  = self.is_antibody_only,
+        barcodes_detected = ATTACH_BCS_AND_UMIS.barcodes_detected,
+    )
+
+    call FILTER_BARCODES(
+        sample_id              = self.sample_id,
+        matrices_h5            = COUNT_GENES.matrices_h5,
+        barcode_correction_csv = MARK_DUPLICATES.barcode_summary,
+        raw_fastq_summary      = SUMMARIZE_READ_REPORTS.summary,
+        attach_bcs_summary     = ATTACH_BCS_AND_UMIS.summary,
+        recovered_cells        = self.recovered_cells,
+        force_cells            = self.force_cells,
+        barcode_summary        = COUNT_GENES.barcode_summary,
+        barcode_whitelist      = self.barcode_whitelist,
+        gem_groups             = SUMMARIZE_READ_REPORTS.gem_groups,
+        chemistry_def          = self.chemistry_def,
+        is_antibody_only       = self.is_antibody_only,
+        reference_path         = self.reference_path,
+        cell_barcodes          = self.cell_barcodes,
+    )
+
+    call REPORT_MOLECULES(
+        inputs                      = MARK_DUPLICATES.output,
+        reference_path              = self.reference_path,
+        feature_reference           = self.feature_reference,
+        align                       = SUMMARIZE_READ_REPORTS.align,
+        barcode_whitelist           = self.barcode_whitelist,
+        extract_reads_summary       = SUMMARIZE_READ_REPORTS.summary,
+        attach_bcs_and_umis_summary = ATTACH_BCS_AND_UMIS.summary,
+        mark_duplicates_summary     = MARK_DUPLICATES.summary,
+        recovered_cells             = self.recovered_cells,
+        force_cells                 = self.force_cells,
+        filtered_barcodes           = FILTER_BARCODES.filtered_barcodes,
+    )
+
+    call SUBSAMPLE_READS(
+        molecule_info     = REPORT_MOLECULES.output,
+        filtered_barcodes = FILTER_BARCODES.filtered_barcodes,
+    ) using (
+        volatile = true,
+    )
+
+    call SUMMARIZE_BASIC_REPORTS(
+        reference_path               = self.reference_path,
+        align                        = SUMMARIZE_READ_REPORTS.align,
+        barcode_whitelist            = self.barcode_whitelist,
+        gem_groups                   = SUMMARIZE_READ_REPORTS.gem_groups,
+        extract_reads_summary        = SUMMARIZE_READ_REPORTS.summary,
+        attach_bcs_and_umis_summary  = ATTACH_BCS_AND_UMIS.summary,
+        mark_duplicates_summary      = MARK_DUPLICATES.summary,
+        count_genes_reporter_summary = COUNT_GENES.reporter_summary,
+        filter_barcodes_summary      = FILTER_BARCODES.summary,
+        subsample_molecules_summary  = SUBSAMPLE_READS.summary,
+        raw_gene_bc_matrices_h5      = COUNT_GENES.matrices_h5,
+        filtered_gene_bc_matrices_h5 = FILTER_BARCODES.filtered_matrices_h5,
+    )
+
+    return (
+        filtered_barcodes             = FILTER_BARCODES.filtered_barcodes,
+        barcode_correction_csv        = MARK_DUPLICATES.barcode_summary,
+        possorted_genome_bam          = SORT_BY_POS.output,
+        possorted_genome_bam_index    = SORT_BY_POS.index,
+        summary                       = SUMMARIZE_BASIC_REPORTS.summary,
+        barcode_summary               = COUNT_GENES.barcode_summary,
+        molecule_info                 = REPORT_MOLECULES.output,
+        raw_gene_bc_matrices_h5       = COUNT_GENES.matrices_h5,
+        raw_gene_bc_matrices_mex      = COUNT_GENES.matrices_mex,
+        filtered_gene_bc_matrices_h5  = FILTER_BARCODES.filtered_matrices_h5,
+        filtered_gene_bc_matrices_mex = FILTER_BARCODES.filtered_matrices_mex,
+        align                         = SUMMARIZE_READ_REPORTS.align,
+        gem_groups                    = SUMMARIZE_READ_REPORTS.gem_groups,
+        read1s                        = SUMMARIZE_READ_REPORTS.read1s,
+    )
+}
+
+#
+# @include "_sc_rna_counter_stages.mro"
+#
+
+stage SUMMARIZE_REPORTS(
+    in  json[] summaries,
+    in  string sample_id,
+    in  string sample_desc,
+    in  path   reference_path,
+    in  path   analysis,
+    in  h5     barcode_summary_h5,
+    in  h5     filtered_gene_bc_matrices_h5,
+    in  csv    filtered_barcodes,
+    in  string barcode_whitelist,
+    in  int[]  gem_groups,
+    in  csv    feature_reference,
+    out json   metrics_summary_json,
+    out csv    metrics_summary_csv,
+    out html   web_summary,
+    out csv    feature_reference,
+    src py     "stages/counter/summarize_reports",
+) using (
+    mem_gb = 4,
+)
+
+#
+# @include "_sc_crispr_analyzer_stages.mro"
+#
+
+stage CALL_PROTOSPACERS(
+    in  csv  filtered_barcodes,
+    in  h5   molecule_info,
+    in  h5   filtered_feature_counts_matrix,
+    in  csv  feature_reference,
+    in  json counter_metrics_json,
+    out csv  protospacer_calls_summary,
+    out csv  protospacer_calls_per_cell,
+    out json protospacer_call_metrics_json,
+    out json cells_per_protospacer,
+    out json protospacer_umi_thresholds_json,
+    out csv  protospacer_umi_thresholds_csv,
+    src py   "stages/feature/call_protospacers",
+) using (
+    mem_gb = 16,
+)
+
+stage MEASURE_PERTURBATIONS(
+    in  csv  protospacer_calls_per_cell,
+    in  h5   filtered_feature_counts_matrix,
+    in  csv  feature_reference,
+    in  bool by_feature,
+    in  bool ignore_multiples,
+    out csv  perturbation_efficiencies,
+    out path perturbation_effects_path,
+    src py   "stages/feature/measure_perturbations",
+) using (
+    mem_gb  = 12,
+    threads = 2,
+)
+
+stage SUMMARIZE_CRISPR_ANALYSIS(
+    in  csv  feature_reference,
+    in  csv  protospacer_calls_summary,
+    in  csv  protospacer_calls_per_cell,
+    in  json cells_per_protospacer,
+    in  csv  protospacer_umi_thresholds_csv,
+    in  json protospacer_umi_thresholds_json,
+    in  csv  perturbation_efficiencies_by_feature,
+    in  csv  perturbations_efficiencies_by_target,
+    in  path perturbation_effects_by_feature,
+    in  path perturbation_effects_by_target,
+    out path crispr_analysis,
+    src py   "stages/feature/summarize_crispr_analysis",
+) using (
+    mem_gb = 4,
+)
+
+#
+# @include "_crispr_analyzer.mro"
+#
+
+pipeline _CRISPR_ANALYZER(
+    in  h5   molecule_info,
+    in  h5   filtered_feature_counts_matrix,
+    in  csv  filtered_barcodes,
+    in  csv  feature_reference,
+    in  json counter_metrics_json,
+    out json crispr_analysis_metrics,
+    out path crispr_analysis,
+)
+{
+    call CALL_PROTOSPACERS(
+        filtered_barcodes    = self.filtered_barcodes,
+        molecule_info        = self.molecule_info,
+        filtered_feature_counts_matrix = self.filtered_feature_counts_matrix,
+        feature_reference    = self.feature_reference,
+        counter_metrics_json = self.counter_metrics_json,
+    )
+
+    call MEASURE_PERTURBATIONS as _PERTURBATIONS_BY_FEATURE(
+        protospacer_calls_per_cell = CALL_PROTOSPACERS.protospacer_calls_per_cell,
+        filtered_feature_counts_matrix = self.filtered_feature_counts_matrix,
+        feature_reference          = self.feature_reference,
+        by_feature                 = true,
+        ignore_multiples           = false,
+    )
+
+    call MEASURE_PERTURBATIONS as _PERTURBATIONS_BY_TARGET(
+        protospacer_calls_per_cell = CALL_PROTOSPACERS.protospacer_calls_per_cell,
+        filtered_feature_counts_matrix = self.filtered_feature_counts_matrix,
+        feature_reference          = self.feature_reference,
+        by_feature                 = false,
+        ignore_multiples           = false,
+    )
+
+    call SUMMARIZE_CRISPR_ANALYSIS(
+        feature_reference          = self.feature_reference,
+        protospacer_calls_summary  = CALL_PROTOSPACERS.protospacer_calls_summary,
+        protospacer_calls_per_cell = CALL_PROTOSPACERS.protospacer_calls_per_cell,
+        cells_per_protospacer      = CALL_PROTOSPACERS.cells_per_protospacer,
+        protospacer_umi_thresholds_csv = CALL_PROTOSPACERS.protospacer_umi_thresholds_csv,
+        protospacer_umi_thresholds_json = CALL_PROTOSPACERS.protospacer_umi_thresholds_json,
+        perturbation_efficiencies_by_feature = _PERTURBATIONS_BY_FEATURE.perturbation_efficiencies,
+        perturbations_efficiencies_by_target = _PERTURBATIONS_BY_TARGET.perturbation_efficiencies,
+        perturbation_effects_by_feature = _PERTURBATIONS_BY_FEATURE.perturbation_effects_path,
+        perturbation_effects_by_target = _PERTURBATIONS_BY_TARGET.perturbation_effects_path,
+    )
+
+    return (
+        crispr_analysis_metrics = CALL_PROTOSPACERS.protospacer_call_metrics_json,
+        crispr_analysis         = SUMMARIZE_CRISPR_ANALYSIS.crispr_analysis,
+    )
+}
+
+#
+# @include "sc_rna_counter.mro"
+#
+
+pipeline SC_RNA_COUNTER(
+    in  string   sample_id,
+    in  map[]    sample_def,
+    in  string   chemistry_name,
+    in  map      custom_chemistry_def,
+    in  float    barcode_confidence_threshold,
+    in  int      umi_min_qual_threshold,
+    in  map      align,
+    in  int      align_threads,
+    in  path     reference_path,
+    in  map[]    primers,
+    in  int      recovered_cells,
+    in  int      force_cells,
+    in  float    subsample_rate,
+    in  int      initial_reads,
+    in  string   sample_desc,
+    in  int      r1_length                      "Trim input R1 to this length (optional)",
+    in  int      r2_length                      "Trim input R2 to this length (optional)",
+    in  map      annotation_params,
+    in  bool     no_secondary_analysis,
+    in  bool     filter_umis,
+    in  bool     retain_fastqs,
+    in  string[] allowed_chems,
+    in  string[] library_type_filter,
+    in  csv      feature_reference,
+    in  int      num_reads_to_check_barcode,
+    in  float    barcode_compatibility_cutoff,
+    in  bool     disable_preflight_local,
+    in  json     cell_barcodes,
+    out bam      possorted_genome_bam,
+    out bam.bai  possorted_genome_bam_index,
+    out json     metrics_summary_json,
+    out csv      metrics_summary_csv,
+    out html     web_summary,
+    out h5       barcode_summary,
+    out h5       molecule_info,
+    out h5       raw_gene_bc_matrices_h5,
+    out path     raw_gene_bc_matrices_mex,
+    out h5       filtered_gene_bc_matrices_h5,
+    out path     filtered_gene_bc_matrices_mex,
+    out path     analysis,
+    out path     analysis_csv,
+    out path     crispr_analysis,
+    out string   barcode_whitelist,
+    out fastq[]  read_fastqs,
+    out map[]    fastq_chunks,
+    out map      chemistry_def,
+    out map      align,
+    out int[]    gem_groups,
+    out csv      filtered_barcodes,
+    out csv      barcode_correction_csv,
+    out string   chemistry_type,
+    out map[]    library_info,
+    out bool     is_antibody_only,
+    out csv      feature_reference,
+)
+{
+    call CELLRANGER_PREFLIGHT(
+        sample_def           = self.sample_def,
+        chemistry_name       = self.chemistry_name,
+        custom_chemistry_def = self.custom_chemistry_def,
+        reference_path       = self.reference_path,
+        feature_reference    = self.feature_reference,
+        check_executables    = true,
+        recovered_cells      = self.recovered_cells,
+        force_cells          = self.force_cells,
+        allowed_chems        = self.allowed_chems,
+        r1_length            = self.r1_length,
+        r2_length            = self.r2_length,
+    ) using (
+        preflight = true,
+    )
+
+    call CELLRANGER_PREFLIGHT_LOCAL(
+        sample_def           = self.sample_def,
+        chemistry_name       = self.chemistry_name,
+        custom_chemistry_def = self.custom_chemistry_def,
+        reference_path       = self.reference_path,
+        feature_reference    = self.feature_reference,
+        check_executables    = false,
+        recovered_cells      = self.recovered_cells,
+        force_cells          = self.force_cells,
+        allowed_chems        = self.allowed_chems,
+        r1_length            = self.r1_length,
+        r2_length            = self.r2_length,
+    ) using (
+        disabled  = self.disable_preflight_local,
+        local     = true,
+        preflight = true,
+    )
+
+    call CHEMISTRY_DETECTOR(
+        sample_id           = self.sample_id,
+        sample_def          = self.sample_def,
+        reference_path      = self.reference_path,
+        vdj_reference_path  = null,
+        chemistry_name_spec = self.chemistry_name,
+        allowed_chems       = self.allowed_chems,
+        r1_length           = self.r1_length,
+        r2_length           = self.r2_length,
+    )
+
+    call DISABLE_FEATURE_STAGES(
+        sample_def = self.sample_def,
+    )
+
+    call SETUP_CHUNKS(
+        sample_id            = self.sample_id,
+        sample_def           = self.sample_def,
+        library_type_filter  = self.library_type_filter,
+        chemistry_name       = CHEMISTRY_DETECTOR.chemistry_type,
+        custom_chemistry_def = self.custom_chemistry_def,
+        default_library_type = null,
+    ) using (
+        local    = true,
+        volatile = true,
+    )
+
+    call CHECK_BARCODES_COMPATIBILITY(
+        chunks                       = SETUP_CHUNKS.chunks,
+        barcode_whitelist            = SETUP_CHUNKS.barcode_whitelist,
+        num_reads_to_check_barcode   = self.num_reads_to_check_barcode,
+        barcode_compatibility_cutoff = self.barcode_compatibility_cutoff,
+    )
+
+    call _BASIC_SC_RNA_COUNTER(
+        sample_id                    = self.sample_id,
+        chemistry_def                = SETUP_CHUNKS.chemistry_def,
+        barcode_whitelist            = SETUP_CHUNKS.barcode_whitelist,
+        is_antibody_only             = CHEMISTRY_DETECTOR.is_antibody_only,
+        barcode_confidence_threshold = self.barcode_confidence_threshold,
+        umi_min_qual_threshold       = self.umi_min_qual_threshold,
+        align                        = self.align,
+        align_threads                = self.align_threads,
+        reference_path               = self.reference_path,
+        recovered_cells              = self.recovered_cells,
+        force_cells                  = self.force_cells,
+        cell_barcodes                = self.cell_barcodes,
+        correct_barcodes             = true,
+        rescue_multimappers          = true,
+        skip_metrics                 = false,
+        skip_translate               = CHECK_BARCODES_COMPATIBILITY.skip_translate,
+        annotation_params            = self.annotation_params,
+        filter_umis                  = self.filter_umis,
+        retain_fastqs                = self.retain_fastqs,
+        chunks                       = SETUP_CHUNKS.chunks,
+        subsample_rate               = self.subsample_rate,
+        initial_reads                = self.initial_reads,
+        primers                      = self.primers,
+        r1_length                    = self.r1_length,
+        r2_length                    = self.r2_length,
+        feature_reference            = self.feature_reference,
+        library_info                 = SETUP_CHUNKS.library_info,
+    )
+
+    call SC_RNA_ANALYZER(
+        raw_matrices_h5            = _BASIC_SC_RNA_COUNTER.raw_gene_bc_matrices_h5,
+        filtered_matrices_h5       = _BASIC_SC_RNA_COUNTER.filtered_gene_bc_matrices_h5,
+        no_secondary_analysis      = self.no_secondary_analysis,
+        aggr_library_info          = null,
+        num_analysis_bcs           = null,
+        num_pca_bcs                = null,
+        num_pca_genes              = null,
+        num_principal_comps        = null,
+        chemistry_batch_correction = false,
+        cbc_knn                    = null,
+        cbc_alpha                  = null,
+        cbc_sigma                  = null,
+        cbc_realign_panorama       = null,
+        max_clusters               = null,
+        graphclust_neighbors       = null,
+        neighbor_a                 = null,
+        neighbor_b                 = null,
+        tsne_perplexity            = null,
+        tsne_input_pcs             = null,
+        random_seed                = null,
+        tsne_theta                 = null,
+        use_genes                  = null,
+        exclude_genes              = null,
+        use_bcs                    = null,
+        tsne_max_dims              = null,
+        tsne_max_iter              = null,
+        tsne_stop_lying_iter       = null,
+        tsne_mom_switch_iter       = null,
+        umap_n_neighbors           = null,
+        umap_input_pcs             = null,
+        umap_max_dims              = null,
+        umap_min_dist              = null,
+        umap_metric                = null,
+        # NOTE: this is null because the cells are already forced in FILTER_BARCODES
+        force_cells                = null,
+    )
+
+    call _CRISPR_ANALYZER(
+        molecule_info        = _BASIC_SC_RNA_COUNTER.molecule_info,
+        filtered_feature_counts_matrix = _BASIC_SC_RNA_COUNTER.filtered_gene_bc_matrices_h5,
+        filtered_barcodes    = _BASIC_SC_RNA_COUNTER.filtered_barcodes,
+        feature_reference    = self.feature_reference,
+        counter_metrics_json = _BASIC_SC_RNA_COUNTER.summary,
+    ) using (
+        disabled = DISABLE_FEATURE_STAGES.disable_crispr,
+    )
+
+    call SUMMARIZE_REPORTS(
+        summaries                    = [
+            _BASIC_SC_RNA_COUNTER.summary,
+            SC_RNA_ANALYZER.summary,
+            _CRISPR_ANALYZER.crispr_analysis_metrics,
+        ],
+        sample_id                    = self.sample_id,
+        sample_desc                  = self.sample_desc,
+        reference_path               = self.reference_path,
+        analysis                     = SC_RNA_ANALYZER.analysis,
+        barcode_summary_h5           = _BASIC_SC_RNA_COUNTER.barcode_summary,
+        filtered_gene_bc_matrices_h5 = _BASIC_SC_RNA_COUNTER.filtered_gene_bc_matrices_h5,
+        filtered_barcodes            = _BASIC_SC_RNA_COUNTER.filtered_barcodes,
+        barcode_whitelist            = SETUP_CHUNKS.barcode_whitelist,
+        gem_groups                   = _BASIC_SC_RNA_COUNTER.gem_groups,
+        feature_reference            = self.feature_reference,
+    )
+
+    return (
+        possorted_genome_bam          = _BASIC_SC_RNA_COUNTER.possorted_genome_bam,
+        possorted_genome_bam_index    = _BASIC_SC_RNA_COUNTER.possorted_genome_bam_index,
+        web_summary                   = SUMMARIZE_REPORTS.web_summary,
+        metrics_summary_json          = SUMMARIZE_REPORTS.metrics_summary_json,
+        metrics_summary_csv           = SUMMARIZE_REPORTS.metrics_summary_csv,
+        barcode_summary               = _BASIC_SC_RNA_COUNTER.barcode_summary,
+        molecule_info                 = _BASIC_SC_RNA_COUNTER.molecule_info,
+        raw_gene_bc_matrices_h5       = _BASIC_SC_RNA_COUNTER.raw_gene_bc_matrices_h5,
+        raw_gene_bc_matrices_mex      = _BASIC_SC_RNA_COUNTER.raw_gene_bc_matrices_mex,
+        filtered_gene_bc_matrices_h5  = _BASIC_SC_RNA_COUNTER.filtered_gene_bc_matrices_h5,
+        filtered_gene_bc_matrices_mex = _BASIC_SC_RNA_COUNTER.filtered_gene_bc_matrices_mex,
+        analysis                      = SC_RNA_ANALYZER.analysis,
+        analysis_csv                  = SC_RNA_ANALYZER.analysis_csv,
+        crispr_analysis               = _CRISPR_ANALYZER.crispr_analysis,
+        barcode_whitelist             = SETUP_CHUNKS.barcode_whitelist,
+        read_fastqs                   = _BASIC_SC_RNA_COUNTER.read1s,
+        fastq_chunks                  = SETUP_CHUNKS.chunks,
+        chemistry_def                 = SETUP_CHUNKS.chemistry_def,
+        align                         = _BASIC_SC_RNA_COUNTER.align,
+        gem_groups                    = _BASIC_SC_RNA_COUNTER.gem_groups,
+        filtered_barcodes             = _BASIC_SC_RNA_COUNTER.filtered_barcodes,
+        barcode_correction_csv        = _BASIC_SC_RNA_COUNTER.barcode_correction_csv,
+        chemistry_type                = CHEMISTRY_DETECTOR.chemistry_type,
+        library_info                  = SETUP_CHUNKS.library_info,
+        is_antibody_only              = CHEMISTRY_DETECTOR.is_antibody_only,
+        feature_reference             = SUMMARIZE_REPORTS.feature_reference,
+    )
+}
+
+#
+# @include "_cloupe_stages.mro"
+#
+
+stage CLOUPE_PREPROCESS(
+    in  string pipestance_type,
+    in  string sample_id,
+    in  string sample_desc,
+    in  path   analysis,
+    in  h5     filtered_gene_bc_matrices_h5,
+    in  json   metrics_json,
+    in  csv    aggregation_csv,
+    in  json   gem_group_index_json,
+    in  bool   no_secondary_analysis,
+    out cloupe output_for_cloupe,
+    out json   gem_group_index_json,
+    src py     "stages/cloupe/cloupe_preprocess",
+) split (
+)
+
+#
+# @include "sc_rna_counter_cs.mro"
+#
+
+pipeline SC_RNA_COUNTER_CS(
+    in  string  sample_id,
+    in  map[]   sample_def,
+    in  string  sample_desc,
+    in  path    reference_path,
+    in  int     recovered_cells,
+    in  bool    no_secondary_analysis,
+    in  int     force_cells,
+    in  string  chemistry,
+    in  int     r1_length,
+    in  int     r2_length,
+    in  csv     feature_reference,
+    out html    web_summary                    "Run summary HTML",
+    out csv     metrics_summary                "Run summary CSV",
+    out bam     possorted_genome_bam           "BAM"                       "possorted_genome_bam.bam",
+    out bam.bai possorted_genome_bam_index     "BAM index"                 "possorted_genome_bam.bam.bai",
+    out path    filtered_feature_bc_matrix     "Filtered feature-barcode matrices MEX",
+    out h5      filtered_feature_bc_matrix_h5  "Filtered feature-barcode matrices HDF5"  "filtered_feature_bc_matrix.h5",
+    out path    raw_feature_bc_matrix          "Unfiltered feature-barcode matrices MEX",
+    out h5      raw_feature_bc_matrix_h5       "Unfiltered feature-barcode matrices HDF5"  "raw_feature_bc_matrix.h5",
+    out path    analysis                       "Secondary analysis output CSV",
+    out h5      molecule_info                  "Per-molecule read information",
+    out path    crispr_analysis                "CRISPR-specific analysis",
+    out cloupe  cloupe                         "Loupe Cell Browser file",
+    out csv     feature_reference              "Feature Reference",
+)
+{
+    call EXPAND_SAMPLE_DEF(
+        raw_sample_def = self.sample_def,
+    ) using (
+        local = true,
+    )
+
+    call SC_RNA_COUNTER(
+        sample_id                    = self.sample_id,
+        sample_def                   = EXPAND_SAMPLE_DEF.sample_def,
+        chemistry_name               = self.chemistry,
+        custom_chemistry_def         = null,
+        sample_desc                  = self.sample_desc,
+        barcode_confidence_threshold = 0.975,
+        umi_min_qual_threshold       = 10,
+        align                        = {
+            "aligner": "star",
+            "high_conf_mapq": null,
+        },
+        align_threads                = 4,
+        reference_path               = self.reference_path,
+        primers                      = [
+            {
+                "name": "P5",
+                "seq": "AATGATACGGCGACCACCGAGATCT",
+            },
+            {
+                "name": "P7",
+                "seq": "CAAGCAGAAGACGGCATACGAGAT",
+            },
+            {
+                "name": "R1",
+                "seq": "ACACTCTTTCCCTACACGACG",
+            },
+            {
+                "name": "R2",
+                "seq": "GTGACTGGAGTTCAGACGTGTG",
+            },
+            {
+                "name": "switch_oligo",
+                "seq": "AAGCAGTGGTATCAACGCAGAGTACATGGG",
+            },
+            {
+                "name": "polyA",
+                "seq": "AAAAAAAAAAAAAAAAAAAA",
+            },
+        ],
+        recovered_cells              = self.recovered_cells,
+        force_cells                  = self.force_cells,
+        subsample_rate               = 1,
+        initial_reads                = null,
+        cell_barcodes                = null,
+        r1_length                    = self.r1_length,
+        r2_length                    = self.r2_length,
+        annotation_params            = null,
+        no_secondary_analysis        = self.no_secondary_analysis,
+        library_type_filter          = null,
+        filter_umis                  = true,
+        retain_fastqs                = false,
+        allowed_chems                = [
+            "auto",
+            "custom",
+            "threeprime",
+            "fiveprime",
+            "SC3P_auto",
+            "SC5P_auto",
+            "SC3Pv1",
+            "SC3Pv2",
+            "SC3Pv3",
+            "SC5P-PE",
+            "SC5P-R2",
+            "SC5P-R1",
+            "SC-FB",
+        ],
+        feature_reference            = self.feature_reference,
+        num_reads_to_check_barcode   = null,
+        barcode_compatibility_cutoff = null,
+        disable_preflight_local      = false,
+    )
+
+    call CLOUPE_PREPROCESS(
+        pipestance_type              = "SC_RNA_COUNTER_CS",
+        sample_id                    = self.sample_id,
+        sample_desc                  = self.sample_desc,
+        analysis                     = SC_RNA_COUNTER.analysis,
+        filtered_gene_bc_matrices_h5 = SC_RNA_COUNTER.filtered_gene_bc_matrices_h5,
+        metrics_json                 = SC_RNA_COUNTER.metrics_summary_json,
+        aggregation_csv              = null,
+        gem_group_index_json         = null,
+        no_secondary_analysis        = false,
+    )
+
+    return (
+        possorted_genome_bam          = SC_RNA_COUNTER.possorted_genome_bam,
+        possorted_genome_bam_index    = SC_RNA_COUNTER.possorted_genome_bam_index,
+        web_summary                   = SC_RNA_COUNTER.web_summary,
+        metrics_summary               = SC_RNA_COUNTER.metrics_summary_csv,
+        raw_feature_bc_matrix         = SC_RNA_COUNTER.raw_gene_bc_matrices_mex,
+        raw_feature_bc_matrix_h5      = SC_RNA_COUNTER.raw_gene_bc_matrices_h5,
+        filtered_feature_bc_matrix    = SC_RNA_COUNTER.filtered_gene_bc_matrices_mex,
+        filtered_feature_bc_matrix_h5 = SC_RNA_COUNTER.filtered_gene_bc_matrices_h5,
+        analysis                      = SC_RNA_COUNTER.analysis_csv,
+        molecule_info                 = SC_RNA_COUNTER.molecule_info,
+        crispr_analysis               = SC_RNA_COUNTER.crispr_analysis,
+        cloupe                        = CLOUPE_PREPROCESS.output_for_cloupe,
+        feature_reference             = SC_RNA_COUNTER.feature_reference,
+    )
+}
+
+#
+# @include "__oyster_r1and2_Bla_roslin-mito-CRv3.mro"
+#
+
+call SC_RNA_COUNTER_CS(
+    sample_id             = "oyster_r1and2_Bla_roslin-mito-CRv3",
+    sample_def            = [
+        {
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "gem_group": null,
+            "lanes": null,
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/HHWNKBGXF",
+            "sample_indices": ["any"],
+            "sample_names": [
+                "Bla",
+                "Bla_2",
+            ],
+        },
+        {
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "gem_group": null,
+            "lanes": null,
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path/HHWHYBGXF",
+            "sample_indices": ["any"],
+            "sample_names": [
+                "Bla",
+                "Bla_2",
+            ],
+        },
+    ],
+    sample_desc           = "",
+    reference_path        = "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    recovered_cells       = null,
+    force_cells           = null,
+    no_secondary_analysis = false,
+    chemistry             = "SC3Pv3",
+    r1_length             = null,
+    r2_length             = null,
+    feature_reference     = null,
+)

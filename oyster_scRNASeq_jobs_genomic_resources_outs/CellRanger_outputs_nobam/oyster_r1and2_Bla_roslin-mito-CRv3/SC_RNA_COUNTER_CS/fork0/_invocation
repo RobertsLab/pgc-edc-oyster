@@ -1,0 +1,42 @@
+@include "sc_rna_counter_cs.mro"
+
+call SC_RNA_COUNTER_CS(
+    sample_id = "oyster_r1and2_Bla_roslin-mito-CRv3",
+    sample_def = [
+        {
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "gem_group": null,
+            "lanes": null,
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/HHWNKBGXF",
+            "sample_indices": [
+                "any"
+            ],
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ]
+        },
+        {
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "gem_group": null,
+            "lanes": null,
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path/HHWHYBGXF",
+            "sample_indices": [
+                "any"
+            ],
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ]
+        }
+    ],
+    sample_desc = "",
+    reference_path = "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    recovered_cells = null,
+    no_secondary_analysis = false,
+    force_cells = null,
+    chemistry = "SC3Pv3",
+    r1_length = null,
+    r2_length = null,
+    feature_reference = null,
+)

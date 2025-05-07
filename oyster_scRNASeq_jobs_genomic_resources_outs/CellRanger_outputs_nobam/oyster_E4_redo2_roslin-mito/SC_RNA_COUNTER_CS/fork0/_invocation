@@ -1,0 +1,40 @@
+@include "sc_rna_counter_cs.mro"
+
+call SC_RNA_COUNTER_CS(
+    sample_id = "oyster_E4_redo2_roslin-mito",
+    sample_def = [
+        {
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "gem_group": null,
+            "lanes": null,
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo/outs/fastq_path/HGKT3BGXK",
+            "sample_indices": [
+                "any"
+            ],
+            "sample_names": [
+                "E4"
+            ]
+        },
+        {
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "gem_group": null,
+            "lanes": null,
+            "read_path": "/home/mgavery/oyster_embryo_r2-redo_2/outs/fastq_path/HHLK5BGXJ",
+            "sample_indices": [
+                "any"
+            ],
+            "sample_names": [
+                "E4"
+            ]
+        }
+    ],
+    sample_desc = "",
+    reference_path = "/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3",
+    recovered_cells = null,
+    no_secondary_analysis = false,
+    force_cells = null,
+    chemistry = "SC3Pv3",
+    r1_length = null,
+    r2_length = null,
+    feature_reference = null,
+)

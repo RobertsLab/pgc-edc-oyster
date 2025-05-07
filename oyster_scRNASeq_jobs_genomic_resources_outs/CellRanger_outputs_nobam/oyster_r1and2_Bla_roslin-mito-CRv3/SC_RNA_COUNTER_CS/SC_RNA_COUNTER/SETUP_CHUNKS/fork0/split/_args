@@ -1,0 +1,35 @@
+{
+    "chemistry_name": "SC3Pv3",
+    "custom_chemistry_def": null,
+    "default_library_type": null,
+    "library_type_filter": null,
+    "sample_def": [
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/HHWNKBGXF"
+        },
+        {
+            "gem_group": null,
+            "lanes": null,
+            "sample_names": [
+                "Bla",
+                "Bla_2"
+            ],
+            "sample_indices": [
+                "any"
+            ],
+            "fastq_mode": "ILMN_BCL2FASTQ",
+            "read_path": "/home/mgavery/oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path/HHWHYBGXF"
+        }
+    ],
+    "sample_id": "oyster_r1and2_Bla_roslin-mito-CRv3"
+}

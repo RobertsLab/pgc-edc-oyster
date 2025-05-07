@@ -1,0 +1,27 @@
+{
+    "count": 1,
+    "size": 27108,
+    "timestamp": "2021-10-10 23:15:14",
+    "paths": [
+        "/home/mgavery/oyster_E4_redo2_roslin-mito/SC_RNA_COUNTER_CS/SC_RNA_COUNTER/_BASIC_SC_RNA_COUNTER/SUMMARIZE_BASIC_REPORTS/fork0/chnk0-u315963d660/files/summary.json"
+    ],
+    "errors": null,
+    "events": [
+        {
+            "Timestamp": "2021-10-10T23:14:55-07:00",
+            "DeltaBytes": 8088
+        },
+        {
+            "Timestamp": "2021-10-10T23:14:56-07:00",
+            "DeltaBytes": 35322
+        },
+        {
+            "Timestamp": "2021-10-10T23:14:57-07:00",
+            "DeltaBytes": 35607
+        },
+        {
+            "Timestamp": "2021-10-10T23:14:58.024484278-07:00",
+            "DeltaBytes": -27108
+        }
+    ]
+}
