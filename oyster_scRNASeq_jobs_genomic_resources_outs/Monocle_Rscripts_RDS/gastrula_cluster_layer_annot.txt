@@ -1,0 +1,28 @@
+cluster	ClusterID	germ_layer	cell_type	GEM_short	CelTyp_short	CelTyp_dotAnnot	shell_subcluster	shell_annot	neural_annot	dev_dotplot	CelTyp_General
+1	Un-M	mesoderm	undefined	Un	Un1	Un	shell field	Un1	NA	Un-M_1	Un
+2	EnM-Un1	endomesoderm	undefined	EnM	Un2	Un	other	NA	NA	EnM-Un1_2	Un
+3	EcM-Un1	ectomesoderm	undefined	EcM	Un3	Un	other	NA	NA	EcM-Un1_3	Un
+4	Ec-SF1	ectoderm	shell field	Ec	SF1	SF1	shell field	SF1	SF	Ec-SF1_4	SF
+5	Mes	mesoderm	digestive/gut	Mes	Un5	Un	other	NA	NA	Un5_5	Un
+6	Ec-SF2	ectoderm	shell field	Ec	SF2	SF2	shell field	SF2	SF	Ec-SF2_6	SF
+7	EcM-Un2	ectomesoderm	undefined	EcM	Un4	Un	other	NA	NA	EcM-Un2_7	Un
+8	Ec-Neu1	ectoderm	neural	Ec	Neu1	Neu1	other	NA	Neu1	Ec-Neu1_8	Neu
+9	Ec-Neu2	ectoderm	neural	Ec	Neu2	Neu2	other	NA	Neu2	Ec-Neu2_9	Neu
+10	Ec-Cil1	ectoderm	ciliated cells	Ec	Cil1	Cil1	other	NA	Cil	Ec-Cil1_10	Cil
+11	EnM-Mus1	endomesoderm	muscle	EnM	Mus1	Mus1	other	NA	Muscle	EnM-Mus1_11	Mus
+12	Ec-Cil2	ectoderm	ciliated cells	Ec	Cil2	Cil2	other	NA	Cil	Ec-Cil2_12	Cil
+13	Ec-Neu3	ectoderm	"neural, sensory"	Ec	Neu3	Neu3	other	NA	Neu3	Ec-Neu3_13	Neu
+14	Ec-Neu4	ectoderm	neural	Ec	Neu4	Neu4	other	NA	Neu4	Ec-Neu4_14	Neu
+15	Ec-Neu5	ectoderm	neural	Ec	Neu5	Neu5	other	NA	Neu5	Ec-Neu5_15	Neu
+16	EcM-Circ1	ectomesoderm	circulatory	EcM	Circ1	Circ1	other	NA	NA	EcM-Circ1_16	Circ
+17	EcM-Neu6	ectomesoderm	neural	EcM	Neu6	Neu6	other	NA	Neu6	EcM-Neu6_17	Neu
+18	EnM-Mus2	endomesoderm	muscle	EnM	Mus2	Mus2	other	NA	Muscle	EnM-Mus2_18	Mus
+19	PGC	PGCs	germ cells	PGC	PGC	PGC	other	NA	NA	PGC_19	PGC
+20	Me-Circ2	mesoderm?	circulatory	Me	Circ2	Circ2	other	NA	NA	Me-Circ2_20	Circ
+21	Me-Circ3	mesoderm?	circulatory	Me	Circ3	Circ3	other	NA	NA	Me-Circ3_21	Circ
+22	Ec-Neu7	ectoderm	neural	Ec	Neu7	Neu7	other	NA	Neu7	Ec-Neu7_22	Neu
+23	Ec-Cil3	ectoderm	ciliated cells	Ec	Cil3	Cil3	other	NA	Cil	Ec-Cil3_23	Cil
+24	Ec-Cil4	ectoderm	ciliated cells	Ec	Cil4	Cil4	other	NA	Cil	Ec-Cil4_24	Cil
+25	Ec-SF3	ectoderm	shell field	Ec	SF3	SF3	shell field	SF3	SF	Ec-SF3_25	SF
+26	Ec-SF4	ectoderm	shell field	Ec	SF4	SF4	shell field	SF4	SF	Ec-SF4_26	SF
+27	Ec-Neu8	ectoderm	"neural, sensory"	Ec	Neu8	Neu8	other	NA	Neu8	Ec-Neu8_27	Neu
