@@ -1,0 +1,17 @@
+{
+    "fasta_hash": "8954385bf612af210b0793827efaba2207843d54", 
+    "genomes": [
+        "Cgigas_Roslin_mkref_genome-CRv3"
+    ], 
+    "gtf_hash": "a4579fe1607d4726421063007a47cffaef829c39", 
+    "input_fasta_files": [
+        "cgigas_uk_roslin_v1_genomic-mito.fa"
+    ], 
+    "input_gtf_files": [
+        "GCF_902806645.1_cgigas_uk_roslin_v1_genomic-mito-CRv3.filtered.gtf"
+    ], 
+    "mem_gb": 16, 
+    "mkref_version": "3.1.0", 
+    "threads": 2, 
+    "version": null
+}

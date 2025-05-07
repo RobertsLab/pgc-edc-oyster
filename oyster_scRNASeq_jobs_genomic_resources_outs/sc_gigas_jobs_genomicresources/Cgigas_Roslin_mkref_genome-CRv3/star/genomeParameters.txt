@@ -1,0 +1,14 @@
+### STAR   --runMode genomeGenerate   --runThreadN 1   --genomeDir /home/mgavery/Cgigas_Roslin_mkref_genome-CRv3/star   --genomeFastaFiles /home/mgavery/Cgigas_Roslin_mkref_genome-CRv3/fasta/genome.fa      --genomeSAindexNbases 13   --genomeChrBinNbits 18   --genomeSAsparseD 1   --limitGenomeGenerateRAM 17179869184   --sjdbGTFfile /home/mgavery/Cgigas_Roslin_mkref_genome-CRv3/genes/genes.gtf
+versionGenome	20201
+genomeFastaFiles	/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3/fasta/genome.fa 
+genomeSAindexNbases	13
+genomeChrBinNbits	18
+genomeSAsparseD	1
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	/home/mgavery/Cgigas_Roslin_mkref_genome-CRv3/genes/genes.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic

@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --job-name=CellRanger_mkref_RoslinGenome_Cgigas_CRv3
+#SBATCH --output=CellRanger_mkref_RoslinGenome_Cgigas_log_CRv3.txt
+
+#SBATCH --mail-user=mackenzie.gavery@noaa.gov
+#SBATCH --mail-type=ALL
+
+#SBATCH -c 20
+
+#SBATCH -D /home/mgavery
+
+module load bio/cellranger/3.1.0
+
+cellranger mkref \
+    --genome=Cgigas_Roslin_mkref_genome-CRv3  \
+    --fasta=cgigas_uk_roslin_v1_genomic-mito.fa \
+    --genes=GCF_902806645.1_cgigas_uk_roslin_v1_genomic-mito-CRv3.filtered.gtf \

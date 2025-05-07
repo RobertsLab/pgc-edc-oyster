@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name=CellRanger_count_CP3_roslin-mito-CR3.1
+#SBATCH --output=CellRanger_count_CP3_roslin-mito_CR3.1log.txt
+
+#SBATCH --mail-user=mackenzie.gavery@noaa.gov
+#SBATCH --mail-type=ALL
+
+#SBATCH -c 20
+
+#SBATCH -D /home/mgavery
+
+module load bio/cellranger/3.1.0
+ 
+cellranger count \
+ --id=oyster_r1and2_CP3_roslin-mito-CRv3 \
+ --fastqs=oyster_scRNA-Seq_NextSeqlanes/oyster_embryo/outs/fastq_path/,oyster_scRNA-Seq_NextSeqlanes/oyster_embryo_r2/outs/fastq_path \
+ --sample=CP3,CP3_2 \
+ --transcriptome=Cgigas_Roslin_mkref_genome-CRv3 \
+ --localcores=20 \
+ --localmem=200 \
+ --chemistry=SC3Pv3 \
