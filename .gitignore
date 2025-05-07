@@ -19,3 +19,4 @@ oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam/**/outs/raw
 oyster_scRNASeq_jobs_genomic_resources_outs/Monocle_Rscripts_RDS/oyster_gastrula.RDS
 
 osf-up.Rmd
+test_bigfile.txt
