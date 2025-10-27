@@ -4,8 +4,7 @@ Repository associated with manuscript:
 
 **Primordial Germ Cell Specification and Early Developmental Cell States in Pacific Oyster**
 
-Authors: Mackenzie R. Gavery, Lauren Vandepas, Lauren M. Saunders, Brent Vadopalas, J. Adam Luckenbach, Cole Trapnell, Steven Roberts
-
+>Mackenzie R. Gavery, Lauren Vandepas, Lauren M. Saunders, Brent Vadopalas, J. Adam Luckenbach, Cole Trapnell, Steven Roberts. Primordial germ cell specification and early developmental cell states in Pacific oyster. BMC Genomics 26, 951 (2025). https://doi.org/10.1186/s12864-025-12122-7
 ---
 
 ## Repository Structure
