@@ -243,8 +243,9 @@
   async function buildDatasets() {
     // Build a base path that works both locally and on GitHub Pages
     const isPages = /github\.io$/i.test(window.location.hostname);
+    const repoRawBase = 'https://raw.githubusercontent.com/RobertsLab/pgc-edc-oyster/main';
     const base = isPages
-      ? 'https://raw.githubusercontent.com/sr320/pgc-edc-oyster/HEAD/oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam'
+      ? `${repoRawBase}/oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam`
       : '../oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam';
     const ids = [
       'oyster_r1and2_CP3_roslin-mito-CRv3',
