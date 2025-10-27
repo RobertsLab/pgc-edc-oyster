@@ -65,17 +65,24 @@
     state.currentLayout = layoutSelect.value;
     info.textContent = `Loading ${ds.label}…`;
 
-    const [coords, clusters] = await Promise.all([
-      loadCoordinates(ds.paths[state.currentLayout]),
-      loadClusters(ds.paths.clusters)
-    ]);
-    state.coordinates = coords;
-    state.clusters = clusters.map;
-    state.clusterList = clusters.unique;
+    try {
+      const [coords, clusters] = await Promise.all([
+        loadCoordinates(ds.paths[state.currentLayout]),
+        loadClusters(ds.paths.clusters)
+      ]);
+      state.coordinates = coords;
+      state.clusters = clusters.map;
+      state.clusterList = clusters.unique;
 
-    populateClusterSelect(state.clusterList);
-    await renderEmbedding();
-    info.textContent = `${coords.barcode.length.toLocaleString()} cells loaded.`;
+      populateClusterSelect(state.clusterList);
+      await renderEmbedding();
+      info.textContent = `${coords.barcode.length.toLocaleString()} cells loaded.`;
+    } catch (err) {
+      console.error(err);
+      Plotly.purge('scatter');
+      document.getElementById('legend').innerHTML = '';
+      info.textContent = `Failed to load data: ${err && err.message ? err.message : err}`;
+    }
   }
 
   function populateClusterSelect(uniqueClusters) {
@@ -196,6 +203,9 @@
 
   async function loadCoordinates(csvPath) {
     const res = await fetch(csvPath);
+    if (!res.ok) {
+      throw new Error(`GET ${csvPath} → ${res.status}`);
+    }
     const txt = await res.text();
     const parsed = Papa.parse(txt, { header: true, dynamicTyping: true });
     const x = [];
@@ -215,6 +225,9 @@
 
   async function loadClusters(csvPath) {
     const res = await fetch(csvPath);
+    if (!res.ok) {
+      throw new Error(`GET ${csvPath} → ${res.status}`);
+    }
     const txt = await res.text();
     const parsed = Papa.parse(txt, { header: true, dynamicTyping: true });
     const map = new Map();
@@ -228,9 +241,11 @@
   }
 
   async function buildDatasets() {
-    // Static mapping based on repository layout
-    // Paths are relative to docs/ so we go up one level to reach repo root
-    const root = '../oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam';
+    // Build a base path that works both locally and on GitHub Pages
+    const isPages = /github\.io$/i.test(window.location.hostname);
+    const base = isPages
+      ? 'https://raw.githubusercontent.com/sr320/pgc-edc-oyster/HEAD/oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam'
+      : '../oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam';
     const ids = [
       'oyster_r1and2_CP3_roslin-mito-CRv3',
       'oyster_r1and2_CP2_roslin-mito-CRv3',
@@ -255,9 +270,9 @@
       id,
       label: friendly.get(id) || id,
       paths: {
-        umap: `${root}/${id}/outs/analysis/umap/2_components/projection.csv`,
-        tsne: `${root}/${id}/outs/analysis/tsne/2_components/projection.csv`,
-        clusters: `${root}/${id}/outs/analysis/clustering/graphclust/clusters.csv`
+        umap: `${base}/${id}/outs/analysis/umap/2_components/projection.csv`,
+        tsne: `${base}/${id}/outs/analysis/tsne/2_components/projection.csv`,
+        clusters: `${base}/${id}/outs/analysis/clustering/graphclust/clusters.csv`
       }
     }));
   }
