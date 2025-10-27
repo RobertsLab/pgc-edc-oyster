@@ -1,1 +1,16 @@
+scRNASeq genome and reference files
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/cgigas_uk_roslin_v1_genomic-mito.fa
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/GCF_902806645.1_cgigas_uk_roslin_v1_genomic-mito-CRv3.filtered.gtf
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/Cgigas_Roslin_mkref_genome-CRv3/star/Genome
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/Cgigas_Roslin_mkref_genome-CRv3/star/SA
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/Cgigas_Roslin_mkref_genome-CRv3/star/SAindex
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/Cgigas_Roslin_mkref_genome-CRv3/fasta/genome.fa
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/sc_gigas_jobs_genomicresources/Cgigas_Roslin_mkref_genome-CRv3/genes/genes.gtf
+
+
+CellRanger output files
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam/
+
+RDS object
+https://gannet.fish.washington.edu/seashell/oyster_scRNASeq_jobs_genomic_resources_outs/Monocle_Rscripts_RDS/oyster_gastrula.RDS
 
