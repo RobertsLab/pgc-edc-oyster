@@ -5,6 +5,7 @@
   const clusterSelect = document.getElementById('clusterSelect');
   const geneInput = document.getElementById('geneInput');
   const geneShowBtn = document.getElementById('geneShowBtn');
+  const geneInfoBtn = document.getElementById('geneInfoBtn');
   const info = document.getElementById('info');
 
   const state = {
@@ -15,6 +16,7 @@
     clusters: null, // Map barcode -> clusterId
     clusterList: [],
     expression: null, // { gene: string, valuesByBarcode: Map, min: number, max: number }
+    annotations: { loaded: false, index: null, records: null },
   };
 
   init();
@@ -54,10 +56,37 @@
       try {
         await loadExpression(state.currentDataset.id, gene);
         await renderEmbedding();
-        info.textContent = `Expression: ${state.expression.gene} loaded.`;
+        // Try to show annotations too
+        try {
+          await ensureAnnotationsLoaded();
+          const rec = findAnnotation(gene);
+          if (rec) {
+            renderAnnotationRow(rec);
+          } else {
+            info.textContent = `Expression: ${state.expression.gene} loaded. No annotation found.`;
+          }
+        } catch (e2) {
+          info.textContent = `Expression: ${state.expression.gene} loaded.`;
+        }
       } catch (err) {
         console.error(err);
         info.textContent = `Expression not found for gene "${gene}" in ${state.currentDataset.label}. Place CSV at docs/data/${state.currentDataset.id}/expr/${gene}.csv`;
+      }
+    });
+
+    geneInfoBtn?.addEventListener('click', async () => {
+      const gene = geneInput.value.trim();
+      if (!gene) {
+        info.textContent = 'Enter a gene symbol or LOC ID (e.g., LOC105326593 or Tyr).';
+        return;
+      }
+      try {
+        await ensureAnnotationsLoaded();
+        const rec = findAnnotation(gene);
+        renderAnnotationRow(rec);
+      } catch (err) {
+        console.error(err);
+        info.textContent = 'Failed to load annotations index.';
       }
     });
   }
@@ -245,6 +274,55 @@
       }
     }
     return map;
+  }
+
+  function getDataBase() {
+    const isPages = /github\.io$/i.test(window.location.hostname);
+    const repoRawBase = 'https://raw.githubusercontent.com/RobertsLab/pgc-edc-oyster/main';
+    return isPages ? `${repoRawBase}/docs/data` : 'data';
+  }
+
+  async function ensureAnnotationsLoaded() {
+    if (state.annotations.loaded) return;
+    const url = `${getDataBase()}/annotations/index.json`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`GET ${url} → ${res.status}`);
+    const payload = await res.json();
+    state.annotations.index = payload.index || {};
+    state.annotations.records = payload.records || [];
+    state.annotations.loaded = true;
+  }
+
+  function findAnnotation(geneRaw) {
+    if (!geneRaw) return null;
+    const key = String(geneRaw).toUpperCase();
+    const idx = state.annotations.index && state.annotations.index[key];
+    if (typeof idx !== 'number') return null;
+    return state.annotations.records[idx] || null;
+  }
+
+  function renderAnnotationRow(r) {
+    if (!r) {
+      info.textContent = 'No annotation found for this gene.';
+      return;
+    }
+    const parts = [];
+    parts.push(`Gene: ${r.loc_id || ''}${r.gene_name ? ` — ${r.gene_name}` : ''}`.trim());
+    if (r.gene_type) parts.push(`Type: ${r.gene_type}`);
+    if (r.protein_accession) parts.push(`NCBI Protein: ${r.protein_accession}`);
+    if (r.uniprot) parts.push(`UniProt: ${r.uniprot}${r.uniprot_e ? ` (e=${r.uniprot_e})` : ''}`);
+    if (r.dmel) parts.push(`Dmel: ${r.dmel}${r.dmel_e ? ` (e=${r.dmel_e})` : ''}`);
+    if (r.cel) parts.push(`Cel: ${r.cel}${r.cel_e ? ` (e=${r.cel_e})` : ''}`);
+    if (r.spur) parts.push(`Spur: ${r.spur}${r.spur_e ? ` (e=${r.spur_e})` : ''}`);
+
+    const links = [];
+    if (r.uniprot) links.push(`<a href="https://www.uniprot.org/uniprotkb/${encodeURIComponent(r.uniprot)}/entry" target="_blank" rel="noopener">UniProt</a>`);
+    if (r.protein_accession) links.push(`<a href="https://www.ncbi.nlm.nih.gov/protein/${encodeURIComponent(r.protein_accession)}" target="_blank" rel="noopener">NCBI Protein</a>`);
+
+    info.innerHTML = [
+      parts.join(' · '),
+      links.length ? `Links: ${links.join(' | ')}` : ''
+    ].filter(Boolean).join('<br>');
   }
 
   async function loadCoordinates(csvPath) {
