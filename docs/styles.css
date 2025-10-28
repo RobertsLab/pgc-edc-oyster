@@ -45,6 +45,10 @@ body {
   border-color: rgba(110,168,254,0.7);
 }
 
+/* Icon-only GitHub button */
+.site-header .nav-icon { display: inline-flex; align-items: center; justify-content: center; padding: 8px; width: 36px; height: 36px; }
+.site-header .nav-icon svg { width: 18px; height: 18px; display: block; }
+
 .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
 
 .controls { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
