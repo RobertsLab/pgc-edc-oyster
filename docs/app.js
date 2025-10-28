@@ -17,6 +17,7 @@
     clusterList: [],
     expression: null, // { gene: string, valuesByBarcode: Map, min: number, max: number }
     annotations: { loaded: false, index: null, records: null },
+    markers: { loadedFor: null, byCluster: new Map() }, // Map clusterId -> [{ geneId, shortName, score }]
   };
 
   init();
@@ -119,6 +120,14 @@
       populateClusterSelect(state.clusterList);
       await renderEmbedding();
       info.textContent = `${coords.barcode.length.toLocaleString()} cells loaded.`;
+      // Load markers for this dataset (non-blocking for plot)
+      try {
+        await loadMarkersForDataset(ds.id);
+        // Refresh legend to include markers
+        renderLegend(buildPalette());
+      } catch (e) {
+        // Silently ignore if marker files are unavailable
+      }
     } catch (err) {
       console.error(err);
       Plotly.purge('scatter');
@@ -257,6 +266,74 @@
       list.appendChild(row);
     }
     legendEl.appendChild(list);
+
+    // Markers section
+    const hr = document.createElement('div');
+    hr.style.borderTop = '1px solid #233055';
+    hr.style.margin = '10px 0';
+    legendEl.appendChild(hr);
+
+    const mtitle = document.createElement('div');
+    mtitle.textContent = 'Top markers';
+    mtitle.style.marginBottom = '8px';
+    legendEl.appendChild(mtitle);
+
+    const selectedCluster = clusterSelect.value;
+    if (!state.markers.byCluster || state.markers.byCluster.size === 0) {
+      const note = document.createElement('div');
+      note.textContent = 'No marker table available for this dataset.';
+      note.style.color = '#a5b4d6';
+      legendEl.appendChild(note);
+    } else if (selectedCluster === 'all') {
+      const note = document.createElement('div');
+      note.textContent = 'Select a cluster to view its top markers.';
+      note.style.color = '#a5b4d6';
+      legendEl.appendChild(note);
+    } else {
+      const genes = state.markers.byCluster.get(Number(selectedCluster)) || [];
+      const ul = document.createElement('div');
+      for (const g of genes.slice(0, 20)) { // limit for brevity
+        const row = document.createElement('div');
+        row.style.display = 'flex';
+        row.style.alignItems = 'center';
+        row.style.justifyContent = 'space-between';
+        row.style.gap = '8px';
+        row.style.marginBottom = '6px';
+
+        const name = document.createElement('button');
+        name.textContent = g.shortName || g.geneId;
+        name.style.background = 'transparent';
+        name.style.border = '1px solid #233055';
+        name.style.color = '#e6ecff';
+        name.style.borderRadius = '6px';
+        name.style.padding = '4px 8px';
+        name.style.cursor = 'pointer';
+        name.title = `Overlay expression and show annotation for ${g.geneId}`;
+        name.addEventListener('click', async () => {
+          try {
+            await loadExpression(state.currentDataset.id, g.geneId);
+            await renderEmbedding();
+            try {
+              await ensureAnnotationsLoaded();
+              const rec = findAnnotation(g.geneId);
+              renderAnnotationRow(rec);
+            } catch {}
+          } catch (err) {
+            info.textContent = `Expression not found for gene "${g.geneId}" in ${state.currentDataset.label}.`;
+          }
+        });
+
+        const score = document.createElement('span');
+        score.textContent = g.score != null ? g.score.toFixed(3) : '';
+        score.style.color = '#a5b4d6';
+        score.style.fontSize = '12px';
+
+        row.appendChild(name);
+        row.appendChild(score);
+        ul.appendChild(row);
+      }
+      legendEl.appendChild(ul);
+    }
   }
 
   function buildPalette() {
@@ -323,6 +400,54 @@
       parts.join(' · '),
       links.length ? `Links: ${links.join(' | ')}` : ''
     ].filter(Boolean).join('<br>');
+  }
+
+  function getMarkersBase() {
+    const isPages = /github\.io$/i.test(window.location.hostname);
+    const repoRawBase = 'https://raw.githubusercontent.com/RobertsLab/pgc-edc-oyster/main';
+    return isPages
+      ? `${repoRawBase}/oyster_scRNASeq_jobs_genomic_resources_outs/Monocle_Rscripts_RDS/MarkerScoreAnalysis`
+      : '../oyster_scRNASeq_jobs_genomic_resources_outs/Monocle_Rscripts_RDS/MarkerScoreAnalysis';
+  }
+
+  function getMarkerFileForDataset(datasetId) {
+    if (/^oyster_E[1-4]_redo2_roslin-mito$/.test(datasetId)) return 'gast_top_specific_markers_top25byMarkerScore.txt';
+    if (datasetId === 'oyster_r1and2_Bla_roslin-mito-CRv3') return 'Bla_top_specific_markers_top25byMarkerScore.txt';
+    if (/^oyster_r1and2_CP[1-3]_roslin-mito-CRv3$/.test(datasetId)) return 'CPbla_top_specific_markers_top25byMarkerScore.txt';
+    return null;
+  }
+
+  async function loadMarkersForDataset(datasetId) {
+    if (state.markers.loadedFor === datasetId) return;
+    const fname = getMarkerFileForDataset(datasetId);
+    state.markers.byCluster = new Map();
+    state.markers.loadedFor = null;
+    if (!fname) return;
+    const url = `${getMarkersBase()}/${fname}`;
+    const res = await fetch(url);
+    if (!res.ok) return; // silently ignore
+    const txt = await res.text();
+    const parsed = Papa.parse(txt, { header: true, dynamicTyping: true, delimiter: '\t' });
+    const fields = parsed.meta && parsed.meta.fields ? parsed.meta.fields : [];
+    const clusterField = fields.find(f => /cell[ _]?group/i.test(f)) || 'cell_group';
+    const geneField = fields.find(f => /^gene_id$/i.test(f)) || fields.find(f => /^gene_ID$/i.test(f)) || 'gene_id';
+    const shortField = fields.find(f => /short.*name/i.test(f)) || fields.find(f => /gene_short_name/i.test(f));
+    const scoreField = fields.find(f => /marker_score/i.test(f));
+    for (const row of parsed.data) {
+      if (!row || row[clusterField] == null) continue;
+      const cl = Number(row[clusterField]);
+      const geneId = String(row[geneField] || '').trim();
+      if (!geneId) continue;
+      const shortName = shortField ? String(row[shortField] || '').trim() : '';
+      const score = scoreField != null ? Number(row[scoreField]) : null;
+      if (!state.markers.byCluster.has(cl)) state.markers.byCluster.set(cl, []);
+      state.markers.byCluster.get(cl).push({ geneId, shortName, score });
+    }
+    // Sort each cluster by score desc when available
+    for (const [cl, arr] of state.markers.byCluster.entries()) {
+      arr.sort((a, b) => (Number(b.score || 0) - Number(a.score || 0)));
+    }
+    state.markers.loadedFor = datasetId;
   }
 
   async function loadCoordinates(csvPath) {
