@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oyster scRNA‑seq Figures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.34.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Oyster scRNA‑seq Figures</h1>
+    <nav>
+      <a href="index.html">Explorer</a>
+      <a href="https://github.com/RobertsLab/pgc-edc-oyster" target="_blank" rel="noopener">View Repo</a>
+    </nav>
+  </header>
+
+  <main class="container figures">
+    <section class="controls">
+      <div class="control">
+        <label for="datasetSelect2">Dataset</label>
+        <select id="datasetSelect2"></select>
+      </div>
+      <div class="control">
+        <label>&nbsp;</label>
+        <a id="webSummaryLink" href="#" target="_blank" rel="noopener">Open Cell Ranger web summary</a>
+      </div>
+    </section>
+
+    <section class="plots">
+      <div class="subsection">
+        <h3>QC overview (compare datasets)</h3>
+        <div id="qc_plot" class="plot"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>Cluster sizes</h3>
+        <div id="cluster_sizes" class="plot"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>PCA scree</h3>
+        <div id="pca_scree" class="plot"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>PCA PC1 vs PC2</h3>
+        <div id="pca_scatter" class="plot"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>Highly variable features</h3>
+        <div id="hvf_table" class="table"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>Marker score summaries</h3>
+        <div class="controls-inline">
+          <select id="markerStage">
+            <option value="gast">Gastrula</option>
+            <option value="Bla">Blastula</option>
+            <option value="CPbla">Cleavage + Blastula</option>
+          </select>
+          <select id="markerTopN">
+            <option value="5">Top 5</option>
+            <option value="25">Top 25</option>
+          </select>
+        </div>
+        <div id="markers_table" class="table"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>Differential expression (graphclust)</h3>
+        <div class="controls-inline">
+          <select id="deCluster"></select>
+          <button id="deLoadBtn">Load top DE genes</button>
+        </div>
+        <div id="de_table" class="table"></div>
+        <div id="de_volcano" class="plot" style="margin-top:12px;"></div>
+      </div>
+
+      <div class="subsection">
+        <h3>Cross‑dataset small‑multiples (UMAP)</h3>
+        <button id="renderSmallMultiples">Render small‑multiples</button>
+        <div id="small_multiples" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px;"></div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div id="figInfo"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Built for GitHub Pages. Figures derived from Cell Ranger and Monocle outputs in this repository.</span>
+  </footer>
+
+  <script src="figures.js"></script>
+</body>
+</html>
+
+

@@ -57,6 +57,14 @@ body {
 .plot { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; min-height: 560px; }
 .legend { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
 
+/* Figures page adjustments to avoid overlapping plots */
+.container.figures .plots { grid-template-columns: 1fr; }
+.container.figures .subsection { margin-bottom: 16px; }
+.container.figures .plot { min-height: 400px; }
+.container.figures .table { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 8px; overflow: auto; }
+.container.figures table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.container.figures th, .container.figures td { border-bottom: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+
 .details { margin-top: 16px; }
 #info { color: var(--muted); }
 
