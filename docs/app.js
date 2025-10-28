@@ -14,6 +14,7 @@
     coordinates: null, // { x:[], y:[], barcode:[] }
     clusters: null, // Map barcode -> clusterId
     clusterList: [],
+    expression: null, // { gene: string, valuesByBarcode: Map, min: number, max: number }
   };
 
   init();
@@ -41,11 +42,23 @@
     clusterSelect.addEventListener('change', () => {
       renderEmbedding();
     });
-    geneShowBtn.addEventListener('click', () => {
-      // Placeholder: expression not wired (Matrix is large). Could wire via API or precomputed features.
+    geneShowBtn.addEventListener('click', async () => {
       const gene = geneInput.value.trim();
-      if (!gene) return;
-      alert('Expression visualization is not bundled in this static demo. Provide per-cell expression CSVs to enable.');
+      if (!gene) {
+        // Clear expression overlay
+        state.expression = null;
+        await renderEmbedding();
+        info.textContent = 'Cleared expression overlay.';
+        return;
+      }
+      try {
+        await loadExpression(state.currentDataset.id, gene);
+        await renderEmbedding();
+        info.textContent = `Expression: ${state.expression.gene} loaded.`;
+      } catch (err) {
+        console.error(err);
+        info.textContent = `Expression not found for gene "${gene}" in ${state.currentDataset.label}. Place CSV at docs/data/${state.currentDataset.id}/expr/${gene}.csv`;
+      }
     });
   }
 
@@ -112,6 +125,7 @@
     const y = [];
     const text = [];
     const color = [];
+    const z = []; // expression values when present
 
     // Build color palette
     const palette = buildPalette();
@@ -123,10 +137,31 @@
       x.push(coords.x[i]);
       y.push(coords.y[i]);
       text.push(`${bc} | cluster ${cl}`);
-      color.push(palette.get(String(cl)) || '#cccccc');
+      if (state.expression) {
+        const v = state.expression.valuesByBarcode.get(bc);
+        z.push(typeof v === 'number' ? v : NaN);
+      } else {
+        color.push(palette.get(String(cl)) || '#cccccc');
+      }
     }
 
-    const trace = {
+    const trace = state.expression ? {
+      x,
+      y,
+      text,
+      type: 'scattergl',
+      mode: 'markers',
+      marker: {
+        size: 4,
+        color: z,
+        colorscale: 'Viridis',
+        opacity: 0.9,
+        cmin: state.expression.min,
+        cmax: state.expression.max,
+        colorbar: { title: state.expression.gene }
+      },
+      hovertemplate: '%{text}<extra></extra>'
+    } : {
       x,
       y,
       text,
@@ -137,7 +172,7 @@
     };
 
     const layout = {
-      title: `${state.currentDataset.label} – ${state.currentLayout.toUpperCase()}`,
+      title: state.expression ? `${state.currentDataset.label} – ${state.currentLayout.toUpperCase()} · ${state.expression.gene}` : `${state.currentDataset.label} – ${state.currentLayout.toUpperCase()}`,
       paper_bgcolor: 'rgba(0,0,0,0)',
       plot_bgcolor: 'rgba(0,0,0,0)',
       font: { color: '#e6ecff' },
@@ -154,6 +189,17 @@
   function renderLegend(palette) {
     const legendEl = document.getElementById('legend');
     legendEl.innerHTML = '';
+    if (state.expression) {
+      const title = document.createElement('div');
+      title.textContent = `Expression: ${state.expression.gene}`;
+      legendEl.appendChild(title);
+      const hint = document.createElement('div');
+      hint.textContent = 'Colorbar shown on plot.';
+      hint.style.color = '#a5b4d6';
+      hint.style.marginTop = '6px';
+      legendEl.appendChild(hint);
+      return;
+    }
     const title = document.createElement('div');
     title.textContent = 'Clusters';
     title.style.marginBottom = '8px';
@@ -247,6 +293,9 @@
     const base = isPages
       ? `${repoRawBase}/oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam`
       : '../oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam';
+    const dataBase = isPages
+      ? `${repoRawBase}/docs/data`
+      : 'data';
     const ids = [
       'oyster_r1and2_CP3_roslin-mito-CRv3',
       'oyster_r1and2_CP2_roslin-mito-CRv3',
@@ -273,9 +322,46 @@
       paths: {
         umap: `${base}/${id}/outs/analysis/umap/2_components/projection.csv`,
         tsne: `${base}/${id}/outs/analysis/tsne/2_components/projection.csv`,
-        clusters: `${base}/${id}/outs/analysis/clustering/graphclust/clusters.csv`
+        clusters: `${base}/${id}/outs/analysis/clustering/graphclust/clusters.csv`,
+        exprDir: `${dataBase}/${id}/expr`
       }
     }));
+  }
+
+  async function loadExpression(datasetId, geneRaw) {
+    const ds = state.datasets.find(d => d.id === datasetId);
+    if (!ds) throw new Error('Dataset not found');
+    const candidates = [geneRaw, geneRaw.toUpperCase(), geneRaw.toLowerCase()].filter(Boolean);
+    let csvText = null;
+    let geneUsed = null;
+    for (const g of candidates) {
+      const url = `${ds.paths.exprDir}/${encodeURIComponent(g)}.csv`;
+      const res = await fetch(url);
+      if (res.ok) {
+        csvText = await res.text();
+        geneUsed = g;
+        break;
+      }
+    }
+    if (!csvText) throw new Error('Expression CSV not found');
+
+    const parsed = Papa.parse(csvText, { header: true, dynamicTyping: true });
+    // Determine expression column: prefer a column literally named geneUsed; otherwise, use second column
+    let exprCol = parsed.meta.fields.find(f => f.toLowerCase() === String(geneUsed).toLowerCase());
+    if (!exprCol && parsed.meta.fields.length >= 2) exprCol = parsed.meta.fields[1];
+    const valuesByBarcode = new Map();
+    let min = Infinity, max = -Infinity;
+    for (const row of parsed.data) {
+      if (!row || row.Barcode == null) continue;
+      const v = Number(row[exprCol]);
+      if (Number.isFinite(v)) {
+        valuesByBarcode.set(String(row.Barcode), v);
+        if (v < min) min = v;
+        if (v > max) max = v;
+      }
+    }
+    if (!Number.isFinite(min) || !Number.isFinite(max)) { min = 0; max = 1; }
+    state.expression = { gene: geneUsed, valuesByBarcode, min, max };
   }
 })();
 

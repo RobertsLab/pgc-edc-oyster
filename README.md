@@ -4,20 +4,6 @@
 
 An interactive, static explorer is available in `docs/` and can be published via GitHub Pages. It visualizes UMAP/t‑SNE embeddings from Cell Ranger analysis and colors cells by clusters.
 
-### View locally
-
-Because browsers block `file://` fetches, use a local web server from the repository root:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then open `http://localhost:8080/docs/`.
-
-### Deploy on GitHub Pages
-
-1. In the repository settings, enable GitHub Pages with source set to `main` branch and folder `docs/`.
-2. The site will be published at your repository Pages URL, e.g., `https://<user>.github.io/pgc-edc-oyster/`.
 
 ### Data wiring
 
@@ -38,7 +24,6 @@ Datasets currently included:
 - `oyster_E2_redo2_roslin-mito`
 - `oyster_E1_redo2_roslin-mito`
 
-If your folder names change, update `docs/app.js` in the `buildDatasets()` function accordingly.
 
 ### Optional: Gene expression visualization
 
@@ -47,6 +32,9 @@ Expression layers are not bundled for page weight reasons. To add expression:
 1. Export per‑cell expression for a set of genes into CSV files with headers `Barcode,<GENE>`.
 2. Place them under `docs/data/<dataset>/<gene>.csv` and extend `loadCoordinates`/`loadClusters` with a `loadExpression` function.
 3. Wire the `Show` button in `docs/index.html` to overlay expression values as a color scale.
+
+
+--- 
 
 Repository associated with manuscript:
 
