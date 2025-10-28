@@ -2,7 +2,6 @@
   /* global Papa, Plotly */
 
   const dsSelect = document.getElementById('datasetSelect2');
-  const webSummaryLink = document.getElementById('webSummaryLink');
   const qcPlot = document.getElementById('qc_plot');
   const clusterSizesPlot = document.getElementById('cluster_sizes');
   const pcaScreePlot = document.getElementById('pca_scree');
@@ -72,7 +71,6 @@
   async function onDatasetChange() {
     const ds = state.datasets.find(d => d.id === dsSelect.value);
     state.currentDataset = ds;
-    setWebSummaryLink(ds);
     await renderClusterSizes(ds);
     await renderPcaScree(ds);
     await renderPcaScatter(ds);
@@ -133,15 +131,7 @@
     }));
   }
 
-  function setWebSummaryLink(ds) {
-    // Prefer linking to GitHub repo view to ensure it renders in browser
-    const repoBase = 'https://github.com/RobertsLab/pgc-edc-oyster/blob/main';
-    const relative = `oyster_scRNASeq_jobs_genomic_resources_outs/CellRanger_outputs_nobam/${ds.id}/outs`;
-    // Find a file matching web_summary*.html (dataset specific name varies)
-    // Use a generic path that most likely exists (E* datasets have web_summary_E#.html, others may differ)
-    const likely = `web_summary_${ds.id.includes('E') ? ds.id.split('_')[1] : 'E1'}.html`;
-    webSummaryLink.href = `${repoBase}/${relative}/${likely}`;
-  }
+  // web summary link removed per request
 
   async function renderQcOverview(datasets) {
     const rows = await Promise.all(datasets.map(async ds => {

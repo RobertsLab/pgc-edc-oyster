@@ -30,6 +30,20 @@ body {
 .site-header h1 { font-size: 20px; margin: 0; letter-spacing: 0.2px; }
 .site-header a { color: var(--muted); text-decoration: none; }
 .site-header a:hover { color: var(--text); }
+.site-header nav { display: flex; align-items: center; gap: 10px; }
+.site-header .nav-label { color: var(--text); font-size: 12px; opacity: 0.8; margin-right: 4px; }
+.site-header .nav-link {
+  background: linear-gradient(180deg, rgba(110,168,254,0.18), rgba(110,168,254,0.06));
+  color: #e6ecff;
+  border: 1px solid rgba(110,168,254,0.4);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+.site-header .nav-link:hover {
+  background: linear-gradient(180deg, rgba(110,168,254,0.28), rgba(110,168,254,0.12));
+  border-color: rgba(110,168,254,0.7);
+}
 
 .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
 
